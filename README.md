@@ -1,4 +1,4 @@
-twitter_analyser
+Twitter Analyser
 ================
 
 neo4j installieren:

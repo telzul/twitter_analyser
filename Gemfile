@@ -21,6 +21,13 @@ gem 'haml-rails'
 gem 'sidekiq'
 gem 'twitter'
 
+# Deploy
+
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-passenger'
+
 group :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
