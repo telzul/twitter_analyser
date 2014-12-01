@@ -4,6 +4,7 @@ lock '3.3.3'
 set :application, 'twitter_analyser'
 set :repo_url, 'https://github.com/telzul/twitter_analyser.git'
 
+set :linked_files, %w{config/secrets.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default branch is :master
