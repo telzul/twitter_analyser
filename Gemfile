@@ -20,6 +20,7 @@ gem 'haml-rails'
 
 gem 'sidekiq'
 gem 'twitter'
+gem 'figaro'
 
 # Deploy
 
