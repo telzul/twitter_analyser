@@ -1,4 +1,4 @@
-class SferiktwitterParsedTweet
+class TwitterStream::SferiktwitterParsedTweet
   # we could also replace this by a simple struct
   attr_reader :text, :tweet_id, :user_name, :user_id, :created_at
   

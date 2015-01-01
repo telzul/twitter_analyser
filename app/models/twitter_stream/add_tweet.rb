@@ -1,4 +1,4 @@
-class AddTweet
+class TwitterStream::AddTweet
   def self.perform(topic, parsed_tweet)
     topic = Topic.find_by(title: topic) || Topic.create(title: topic)
     user = User.find_by(twitter_id: parsed_tweet.user_id) || User.create(twitter_id: parsed_tweet.user_id, name: parsed_tweet.user_name)
