@@ -17,9 +17,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 
-
 gem 'sidekiq'
 gem 'twitter'
+gem 'figaro'
 
 
 # Sentiment Analysis
