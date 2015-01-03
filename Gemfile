@@ -21,6 +21,10 @@ gem 'haml-rails'
 gem 'sidekiq'
 gem 'twitter'
 
+
+# Sentiment Analysis
+gem 'tokenizer'
+
 # Deploy
 
 gem 'capistrano'
