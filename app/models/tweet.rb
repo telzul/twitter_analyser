@@ -5,4 +5,6 @@ class Tweet
   property :created_at
   has_one :in, :user, origin: :tweets, model_class: User
   has_one :in, :topic, model_class: Topic
+  has_many :in, :replies, model_class: Tweet, origin: :reply_to
+  has_one :out, :reply_to, model_class: Tweet
 end
