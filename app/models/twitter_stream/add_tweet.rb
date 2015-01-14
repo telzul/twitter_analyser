@@ -6,5 +6,6 @@ class TwitterStream::AddTweet
     tweet.user = user                                            
     tweet.topic = topic
     tweet.save!
+    tweet
   end
 end
