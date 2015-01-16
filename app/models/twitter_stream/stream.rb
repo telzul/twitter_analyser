@@ -1,13 +1,9 @@
 class TwitterStream::Stream
   
   def self.stream(topic)
+    Topic.find_or_create_by(title: topic)
     self.sferik_stream(topic) do |tweet|
-      saved_tweet = TwitterStream::AddTweet.perform(topic, tweet)
-      unless tweet.reply_to.nil?
-        missing = TwitterStream::AddMissingTweet.add_missing_tweet(topic, tweet.reply_to)
-        saved_tweet.reply_to = missing
-        saved_tweet.save!
-      end
+      TwitterStream::AddTweet.perform(tweet)
     end
   end
 
