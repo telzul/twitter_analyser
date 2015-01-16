@@ -1,0 +1,5 @@
+%h2 Create a new Topic
+Please give a Hashtag
+= form_for @topic, url: {action: "create"}, html: { class: "form" } do |f|
+  = f.text_field :title
+  = f.submit "Create"
