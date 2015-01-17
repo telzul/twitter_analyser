@@ -56,13 +56,45 @@ RSpec.describe SentimentAnalyser::FeatureSelector, type: :model do
   describe "#significance" do
     it "calculates the chi_square score for every label for a given ngram" do
       bigram_measure = double("bigram_measure")
-      expect(bigram_measure).to receive(:chi_square).twice.and_return(5,0)
+      expect(bigram_measure).to receive(:chi_square).twice.and_return(5,1)
+
+      allow(@selector).to receive(:is_relevant?).and_return(true)
+
 
       expect(SentimentAnalyser::BigramAssociationMeasures).to receive(:new).with(2,2,7,15).and_return(bigram_measure)
       expect(SentimentAnalyser::BigramAssociationMeasures).to receive(:new).with(0,2,8,15).and_return(bigram_measure)
 
-      expect(@selector.significance("toll")).to be 5
+      expect(@selector.significance("toll")).to be 4
     end
+
+    it "returns -100000 if the ngram is not relevant" do
+      expect(@selector).to receive(:is_relevant?).and_return(false)
+
+      expect(@selector.significance("toll")).to be -100000
+    end
+  end
+
+  describe "#is_relevant?" do
+    it "return false if ngram has appeared less than 5 times" do
+      allow(@selector).to receive(:ngram_fd).and_return(4)
+
+      expect(@selector.send(:is_relevant?,"toll")).to be false
+    end
+
+    it "return false if ngram has appeared more than 0.005*total_ngram_count times" do
+      allow(@selector).to receive(:ngram_fd).and_return(10)
+      allow(@selector).to receive(:total_ngram_count).and_return(11)
+
+      expect(@selector.send(:is_relevant?,"toll")).to be false
+    end
+
+    it "returns true if has appeared within the boundaries" do
+      allow(@selector).to receive(:ngram_fd).and_return(10)
+      allow(@selector).to receive(:total_ngram_count).and_return(100000)
+
+      expect(@selector.send(:is_relevant?,"toll")).to be true
+    end
+
   end
 
   describe "#ngrams_sorted" do

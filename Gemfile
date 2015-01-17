@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Core
 gem 'rails', '4.1.7'
-gem 'neo4j'
+#gem 'neo4j'
 gem 'spring',        group: :development
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
@@ -32,8 +32,9 @@ gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-passenger'
 
+gem 'rspec-rails', :group => [:development, :test]
+
 group :test do
-  gem 'rspec-rails'
   gem 'database_cleaner'
 end
 

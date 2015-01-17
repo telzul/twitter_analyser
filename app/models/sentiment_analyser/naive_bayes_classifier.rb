@@ -1,5 +1,7 @@
 class SentimentAnalyser::NaiveBayesClassifier
 
+  attr_reader :features, :labels
+
   def initialize(labels,features)
     @labels = labels
     @features = features
@@ -32,11 +34,12 @@ class SentimentAnalyser::NaiveBayesClassifier
   end
 
   def classify(content)
-    content.uniq!
-    content.reject! {|ngram| !@features.include?(ngram)}
+    data = content.
+        uniq.
+        reject {|ngram| !@features.include?(ngram)}
 
     @labels.find do |label|
-      test(label,content) > 0.0
+      test(label,data) > 0.0
     end
   end
 end

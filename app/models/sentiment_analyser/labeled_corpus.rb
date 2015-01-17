@@ -15,7 +15,7 @@ class SentimentAnalyser::LabeledCorpus
     @data[label] || []
   end
 
-  def self.from_csv(corpus_file, segmentizer = SentimentAnalyser::NGramSegmentizer.new(2,:en))
+  def self.from_csv(corpus_file, segmentizer = SentimentAnalyser::NGramSegmentizer.new(:n => 2,:lang => :en))
     require 'csv'
     data = Hash.new {|h,k| h[k]=[]}
     CSV.foreach(corpus_file) do |csv|

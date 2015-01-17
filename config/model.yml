@@ -1,0 +1,706 @@
+--- !ruby/object:SentimentAnalyser::NaiveBayesClassifier
+labels:
+- positive
+- negative
+- neutral
+features:
+- love
+- awesome
+- fix
+- amazing
+- looks
+- fail
+- fucking
+- ics
+- hate
+- loving
+- itunes
+- bit
+- nice
+- eclipsed
+- restore
+- nexus
+- after
+- ":("
+- cream
+- doesn't
+- ice
+- why
+- having
+- not
+- issues
+- since
+- apps
+- improvements
+- job
+- usage
+- galaxy
+- won't
+- terrible
+- blue
+- thanks
+- good
+- sandwich
+- impressive
+- microsoftstores
+- battery
+- sweet
+- only
+- retweets
+- customer
+- icloud
+- late
+- issue
+- great
+- nothing
+- problem
+- else
+- ".ly/nejbye"
+- them
+- samsung
+- wtf
+- dead
+- replaced
+- ups
+- annoyed
+- power
+- feature
+- 'no'
+- dear
+- shit
+- update
+- icecreamsandwich
+- finally
+- smart
+- network
+- blackberry
+- contact
+- looking
+- such
+- trouble
+- reservation
+- accounts
+- science
+- beyond
+- holodesk
+- beautiful
+- updating
+- best
+- seriously
+- icecream
+- failed
+- half
+- fuck
+- smartphone
+- sucks
+- uh
+- dev
+- been
+- able
+- sms
+- galaxynexus
+- hold
+- sound
+- do
+- introducing
+- impressed
+- god
+- guy
+- connect
+- adobe
+- took
+- suck
+- hacked
+- ugh
+- neck
+- never
+- offer
+- well
+- hour
+- lion
+- thx
+- almost
+- google+
+- camera
+- stores
+- thank
+- apparently
+- seems
+- google's
+- so
+- excited
+- bottom
+- capabilities
+- vslive
+- moving
+- ballmer
+- ui
+- email
+- working
+- can't
+- ask
+- success
+- crash
+- pissed
+- mentions
+- quality
+- lil
+- went
+- here
+- os
+- pretty
+- far
+- search
+- way
+- worst
+- full
+- lose
+- w/
+- ass
+- they
+- recognition
+- charge
+- think
+- if
+- already
+- any
+- v
+- want
+- dhilipsiva
+- missing
+- fixed
+- technology
+- software
+- button
+- stuck
+- x
+- list
+- tools
+- mango
+- wait
+- powered
+- forward
+- devices
+- work
+- time
+- shows
+- i've
+- yeah
+- report
+- really
+- iphone
+- sprint
+- around
+- pull
+- appreciated
+- literally
+- today
+- million
+- me
+- windowsphone
+- worse
+- crap
+- definitely
+- failing
+- tried
+- point
+label_document_count:
+  positive: 461
+  negative: 512
+  neutral: 2144
+label_feature_count:
+  positive:
+    so: 16
+    blackberry: 9
+    bit: 12
+    iphone: 40
+    not: 10
+    million: 6
+    smartphone: 9
+    if: 7
+    me: 33
+    do: 16
+    any: 3
+    appreciated: 4
+    today: 10
+    sweet: 7
+    time: 9
+    been: 7
+    nice: 15
+    thank: 13
+    replaced: 5
+    great: 24
+    want: 16
+    thanks: 27
+    after: 4
+    thx: 4
+    moving: 4
+    email: 6
+    loving: 11
+    update: 8
+    guy: 5
+    pretty: 8
+    love: 30
+    yeah: 5
+    they: 6
+    well: 13
+    amazing: 16
+    job: 12
+    far: 5
+    best: 13
+    customer: 4
+    technology: 8
+    icloud: 4
+    camera: 7
+    god: 5
+    ass: 3
+    itunes: 2
+    devices: 8
+    apps: 3
+    think: 11
+    i've: 6
+    awesome: 19
+    'no': 10
+    way: 11
+    fixed: 2
+    battery: 3
+    problem: 2
+    working: 3
+    looking: 8
+    forward: 5
+    work: 5
+    never: 2
+    worst: 2
+    pull: 4
+    bottom: 4
+    feature: 9
+    really: 20
+    issues: 2
+    beautiful: 6
+    good: 24
+    charge: 2
+    success: 5
+    finally: 11
+    v: 5
+    impressed: 5
+    since: 2
+    powered: 5
+    search: 11
+    recognition: 2
+    impressive: 6
+    power: 7
+    google+: 14
+    why: 4
+    usage: 8
+    only: 4
+    ics: 41
+    samsung: 37
+    ice: 36
+    cream: 36
+    sandwich: 41
+    here: 10
+    nexus: 43
+    galaxy: 26
+    galaxynexus: 16
+    icecreamsandwich: 27
+    looks: 20
+    missing: 2
+    ui: 6
+    google's: 9
+    smart: 6
+    os: 11
+    dear: 5
+    icecream: 7
+    excited: 5
+    introducing: 5
+    beyond: 5
+    went: 2
+    can't: 7
+    wait: 9
+    literally: 4
+    nothing: 2
+    shows: 9
+    tools: 7
+    contact: 4
+    dhilipsiva: 3
+    almost: 4
+    windowsphone: 6
+    ".ly/nejbye": 8
+    improvements: 10
+    full: 2
+    capabilities: 4
+    report: 2
+    stores: 7
+    holodesk: 5
+    science: 3
+    offer: 6
+    microsoftstores: 6
+    mango: 7
+    dev: 5
+    them: 3
+    ballmer: 2
+    vslive: 4
+    seriously: 2
+    sound: 2
+    uh: 2
+    w/: 2
+    shit: 5
+    sucks: 2
+    fuck: 3
+    fucking: 2
+  negative:
+    so: 37
+    apparently: 6
+    sms: 6
+    update: 24
+    full: 7
+    went: 7
+    w/: 10
+    'no': 29
+    customer: 16
+    why: 35
+    do: 34
+    wait: 11
+    fail: 22
+    time: 24
+    iphone: 57
+    them: 15
+    only: 21
+    can't: 18
+    me: 51
+    after: 25
+    they: 18
+    want: 7
+    having: 15
+    issue: 8
+    charge: 6
+    pissed: 5
+    icloud: 17
+    wtf: 9
+    apps: 18
+    itunes: 15
+    really: 20
+    think: 6
+    battery: 15
+    late: 7
+    work: 15
+    stuck: 5
+    half: 7
+    sucks: 8
+    ":(": 11
+    reservation: 6
+    not: 54
+    working: 11
+    shows: 5
+    nothing: 9
+    shit: 18
+    fixed: 6
+    fuck: 12
+    already: 7
+    ups: 6
+    fucking: 16
+    feature: 2
+    missing: 6
+    since: 14
+    list: 5
+    doesn't: 14
+    software: 8
+    dead: 8
+    restore: 11
+    been: 21
+    around: 6
+    dear: 19
+    awesome: 2
+    crap: 4
+    great: 7
+    if: 29
+    camera: 4
+    love: 5
+    such: 7
+    job: 3
+    x: 5
+    hate: 16
+    far: 2
+    thank: 7
+    seriously: 9
+    sound: 5
+    quality: 4
+    samsung: 12
+    best: 4
+    issues: 12
+    almost: 2
+    any: 14
+    fix: 21
+    recognition: 8
+    worst: 6
+    problem: 10
+    ass: 7
+    good: 9
+    lion: 7
+    button: 5
+    won't: 10
+    here: 2
+    annoyed: 6
+    definitely: 4
+    sprint: 4
+    stores: 2
+    looks: 3
+    else: 10
+    yeah: 3
+    thx: 2
+    ugh: 5
+    hold: 8
+    terrible: 7
+    well: 6
+    looking: 2
+    connect: 5
+    network: 10
+    trouble: 6
+    way: 5
+    blue: 9
+    never: 10
+    today: 5
+    updating: 8
+    pretty: 4
+    hour: 7
+    failing: 4
+    excited: 2
+    worse: 4
+    usage: 2
+    lose: 6
+    thanks: 13
+    suck: 5
+    blackberry: 3
+    nexus: 3
+    point: 4
+    email: 2
+    failed: 7
+    able: 6
+    took: 5
+    ask: 7
+    os: 6
+    tried: 4
+    contact: 2
+    i've: 3
+    seems: 6
+    accounts: 6
+    pull: 2
+    sweet: 2
+    beautiful: 2
+    nice: 2
+    galaxynexus: 4
+    cream: 3
+    google+: 3
+    ics: 9
+    search: 4
+    ice: 2
+    sandwich: 2
+    icecreamsandwich: 5
+    google's: 2
+    crash: 5
+    literally: 2
+    adobe: 5
+    report: 6
+    hacked: 5
+    dev: 2
+    ui: 2
+    v: 2
+    neck: 5
+    mango: 2
+    finally: 2
+    eclipsed: 11
+    ballmer: 6
+    mentions: 5
+    retweets: 10
+    lil: 5
+    uh: 2
+    appreciated: 2
+  neutral:
+    powered: 6
+    wtf: 4
+    if: 55
+    after: 19
+    iphone: 105
+    having: 8
+    good: 36
+    ask: 6
+    apparently: 4
+    been: 24
+    working: 11
+    stores: 8
+    only: 20
+    hold: 6
+    me: 86
+    thanks: 22
+    best: 22
+    great: 40
+    amazing: 5
+    so: 59
+    adobe: 2
+    pretty: 7
+    time: 43
+    crap: 3
+    dear: 16
+    way: 19
+    samsung: 125
+    success: 5
+    well: 20
+    far: 4
+    apps: 14
+    since: 5
+    tried: 3
+    feature: 10
+    forward: 6
+    else: 5
+    do: 50
+    want: 35
+    doesn't: 6
+    not: 89
+    never: 13
+    blackberry: 9
+    battery: 8
+    problem: 4
+    thx: 5
+    hour: 5
+    wait: 7
+    already: 7
+    they: 34
+    w/: 12
+    went: 4
+    here: 39
+    thank: 17
+    why: 46
+    love: 23
+    icloud: 12
+    yeah: 6
+    them: 16
+    technology: 25
+    list: 4
+    million: 21
+    email: 6
+    pissed: 3
+    update: 19
+    button: 4
+    'no': 36
+    replaced: 2
+    really: 27
+    restore: 2
+    can't: 12
+    nice: 11
+    job: 8
+    bottom: 3
+    fail: 7
+    think: 18
+    beautiful: 3
+    google's: 13
+    today: 19
+    work: 16
+    fixed: 3
+    blue: 2
+    reservation: 2
+    camera: 10
+    nothing: 2
+    lil: 3
+    guy: 4
+    any: 21
+    shows: 13
+    issues: 3
+    looks: 11
+    loving: 3
+    ice: 116
+    cream: 123
+    seems: 4
+    such: 3
+    power: 5
+    network: 6
+    smart: 4
+    impressive: 2
+    i've: 6
+    awesome: 7
+    fix: 2
+    trouble: 2
+    galaxy: 119
+    shit: 9
+    lion: 5
+    devices: 23
+    x: 4
+    worse: 3
+    crash: 3
+    sms: 3
+    stuck: 4
+    failed: 4
+    improvements: 7
+    os: 14
+    sucks: 3
+    v: 4
+    impressed: 3
+    looking: 7
+    finally: 13
+    charge: 2
+    won't: 3
+    issue: 2
+    seriously: 5
+    sprint: 6
+    able: 3
+    sandwich: 115
+    nexus: 141
+    search: 40
+    google+: 49
+    icecreamsandwich: 50
+    smartphone: 11
+    galaxynexus: 27
+    ics: 61
+    dhilipsiva: 52
+    tools: 9
+    recognition: 8
+    ballmer: 81
+    itunes: 3
+    icecream: 7
+    moving: 3
+    ui: 6
+    mango: 15
+    introducing: 4
+    fuck: 8
+    capabilities: 3
+    missing: 3
+    bit: 6
+    ".ly/nejbye": 6
+    full: 5
+    half: 4
+    contact: 2
+    usage: 2
+    literally: 2
+    software: 8
+    windowsphone: 20
+    report: 4
+    quality: 3
+    around: 6
+    excited: 3
+    offer: 6
+    microsoftstores: 2
+    definitely: 3
+    appreciated: 2
+    science: 3
+    vslive: 2
+    holodesk: 3
+    dead: 3
+    took: 2
+    failing: 3
+    god: 4
+    beyond: 3
+    point: 3
+    connect: 2
+    updating: 5
+    ":(": 2
+    ass: 6
+    lose: 5
+    mentions: 3
+    hacked: 2
+    pull: 2
+    ugh: 2
+    retweets: 4
+    suck: 2
+    hate: 2
+    accounts: 2
+    almost: 2
+    neck: 2

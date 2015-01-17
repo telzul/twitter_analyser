@@ -12,9 +12,11 @@ class SentimentAnalyser::FeatureSelector
     ngrams_sorted.first(n)
   end
 
+
   def ngrams_sorted
     @ngrams_sorted ||= @corpus.data.values.flatten.uniq.sort_by {|ngram| -significance(ngram)}
   end
+
 
   def label_fd(label)
     @label_fd[label] ||= @corpus.documents(label).flatten.count
@@ -35,13 +37,21 @@ class SentimentAnalyser::FeatureSelector
   end
 
   def significance(ngram)
-    @corpus.labels.inject(0) do |sum,label|
-        sum + SentimentAnalyser::BigramAssociationMeasures.new(
+    return -100000 unless is_relevant?(ngram)
+
+    @corpus.labels.map do |label|
+        SentimentAnalyser::BigramAssociationMeasures.new(
             label_ngram_fd(label,ngram),
             ngram_fd(ngram),
             label_fd(label),
             total_ngram_count
         ).chi_square
-    end
+    end.sort_by{|a| -a}.inject(:-)
+  end
+
+  private
+
+  def is_relevant?(ngram)
+    ngram_fd(ngram) > 5 && ngram_fd(ngram) < total_ngram_count*0.005
   end
 end

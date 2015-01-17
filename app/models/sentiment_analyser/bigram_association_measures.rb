@@ -54,7 +54,17 @@ class SentimentAnalyser::BigramAssociationMeasures
         sum += ((contingency_table[i][j]-expected_values[i][j])**2) / expected_values[i][j]
       end
     end
-
     sum
+  end
+
+
+  def zscore
+    n1 = @n_ii + contingency_table[2][0].to_f
+    pf = (@n_ii + contingency_table[0][1]).to_f / contingency_table[2][2].to_f
+
+    a = @n_ii - n1 * pf
+    b = Math.sqrt(n1 * pf * (1-pf))
+
+    a/b
   end
 end
