@@ -17,7 +17,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 
+
 gem 'sidekiq'
+
 gem 'twitter'
 gem 'figaro'
 
@@ -27,10 +29,13 @@ gem 'tokenizer'
 
 # Deploy
 
-gem 'capistrano'
-gem 'capistrano-rails'
-gem 'capistrano-bundler'
-gem 'capistrano-passenger'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-passenger'
+  gem 'capistrano-sidekiq'
+end
 
 gem 'rspec-rails', :group => [:development, :test]
 

@@ -46,6 +46,9 @@ GEM
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-sidekiq (0.4.0)
+      capistrano
+      sidekiq
     capistrano-stats (1.0.3)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -205,6 +208,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-passenger
   capistrano-rails
+  capistrano-sidekiq
   coffee-rails (~> 4.0.0)
   database_cleaner
   figaro
