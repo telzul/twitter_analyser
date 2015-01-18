@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'pages_controller/index'
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
+  get 'pages_controller/index'
 
   root 'pages_controller#index'
 

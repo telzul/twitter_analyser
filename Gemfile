@@ -17,6 +17,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 gem 'haml-rails'
 
+gem 'sinatra', :require => nil
+
 
 gem 'sidekiq'
 
