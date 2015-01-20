@@ -8,7 +8,3 @@ end
 $twitter_rest = Twitter::REST::Client.new do |config|
   config_client(config)
 end
-
-$twitter_stream = Twitter::Streaming::Client.new do |config|
-  config_client(config)
-end

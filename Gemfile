@@ -23,14 +23,13 @@ gem 'sinatra', :require => nil
 gem 'sidekiq'
 
 gem 'twitter'
+gem 'tweetstream'
 gem 'figaro'
-
 
 # Sentiment Analysis
 gem 'tokenizer'
 
 # Deploy
-
 group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
