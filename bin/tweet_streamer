@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+ENV["RAILS_ENV"] ||= "production"
+
+root = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+require File.join(root, "config", "boot")
+require File.join(root, "config", "environment")
+
+TweetStream.configure do |config|
+  config.consumer_key       = ENV['TWITTER_CONSUMER_KEY']
+  config.consumer_secret    = ENV['TWITTER_CONSUMER_SECRET']
+  config.oauth_token        = ENV['TWITTER_ACCESS_TOKEN']
+  config.oauth_token_secret = ENV['TWITTER_ACCESS_SECRET']
+  config.auth_method        = :oauth
+end
+
+topics = Topic.all.map(&:title)
+
+daemon = TweetStream::Daemon.new('tracker', :log_output => true)
+
+daemon.on_inited do
+  puts "Started tracking topics: #{topics.join(", ")}"
+end
+
+daemon.track(topics) do |tweet|
+  puts "New Tweet #{tweet.id}"
+  AddTweetJob.perform_async(tweet.to_json)
+end
