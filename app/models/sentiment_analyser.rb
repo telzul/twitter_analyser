@@ -8,7 +8,7 @@ class SentimentAnalyser
   end
 
   def self.classify(text)
-    config.model.classify(config.segmentizer.segmentize(text))
+    config.model.classify(config.segmentiser.segmentize(text))
   end
 
   class Configuration

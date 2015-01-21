@@ -23,7 +23,7 @@ class Tweet
     tweet.user = user
 
     # adding Topic
-    tweet.topics = Topic.all.select {|topic| twitter_tweet.text.include?(topic.title)}
+    tweet.topics = Topic.all.select {|topic| twitter_tweet.text.downcase.include?(topic.title.downcase)}
 
     tweet
   end
