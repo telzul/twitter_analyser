@@ -3,36 +3,26 @@ Twitter Analyser
 
 ## neo4j installieren:
     rake neo4j:install[community-2.1.5]
+
 ## Server starten
 1. Neo4j starten
 
         rake neo4j:start
 2. Server starten
 
-          ./bin/rails server
+        ./bin/rails server
 
-## Vorübergehend um Tweets zu streamen
-1. Neo4j starten
+3. Redis starten
 
-        rake neo4j:start
-2. Rails Console öffnen
+		redis-server
+4. Sidekiq starten
 
-        ./bin/rails console
-3. In Console:
+		RAILS_ENV=development bundle exec sidekiq
 
-        TwitterStream::Stream.stream("TOPIC")
-4. Warten :)
-5. Tweets, auf die geantwortet wurde nachladen. In Console:
+5. daemon starten
 
-        TwitterStream::Stream.FetchMissingTweets.perform
-
-Achtung, nicht zu oft starten, Twitter schmeißt dich schnell raus mit TooManyRequests
-
+        RAILS_ENV=development bundle exec ./bin/tweet_streamer run
 
 ## Wichtige TODOs:
 * Visualisierungen einbauen
-* Tweets verarbeiten als Sidekiq Job anlegen
-* Tweets nachladen als Sidekiq Job?
-* Daemon für Stream
-* Sentimentanalyse auf Tweets machen → Sidekiq
 
