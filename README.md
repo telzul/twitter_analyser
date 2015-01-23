@@ -23,6 +23,15 @@ Twitter Analyser
 
         RAILS_ENV=development bundle exec ./bin/tweet_streamer run
 
+
+## Auf dem Server deployen
+
+bundle exec cap staging deploy
+
+## Tweet Streaming auf dem Server starten/stoppen
+
+bundle exec cap staging streamer_daemon:[stop|start]
+
 ## Wichtige TODOs:
 * Visualisierungen einbauen
 
