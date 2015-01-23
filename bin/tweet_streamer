@@ -16,10 +16,14 @@ end
 
 topics = Topic.all.map(&:title)
 
-daemon = TweetStream::Daemon.new('tracker', :log_output => true)
+daemon = TweetStream::Daemon.new('tracker', :log_output => true, :log_dir => '/var/log/')
 
 daemon.on_inited do
   puts "Started tracking topics: #{topics.join(", ")}"
+end
+
+daemon.on_unauthorized do
+  puts "Could not authorize with twitter."
 end
 
 daemon.track(topics) do |tweet|
