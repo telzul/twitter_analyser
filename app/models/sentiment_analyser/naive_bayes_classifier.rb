@@ -9,6 +9,13 @@ class SentimentAnalyser::NaiveBayesClassifier
     @label_feature_count = Hash.new {|k,v| k[v]= Hash.new(1)}
   end
 
+  def ensure_default_values
+    @label_document_count.default=1
+    @label_feature_count.default = Hash.new(1)
+
+    @label_feature_count.values.each { |v| v.default=1}
+  end
+
   def train(label,content)
     @label_document_count[label] += 1
     content.uniq.each do |c|
