@@ -19,7 +19,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
-    @tweets= Topic.find(params[:id]).tweets.map{ |t| {sentiment: t.sentiment,reply_to: t.reply_to,id: t.twitter_id,color: "blue"}}
+    @tweets= Topic.find(params[:id]).tweets.map{ |t| {sentiment: t.sentiment,reply_to: t.reply_to,id: t.twitter_id,color: "lightblue",text: t.text.gsub("\n","<br>").gsub("\r","<br>")}}
     
     @positive=0
     @neutral=0
@@ -33,7 +33,10 @@ class TopicsController < ApplicationController
             
         if tweet[:reply_to] == nil
              tweet[:reply_to]=@topic.title
+        else
+            tweet[:reply_to]=tweet[:reply_to].twitter_id
         end
+
 
         if tweet[:sentiment] == 'positive'
             @positive+=1
@@ -44,7 +47,7 @@ class TopicsController < ApplicationController
         if tweet[:sentiment] =='neutral'
             @neutral+=1
             @nothing-=1
-            tweet[:color]= "brown"
+            tweet[:color]= "yellow"
             next
         end
         if tweet[:sentiment] =='negative'

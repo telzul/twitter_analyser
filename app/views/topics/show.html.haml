@@ -17,7 +17,7 @@
       var data=[
       { "name" : "#{@topic.title}", "parent":"null" },      
       - @tweets.each do |tweet|
-        {"name": "#{tweet[:id]}","parent": "#{tweet[:reply_to]}","color":"#{tweet[:color]}"},
+        {"name": "#{tweet[:id]}","text":"#{tweet[:text]}","parent": "#{tweet[:reply_to]}","color":"#{tweet[:color]}"},
       ];
       loadchart(chartdata);
       loadtree(data);

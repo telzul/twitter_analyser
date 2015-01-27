@@ -39,8 +39,8 @@ var duration = 400;
 var root;
  
 // size of the diagram
-var viewerWidth = 500;
-var viewerHeight = 500;
+var viewerWidth = 1000;
+var viewerHeight = 800;
  
 var tree = d3.layout.tree()
 .size([viewerHeight, viewerWidth]);
@@ -169,6 +169,34 @@ d = toggleChildren(d);
 update(d);
 centerNode(d);
 }
+
+function mouseover(d) {
+    d3.select(this).append("text")
+        .attr("class", "hover")
+        .attr('transform', function(d){ 
+            return 'translate(5, -10)';
+        })
+        .text(  d.text)
+        .style("font-size","18px");
+
+var tweettext = d3.select(".hover");
+var bbox = tweettext.node().getBBox();
+var pad=2;
+
+var rect = d3.select(this).insert("rect", ".hover")
+    .attr("class","hoverbox")
+    .attr("x", bbox.x +5 - pad)
+    .attr("y", bbox.y -10 - pad)
+    .attr("width", bbox.width + (pad*2))
+    .attr("height", bbox.height + (pad*2))
+    .style("fill", "red");
+}
+
+// Toggle children on click.
+function mouseout(d) {
+    d3.select(this).select("text.hover").remove();
+    d3.select(this).select(".hoverbox").remove();
+}
  
 function update(source) {
 // Compute the new height, function counts total children of root node and sets tree height accordingly.
@@ -214,7 +242,9 @@ var nodeEnter = node.enter().append("g")
 .attr("transform", function(d) {
 return "translate(" + source.y0 + "," + source.x0 + ")";
 })
-.on('click', click);
+.on("click", click)
+.on("mouseover", mouseover)
+.on("mouseout", mouseout);
  
 nodeEnter.append("circle")
 .attr('class', 'nodeCircle')
@@ -235,7 +265,9 @@ return d.children || d._children ? "end" : "start";
 .text(function(d) {
 return d.name;
 })
-.style("fill-opacity", 0);
+.style("fill-opacity", 0)
+
+;
  
 
  
