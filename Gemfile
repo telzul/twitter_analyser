@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 
 # Core
 gem 'rails', '4.1.7'
-gem 'neo4j'
 gem 'spring',        group: :development
 gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'pg'
 
 # Assets
 gem 'sass-rails', '~> 4.0.3'

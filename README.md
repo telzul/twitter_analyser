@@ -1,13 +1,12 @@
 Twitter Analyser
 ================
-
-## neo4j installieren:
-    rake neo4j:install[community-2.1.5]
+## Voraussetzungen
+* redis
+* postgresql (hatte komische Fehler bei sqlite)
 
 ## Server starten
-1. Neo4j starten
+1. Läuft postgresql? Richtige Nutzereinstellungen für postgresql (siehe database.yml)? 
 
-        rake neo4j:start
 2. Server starten
 
         ./bin/rails server
@@ -31,7 +30,4 @@ bundle exec cap staging deploy
 ## Tweet Streaming auf dem Server starten/stoppen
 
 bundle exec cap staging streamer_daemon:[stop|start]
-
-## Wichtige TODOs:
-* Visualisierungen einbauen
 

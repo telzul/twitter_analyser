@@ -1,0 +1,30 @@
+class SetupModels < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      t.string :name
+      t.string :twitter_id, index: true
+      t.timestamps
+    end
+
+    create_table :tweets do |t|
+      t.string :text
+      t.string :twitter_id
+      t.datetime :date
+      t.string :sentiment
+      t.timestamps
+      t.integer :user_id
+      t.integer :reply_to_id, index: true
+    end
+
+    create_table :topics do |t|
+      t.string :title, index: true
+      t.timestamps
+    end
+
+    create_table :topics_tweets do |t|
+      t.integer :topic_id
+      t.integer :tweet_id
+    end
+    
+  end
+end

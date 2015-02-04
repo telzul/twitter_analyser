@@ -1,8 +1,5 @@
-class Topic
-  include Neo4j::ActiveNode
-  property :title
-
-  has_many :out, :tweets, model_class: Tweet
+class Topic < ActiveRecord::Base
+  has_and_belongs_to_many :tweets
   before_save :ensure_max_topics
   validates :title, length: {minimum: 1, maximum: 60}
 

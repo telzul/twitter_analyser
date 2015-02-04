@@ -21,6 +21,7 @@ end
 daemon = TweetStream::Daemon.new('tracker', :log_output => true, :log_dir => '/var/www/twitter_analyser/current/log/')
 
 daemon.on_inited do
+  ActiveRecord::Base.connection.reconnect!
   EM::PeriodicTimer.new(900) do
     client.stream.update(:params=>{:follow => topics})
   end

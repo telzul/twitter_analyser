@@ -5,7 +5,7 @@ class TopicsController < ApplicationController
   end
   
   def create
-    @topic = Topic.new(params[:topic])
+    @topic = Topic.new(topic_params)
     if @topic.save
       redirect_to
     else
@@ -27,7 +27,6 @@ class TopicsController < ApplicationController
     @nothing=0
    
     @tweets.each do |tweet|
-        changed=false
         @nothing+=1
 
             
@@ -67,6 +66,10 @@ class TopicsController < ApplicationController
     respond_to do |format|
       format.json { render json: @tweets }
     end
+  end
+
+  def topic_params
+    params.require(:topic).permit(:title)
   end
   
 end
