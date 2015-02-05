@@ -19,21 +19,33 @@ def topics
 end
 
 daemon = TweetStream::Daemon.new('tracker', :log_output => true, :log_dir => '/var/www/twitter_analyser/current/log/')
+def start_tracking(daemon)
+  puts "start tracking"
+  daemon.track(topics) do |tweet|
+    puts "New Tweet #{tweet.id}"
+    AddTweetJob.perform_async(tweet.to_json)
+  end
+end
 
 daemon.on_inited do
   ActiveRecord::Base.connection.reconnect!
-  EM::PeriodicTimer.new(900) do
-    client.stream.update(:params=>{:follow => topics})
+  EM::PeriodicTimer.new(905) do
+    puts "stopped tracking, restarting"
+    daemon.stop
+    sleep(10)
+    start_tracking(daemon)
   end
 
   puts "Started tracking topics: #{topics.join(", ")}"
+end
+
+daemon.on_reconnect do |timeout, retries|
+  puts "Reconnecting in #{timeout} seconds, retry number #{retries}"
 end
 
 daemon.on_unauthorized do
   puts "Could not authorize with twitter."
 end
 
-daemon.track(topics) do |tweet|
-  puts "New Tweet #{tweet.id}"
-  AddTweetJob.perform_async(tweet.to_json)
-end
+start_tracking(daemon)
+
