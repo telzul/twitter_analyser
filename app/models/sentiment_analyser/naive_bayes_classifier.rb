@@ -12,7 +12,6 @@ class SentimentAnalyser::NaiveBayesClassifier
   def ensure_default_values
     @label_document_count.default=1
     @label_feature_count.default = Hash.new(1)
-
     @label_feature_count.values.each { |v| v.default=1}
   end
 
@@ -28,12 +27,11 @@ class SentimentAnalyser::NaiveBayesClassifier
   def test(label,content)
     document_count_other_labels = (@label_document_count.values.inject(:+) - @label_document_count[label]).to_f
 
-    prior = Math.log(@label_document_count[label] / document_count_other_labels)
+    prior = Math.log(@label_document_count[label] / (document_count_other_labels.to_f + @labels.count))
 
     likelihood = content.inject(0) do |sum,feature|
-      a = @label_feature_count[label][feature] / @label_document_count[label].to_f
-      b = ((@labels - [label]).inject(0) {|s,l| s + @label_feature_count[l][feature]}) / document_count_other_labels
-
+      a = @label_feature_count[label][feature].to_f
+      b = ((@labels - [label]).inject(0) {|s,l| s + @label_feature_count[l][feature]}).to_f
       sum + Math.log(a/b)
     end
 

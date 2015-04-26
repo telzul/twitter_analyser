@@ -27,15 +27,16 @@ class SentimentAnalyser::ModelEvaluator
       end
     end
 
-    recall=precision=0
+    recall={}
+    precision={}
 
     @test_corpus.labels.each do |label|
-      recall += true_positives[label] / (true_positives[label] + false_negatives[label]).to_f
-      precision += true_positives[label] / (true_positives[label] + false_positives[label]).to_f
+      recall[label] = true_positives[label] / (true_positives[label] + false_negatives[label]).to_f
+      precision[label] = true_positives[label] / (true_positives[label] + false_positives[label]).to_f
     end
 
-    @recall = recall / @test_corpus.labels.count
-    @precision = precision / @test_corpus.labels.count
+    @recall = recall
+    @precision = precision
   end
 
 end

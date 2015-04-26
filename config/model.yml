@@ -1,706 +1,7530 @@
 --- !ruby/object:SentimentAnalyser::NaiveBayesClassifier
 labels:
-- positive
 - negative
-- neutral
+- positive
 features:
-- love
-- awesome
-- fix
-- amazing
-- looks
-- fail
-- fucking
-- ics
-- hate
-- loving
-- itunes
-- bit
-- nice
-- eclipsed
-- restore
-- nexus
-- after
-- ":("
-- cream
-- doesn't
-- ice
-- why
-- having
-- not
-- issues
-- since
-- apps
-- improvements
-- job
-- usage
-- galaxy
-- won't
-- terrible
-- blue
-- thanks
-- good
-- sandwich
-- impressive
-- microsoftstores
-- battery
-- sweet
-- only
-- retweets
-- customer
-- icloud
-- late
-- issue
-- great
-- nothing
-- problem
-- else
-- ".ly/nejbye"
-- them
-- samsung
-- wtf
-- dead
-- replaced
-- ups
-- annoyed
-- power
-- feature
-- 'no'
-- dear
-- shit
-- update
-- icecreamsandwich
-- finally
-- smart
-- network
-- blackberry
-- contact
-- looking
-- such
-- trouble
-- reservation
-- accounts
-- science
-- beyond
-- holodesk
-- beautiful
-- updating
-- best
-- seriously
-- icecream
-- failed
-- half
-- fuck
-- smartphone
-- sucks
-- uh
-- dev
-- been
-- able
-- sms
-- galaxynexus
-- hold
-- sound
-- do
-- introducing
-- impressed
-- god
-- guy
-- connect
-- adobe
-- took
-- suck
-- hacked
-- ugh
-- neck
-- never
-- offer
-- well
-- hour
-- lion
-- thx
-- almost
-- google+
-- camera
-- stores
-- thank
-- apparently
-- seems
-- google's
-- so
-- excited
-- bottom
-- capabilities
-- vslive
-- moving
-- ballmer
-- ui
-- email
-- working
-- can't
-- ask
-- success
-- crash
-- pissed
-- mentions
-- quality
-- lil
-- went
-- here
-- os
-- pretty
-- far
-- search
-- way
-- worst
-- full
-- lose
-- w/
-- ass
-- they
-- recognition
-- charge
-- think
-- if
-- already
-- any
-- v
-- want
-- dhilipsiva
-- missing
-- fixed
-- technology
-- software
-- button
-- stuck
-- x
-- list
-- tools
-- mango
-- wait
-- powered
-- forward
-- devices
-- work
-- time
-- shows
-- i've
-- yeah
-- report
-- really
-- iphone
-- sprint
-- around
-- pull
-- appreciated
-- literally
-- today
-- million
-- me
-- windowsphone
-- worse
-- crap
-- definitely
-- failing
-- tried
-- point
+- the worst
+- supposed to
+- he is
+- this movie
+- should have
+- have been
+- waste of
+- the best
+- to be
+- bad movie
+- a bad
+- at least
+- the movie
+- the bad
+- star wars
+- the only
+- as the
+- none of
+- be funny
+- too bad
+- jackie brown
+- only thing
+- so bad
+- wild wild
+- the truman
+- of the
+- a bunch
+- bunch of
+- truman show
+- the dude
+- pulp fiction
+- wild west
+- to mars
+- is a
+- this mess
+- to the
+- is supposed
+- private ryan
+- then there's
+- to do
+- many of
+- black cauldron
+- the filmmakers
+- reason to
+- attempts at
+- this turkey
+- is also
+- the script
+- might have
+- not funny
+- a waste
+- as bad
+- portrayal of
+- drunken master
+- no reason
+- bad guy
+- the plot
+- is very
+- is perfect
+- than this
+- could have
+- toy story
+- snake eyes
+- nothing to
+- knock off
+- work with
+- as he
+- van damme
+- bad that
+- sense of
+- worst movie
+- to work
+- absolutely no
+- fairy tale
+- larry flynt
+- story NUMBER
+- through this
+- saving private
+- and boring
+- in this
+- if the
+- chicken run
+- big lebowski
+- the matrix
+- about as
+- general's daughter
+- the general's
+- one of
+- not even
+- you want
+- ghost dog
+- video game
+- is terrific
+- will hunting
+- mission to
+- would have
+- i guess
+- so why
+- attempt to
+- action scenes
+- insult to
+- joel schumacher
+- matt damon
+- doesn't even
+- wing commander
+- a stupid
+- the most
+- but unfortunately
+- does a
+- five minutes
+- battlefield earth
+- the whole
+- NUMBER minutes
+- is terrible
+- poison ivy
+- lost city
+- is great
+- of mars
+- whole thing
+- no sense
+- the political
+- to show
+- is excellent
+- the titanic
+- at best
+- doesn't work
+- the farrellys
+- alien NUMBER
+- the family
+- the jedi
+- bad as
+- why did
+- the psychlos
+- blade squad
+- tomb raider
+- that movie
+- still know
+- the apostle
+- de niro
+- minutes of
+- it is
+- figure out
+- urban legend
+- sit through
+- quite frankly
+- steven seagal
+- of his
+- life is
+- even worse
+- it's as
+- saving grace
+- use of
+- the edge
+- titanic is
+- perfect for
+- falls flat
+- the babysitter
+- NUMBER warrior
+- was made
+- of days
+- to waste
+- bad acting
+- doesn't help
+- wouldn't have
+- stupid and
+- best films
+- a great
+- kung fu
+- and then
+- it's too
+- the men
+- an excellent
+- love and
+- the avengers
+- godzilla is
+- be fun
+- NUMBER dalmatians
+- got to
+- little to
+- the film
+- american history
+- our own
+- had some
+- next to
+- makes no
+- a boring
+- mortal kombat
+- bad dialogue
+- real blonde
+- bland and
+- an insult
+- part NUMBER
+- the ridiculous
+- boring and
+- a bit
+- to kill
+- just too
+- i suppose
+- it's just
+- make a
+- the right
+- no one
+- star trek
+- what was
+- mulan is
+- american dream
+- horse whisperer
+- good actors
+- we're supposed
+- major league
+- amounts to
+- gives a
+- appears to
+- attempt at
+- prinze jr
+- have some
+- tom hanks
+- an intelligent
+- and kills
+- action sequences
+- an hour
+- nothing new
+- NUMBER minute
+- de bont
+- skin deep
+- the musketeer
+- he seems
+- sweet hereafter
+- is the
+- a terrific
+- all right
+- this year
+- dalai lama
+- the coens
+- disney animated
+- mars attacks
+- is an
+- good job
+- the world
+- the true
+- a place
+- so badly
+- compensate for
+- a movie
+- the greatest
+- as if
+- middle of
+- story of
+- is able
+- to have
+- why would
+- the viewer
+- trying to
+- oscar nomination
+- nothing short
+- director who
+- to care
+- be fair
+- how bad
+- fails to
+- boiler room
+- everything from
+- time on
+- tries to
+- the life
+- the japanese
+- best film
+- monkey bone
+- degenerates into
+- at humor
+- werewolf in
+- only saving
+- original sin
+- the flubber
+- worst of
+- dark city
+- most powerful
+- angry inch
+- simon birch
+- very effective
+- ed harris
+- well worth
+- portrayed by
+- works well
+- if i
+- with no
+- batman and
+- a wonderfully
+- the finest
+- are very
+- is something
+- too late
+- give us
+- to his
+- there's a
+- of love
+- joe eszterhas
+- called it
+- the snake
+- cruel intentions
+- hand to
+- batman forever
+- for some
+- what's the
+- freddie prinze
+- a total
+- quite well
+- the accident
+- has no
+- her husband
+- and his
+- no idea
+- rose mcgowan
+- naked gun
+- reindeer games
+- be about
+- creates a
+- a ridiculous
+- red planet
+- movie had
+- mercury rising
+- due to
+- problem is
+- the problem
+- last summer
+- taxi driver
+- very similar
+- obi-wan kenobi
+- tribute to
+- in pulp
+- the mpaa
+- sweet sweetback
+- three kings
+- the mib
+- characters with
+- a script
+- in space
+- though he
+- the point
+- even the
+- NUMBER cigarettes
+- worst movies
+- not scary
+- big momma's
+- randy quaid
+- inspector gadget
+- norm macdonald
+- waste your
+- vegas vacation
+- american werewolf
+- funny or
+- whole nine
+- watchers reborn
+- space station
+- nine yards
+- really matter
+- species NUMBER
+- there isn't
+- there's the
+- begins to
+- very well
+- looks like
+- a really
+- can only
+- to make
+- much better
+- does so
+- worse than
+- some reason
+- the jackal
+- and robin
+- the writers
+- fight scenes
+- the dark
+- gives the
+- little mermaid
+- title character
+- the sweet
+- darth vader
+- south park
+- and as
+- of war
+- at all
+- find themselves
+- makes for
+- schindler's list
+- ghosts of
+- main problem
+- any sense
+- far superior
+- in his
+- the animation
+- best performance
+- the haunting
+- only good
+- doing in
+- be over
+- money talks
+- about nothing
+- simply irresistible
+- and uninteresting
+- young man
+- the american
+- remake of
+- to give
+- they should
+- the tv
+- hank azaria
+- patch adams
+- deep end
+- an outstanding
+- and great
+- world that
+- and believable
+- raging bull
+- best supporting
+- people vs
+- seven years
+- contact is
+- la motta
+- history x
+- one which
+- truman burbank
+- primary colors
+- tobey maguire
+- this one
+- your money
+- a fat
+- show off
+- your time
+- to nothing
+- make any
+- NUMBER seconds
+- painful to
+- animated feature
+- thin red
+- the river
+- kevin spacey
+- a plot
+- really bad
+- the spice
+- well as
+- a world
+- i'm not
+- are so
+- the devil
+- are also
+- the musical
+- quite as
+- the tension
+- like a
+- just not
+- wrote a
+- so poorly
+- nothing much
+- saving silverman
+- bye bye
+- hill house
+- is dull
+- big momma
+- on cable
+- squad is
+- hudson hawk
+- rugrats movie
+- police academy
+- mad slasher
+- west is
+- the psychlo
+- jim west
+- the deedles
+- here it
+- john carpenter's
+- sexy beast
+- a poorly
+- simon west
+- the jury
+- action scene
+- wait for
+- the two
+- a wonderful
+- for both
+- least bit
+- absolutely nothing
+- little of
+- with only
+- on this
+- even better
+- good will
+- cameron diaz
+- especially in
+- is beautiful
+- movie to
+- the hell
+- his mind
+- performances by
+- the force
+- the characters'
+- going to
+- science fiction
+- a terrible
+- bad movies
+- arnold schwarzenegger
+- the lost
+- early on
+- they could
+- than to
+- for no
+- and the
+- a classic
+- life of
+- a big
+- performance as
+- just doesn't
+- turns into
+- look like
+- a joy
+- study of
+- downey jr
+- a mother
+- r rating
+- brings a
+- red line
+- never seems
+- NUMBER mm
+- gingerbread man
+- dog of
+- the horned
+- the spanish
+- the winter
+- freedom of
+- von bulow
+- jackie is
+- when a
+- is it
+- except the
+- this script
+- it's nothing
+- alicia silverstone
+- diane keaton
+- forgot to
+- tarzan and
+- urban legends
+- there's no
+- think that
+- even less
+- with nothing
+- gary sinise
+- the club
+- a young
+- the great
+- very little
+- may not
+- i wonder
+- jan de
+- should know
+- and says
+- the magic
+- for best
+- a hilarious
+- jason biggs
+- rip-off of
+- and stupid
+- dull and
+- here's the
+- have nothing
+- common sense
+- is so
+- wouldn't be
+- a fine
+- the sixth
+- spice girls
+- are supposed
+- why is
+- a tad
+- don't even
+- want to
+- but this
+- the stories
+- and gives
+- and turns
+- and sometimes
+- of it
+- as for
+- something to
+- the more
+- first movie
+- the middle
+- down by
+- check out
+- the blame
+- do this
+- a fantastic
+- dark side
+- your typical
+- is superb
+- full monty
+- not much
+- the black
+- real mccoy
+- no fun
+- the vikings
+- virus is
+- the rugrats
+- stock characters
+- was getting
+- jane march
+- director simon
+- get there
+- no suspense
+- the bats
+- ice cube
+- which really
+- "`hanging up'"
+- christopher lambert
+- absent minded
+- joan of
+- the grinch
+- and laughable
+- fails in
+- william forsythe
+- momma's house
+- sloppy and
+- sebastian valmont
+- to injury
+- the bookseller
+- having her
+- lauren holly
+- doom generation
+- even care
+- major problem
+- least that
+- the doom
+- no looking
+- are wasted
+- like this
+- way too
+- a beautiful
+- is what
+- at first
+- the novel
+- about an
+- the fugitive
+- me to
+- cast and
+- deep rising
+- like i
+- did last
+- some nice
+- joy to
+- blend of
+- his true
+- and clever
+- witty and
+- reality of
+- john turturro
+- the north
+- why the
+- although the
+- what makes
+- the us
+- sixth sense
+- the voice
+- the africans
+- an era
+- the soviet
+- we realize
+- princess caraboo
+- is outstanding
+- the muse
+- a symbol
+- effective and
+- fits the
+- the dalai
+- a political
+- evil dead
+- iron giant
+- john lithgow
+- the gingerbread
+- the strongest
+- right time
+- man who
+- short of
+- and always
+- show is
+- around in
+- of money
+- up as
+- at times
+- an action
+- that's about
+- be honest
+- target audience
+- chris o'donnell
+- ace ventura
+- the genre
+- before i
+- just isn't
+- i should
+- as well
+- isn't as
+- rush hour
+- the history
+- the full
+- is often
+- impression of
+- that tries
+- this bad
+- final cut
+- tim robbins
+- decided that
+- mess that
+- a failure
+- barb wire
+- don't bother
+- mystery science
+- a pointless
+- mod squad
+- weak and
+- poorly written
+- more as
+- go anywhere
+- top it
+- robin tunney
+- death wish
+- the studios
+- of fun
+- of view
+- some sort
+- is completely
+- excuse for
+- his father
+- not one
+- last year's
+- no purpose
+- one good
+- of talent
+- first scene
+- these movies
+- good reason
+- the female
+- would think
+- hard rain
+- least it
+- enough to
+- more appropriate
+- big daddy
+- think they
+- dennis hopper
+- get carter
+- is stuck
+- rebecca gayheart
+- no apparent
+- a promising
+- it's nice
+- special edition
+- these three
+- any of
+- that he
+- a way
+- a very
+- very good
+- but none
+- beverly hills
+- one big
+- go on
+- be seen
+- the studio
+- don't care
+- complete with
+- pretty much
+- any kind
+- so what
+- but only
+- seem to
+- comes off
+- is now
+- a musical
+- most films
+- own way
+- it wasn't
+- have to
+- liu kang
+- glen or
+- those involved
+- peter hyams
+- bye love
+- perfect murder
+- or glenda
+- given very
+- artemus gordon
+- an explanation
+- a trap
+- big gorilla
+- first attempt
+- be scary
+- amanda peet
+- hanging up
+- charlie and
+- i sure
+- an uninteresting
+- that godzilla
+- high on
+- skip it
+- have saved
+- this nonsense
+- mulholland drive
+- of holes
+- a cheesy
+- is bland
+- working from
+- peter coyote
+- thousand times
+- chevy chase
+- lara croft
+- a headache
+- man standing
+- generate any
+- harry to
+- remotely interesting
+- batman film
+- kissing a
+- total waste
+- clue as
+- justin chambers
+- poor man's
+- and ugly
+- harlem nights
+- a cliff
+- is weak
+- trouble when
+- "`the bachelor'"
+- excess baggage
+- of evidence
+- oil tanker
+- that should
+- a testament
+- ned devine
+- forrest gump
+- a unique
+- damon and
+- the shark
+- they take
+- adam sandler
+- even if
+- a bug's
+- entertaining and
+- bug's life
+- best picture
+- life as
+- character study
+- _the caveman's
+- we dance
+- shallow grave
+- lord farquaad
+- the duke
+- symbol of
+- often hilarious
+- truly a
+- refreshing to
+- a pleasure
+- segment is
+- and cinematographer
+- is crisp
+- michael j
+- in fine
+- the supreme
+- went down
+- princess fiona
+- many critics
+- master ii
+- caveman's valentine_
+- his mother
+- boogie nights
+- family is
+- focus of
+- and he
+- finds that
+- tried to
+- it on
+- it just
+- those who
+- cast is
+- is extremely
+- to figure
+- had no
+- call it
+- why do
+- could be
+- find out
+- maybe the
+- that some
+- plot device
+- why does
+- thanks to
+- film of
+- the perfect
+- entire movie
+- to catch
+- or something
+- him as
+- problems with
+- between the
+- completely different
+- best movie
+- became the
+- all year
+- to portray
+- his mission
+- green mile
+- the emperor
+- whole new
+- and witty
+- sliding doors
+- the reality
+- an artist
+- left behind
+- powerful and
+- brown is
+- ends up
+- also very
+- a clue
+- wasn't the
+- there would
+- martin lawrence
+- some movies
+- time it
+- else to
+- the screening
+- days in
+- a creepy
+- script doesn't
+- and dull
+- jakob the
+- saying much
+- the hour
+- of paul
+- summer catch
+- kelly preston
+- mel brooks
+- the stupid
+- half as
+- david lynch
+- the liar
+- movie tries
+- bright spot
+- fact is
+- bad script
+- is poorly
+- least he
+- idea how
+- guys in
+- lame and
+- have at
+- lili taylor
+- matthew modine
+- the subplot
+- is awful
+- the remake
+- the annoying
+- that will
+- movie was
+- had been
+- life and
+- how do
+- the car
+- what he
+- i kept
+- what about
+- warner brothers
+- worst films
+- and j
+- film wasn't
+- really funny
+- be acceptable
+- to remind
+- throws in
+- which should
+- i've got
+- catherine zeta-jones
+- was better
+- as quickly
+- alan smithee
+- jean reno
+- with her
+- most people
+- been a
+- although it
+- that bad
+- of bad
+- turns in
+- all this
+- in its
+- lost in
+- about them
+- how about
+- that was
+- a man
+- direction is
+- happens to
+- chris tucker
+- the wonderful
+- makes us
+- which will
+- he sees
+- to live
+- and most
+- an important
+- is still
+- denzel washington
+- extremely well
+- sets the
+- but here
+- home alone
+- has created
+- his story
+- seen on
+- the green
+- most memorable
+- les miserables
+- the show's
+- high fidelity
+- become one
+- some ways
+- pain and
+- die for
+- also quite
+- never dies
+- pleasure to
+- belief in
+- a magnificent
+- enjoyment of
+- the castle
+- the iron
+- and provides
+- life for
+- made me
+- film is
+- ten minutes
+- a comedy
+- security guard
+- isn't much
+- we need
+- a video
+- a disaster
+- day when
+- agent kay
+- the mystical
+- bread and
+- not your
+- jabba the
+- recreation of
+- between these
+- flynt is
+- the hutt
+- are easily
+- the laserman
+- spanish prisoner
+- that deserves
+- glam rock
+- the endurance
+- pure entertainment
+- the republic
+- andrew niccol
+- voice work
+- "`final destination'"
+- of flanders
+- apt pupil
+- very best
+- army and
+- floating life
+- seen by
+- sharp and
+- intense and
+- and horrifying
+- gretchen mol
+- the prisoners
+- presents the
+- everyday life
+- lead the
+- setting of
+- he allows
+- way a
+- a jedi
+- nuclear war
+- and moving
+- the cider
+- dolores claiborne
+- jack dawson
+- lost her
+- hen wen
+- and honest
+- fallen angels
+- two hours
+- a sense
+- they find
+- that it's
+- NUMBER is
+- and very
+- makes the
+- aspects of
+- you'd think
+- the villains
+- music video
+- throw in
+- why not
+- the makers
+- guy is
+- the poor
+- maria pitillo
+- and unconvincing
+- often and
+- good director
+- no redeeming
+- sat through
+- bang bang
+- fright night
+- haunted house
+- painfully obvious
+- schumacher has
+- only interesting
+- interesting or
+- laughably bad
+- good doctor
+- strange days
+- laugh once
+- one but
+- of stupid
+- the weather
+- clan of
+- script as
+- only redeeming
+- video games
+- funny the
+- seagal is
+- comedy or
+- uninteresting and
+- your hard-earned
+- of hill
+- burn hollywood
+- of lesbos
+- "`the messenger'"
+- isle of
+- eyes is
+- off that
+- no attempt
+- we're going
+- one star
+- tectonic plates
+- her dog
+- cave bear
+- sphere is
+- while all
+- of fancy
+- movie NUMBER
+- saturday morning
+- so full
+- action packed
+- dialogue from
+- teenage boys
+- last man
+- for critics
+- the bathtub
+- di pego
+- the pacific
+- sex jokes
+- itself off
+- worst part
+- anyone ever
+- and badly
+- a gambling
+- you thinking
+- hodgepodge of
+- badly written
+- a cliched
+- girl NUMBER
+- a crap
+- and irene
+- his worst
+- of focus
+- giant snake
+- zooms in
+- low point
+- neil diamond
+- coming up
+- huge disappointment
+- a paycheck
+- would they
+- hollywood burn
+- but i
+- a more
+- to begin
+- everyone else
+- they get
+- i say
+- to write
+- tv series
+- are more
+- action and
+- bad guys
+- a little
+- i've seen
+- the previous
+- it may
+- special effects
+- to top
+- this thing
+- minutes and
+- reason that
+- pretty bad
+- worst film
+- not worth
+- jeff goldblum
+- entertainment value
+- austin powers
+- life in
+- their first
+- meant to
+- a married
+- best movies
+- beautiful and
+- his apartment
+- a deep
+- a toy
+- anakin skywalker
+- the importance
+- easily be
+- but despite
+- chemistry with
+- most famous
+- stuart little
+- do they
+- i could
+- be said
+- have the
+- and love
+- are still
+- the army
+- than just
+- with its
+- movie is
+- in hollywood
+- charlize theron
+- it tries
+- all we
+- movie isn't
+- odd couple
+- anything about
+- film goes
+- the cheap
+- message in
+- to generate
+- not once
+- isn't given
+- isn't enough
+- running around
+- all for
+- and entertaining
+- his most
+- only problem
+- variety of
+- the disney
+- matthew mcconaughey
+- pop culture
+- may seem
+- is amazing
+- songs are
+- her family
+- the hurricane
+- come on
+- trust me
+- there's some
+- needs a
+- least the
+- they come
+- what do
+- nothing but
+- end of
+- a couple
+- of great
+- some great
+- found it
+- image of
+- a personal
+- the deep
+- to entertain
+- phantom menace
+- this guy
+- was supposed
+- say about
+- he just
+- nine months
+- in bad
+- can't save
+- female lead
+- shows some
+- king kong
+- to justify
+- go rent
+- of material
+- some decent
+- the shelf
+- bob gunton
+- couple ii
+- only gets
+- much ado
+- is barely
+- worst thing
+- screen is
+- lou diamond
+- director barry
+- a reporter
+- diamond phillips
+- daughter is
+- ryan and
+- last movie
+- catholic church
+- stick to
+- wes studi
+- the actions
+- wasted as
+- fat suit
+- not surprisingly
+- the wcw
+- the mod
+- and move
+- detroit rock
+- rock city
+- hollow man
+- but the
+- vision of
+- that both
+- seen as
+- the cold
+- pig in
+- screen in
+- to him
+- continues to
+- final destination
+- a private
+- speed NUMBER
+- over time
+- give me
+- pay it
+- worse is
+- straight face
+- to capitalize
+- only hope
+- and scream
+- jesse james
+- can't make
+- little or
+- running gag
+- angelina jolie
+- in fear
+- except to
+- went wrong
+- they're just
+- pie NUMBER
+- would actually
+- NUMBER feet
+- has absolutely
+- producers of
+- and start
+- mystery men
+- though it
+- the little
+- the young
+- is that
+- and their
+- i am
+- you did
+- being john
+- and adults
+- jude law
+- thirteenth floor
+- perfect as
+- production designer
+- of nuclear
+- well by
+- is brilliant
+- tomorrow never
+- wings of
+- quiz show
+- the iceberg
+- a refreshing
+- kate winslet
+- comes through
+- or when
+- an extraordinary
+- kudos to
+- a tribute
+- to detail
+- reminder of
+- up against
+- hanks and
+- robert altman
+- parker and
+- share the
+- becomes one
+- a safe
+- groundhog day
+- blood simple
+- the pain
+- is he
+- a fun
+- what's going
+- were just
+- i sat
+- donald sutherland
+- live action
+- mess of
+- you thought
+- first NUMBER
+- a bottle
+- nice to
+- brilliant performance
+- few movies
+- is eventually
+- impressive is
+- a mature
+- la amistad
+- not say
+- belong to
+- michelle pfeiffer
+- strong supporting
+- as great
+- a variation
+- prison camp
+- horned king
+- memorable moments
+- hardly ever
+- dude is
+- monty is
+- ford is
+- distract from
+- excellent film
+- david cronenberg
+- hanks is
+- mel gibson's
+- not disappoint
+- wonder boys
+- and butthead
+- a poker
+- max cherry
+- black soldiers
+- really enjoyed
+- real treat
+- and memorable
+- supreme court
+- wonderful job
+- wing jing
+- plays with
+- van buren
+- leading men
+- driver in
+- jimmy stewart
+- old fashioned
+- the controversial
+- that once
+- the realistic
+- memorable as
+- darkness of
+- and film
+- is is
+- any age
+- director james
+- roberto benigni
+- superb acting
+- this island
+- wai lin
+- michelle yeoh
+- that few
+- cal hockley
+- jedi knight
+- linda fiorentino
+- the legal
+- concentration camp
+- laura linney
+- paul d
+- and creative
+- and furious
+- pulls it
+- fine performances
+- young daughter
+- the united
+- to sit
+- so they
+- save the
+- attempts to
+- searching for
+- i can
+- comedy is
+- wasted in
+- something else
+- isn't even
+- the brothers
+- to save
+- it does
+- a solid
+- if it
+- dialogue and
+- funny and
+- or maybe
+- after that
+- the action
+- deep impact
+- have had
+- might not
+- and to
+- he creates
+- before she
+- the tradition
+- she loves
+- contrast to
+- will and
+- well written
+- the path
+- the coen
+- with as
+- his wife's
+- a spectacular
+- in modern
+- natural born
+- a delightful
+- the marriage
+- of pace
+- things that
+- is his
+- an oscar
+- off as
+- that day
+- too little
+- idea what
+- can with
+- my friend
+- over it
+- famke janssen
+- the odd
+- you feel
+- we watch
+- edge of
+- while it
+- much time
+- die hard
+- film and
+- so well
+- and out
+- try and
+- needs to
+- a brilliant
+- the manic
+- god forbid
+- the pointless
+- the doubt
+- to strangers
+- not explained
+- julie benz
+- suspense is
+- actors don't
+- and unnecessary
+- don't tell
+- their names
+- never talk
+- a miss
+- do little
+- this sorry
+- this trash
+- no chemistry
+- some promise
+- to you'
+- "`down to"
+- was lost
+- bad it's
+- and lifeless
+- bats are
+- missed opportunity
+- never makes
+- stupid plot
+- no tension
+- dubious distinction
+- of arnold
+- bon jovi
+- few chuckles
+- little life
+- eaters of
+- and insulting
+- an embarrassment
+- an amateur
+- totally wasted
+- young einstein
+- the woman's
+- movie wants
+- a spice
+- eric bischoff
+- jericho cane
+- john smith
+- you give
+- a werewolf
+- they thinking
+- christine york
+- pretentious and
+- incredibly stupid
+- the omegahedron
+- roddy mcdowall
+- miko hughes
+- could a
+- teamed with
+- al simmons
+- the musketeers
+- buster buster
+- is o
+- joseph cross
+- as godzilla
+- maybe that
+- artie lange
+- the blob
+- think back
+- kevin dunn
+- their wedding
+- some potential
+- bothered to
+- alain chabat
+- of fighting
+- "`ready to"
+- you seen
+- this series
+- a haunted
+- absolute power
+- ernie hudson
+- almost nothing
+- the inane
+- to rumble'
+- not when
+- or twice
+- beast is
+- inane plot
+- a ridiculously
+- of rocks
+- the bowels
+- elfont and
+- stare at
+- a capital
+- once or
+- just goes
+- seven days
+- deserves better
+- original script
+- they certainly
+- stretched out
+- no spark
+- into consideration
+- professional wrestling
+- a dud
+- us an
+- will work
+- at worst
+- in romania
+- booty call
+- princess diaries
+- bit part
+- leo and
+- haunting of
+- almost heroes
+- of arc
+- sir august
+- never explored
+- they fail
+- screening i
+- really blame
+- an oil
+- a reckless
+- case here
+- lela rochon
+- the limey
+- isn't worth
+- _saving private
+- is horrible
+- private ryan_
+- dull as
+- night before
+- tired and
+- get NUMBER
+- and overly
+- precinct NUMBER
+- here comes
+- the manchurian
+- godzilla has
+- not interesting
+- time it's
+- up my
+- saved this
+- martha plimpton
+- only notable
+- add anything
+- our big
+- cathrine zeta
+- big burly
+- that maybe
+- a couch
+- the wrestlers
+- even worth
+- to disguise
+- gheorghe muresan
+- anaconda is
+- explanation for
+- s marshals
+- popped up
+- perhaps i
+- for acting
+- lawrence in
+- charles bronson
+- this subplot
+- giant lizard
+- the accompanying
+- bad films
+- character doesn't
+- actually did
+- of fort
+- jack frost
+- red corner
+- the thieves
+- early the
+- rent the
+- comet is
+- not succeed
+- potentially interesting
+- things worse
+- street fighter
+- the bachelor
+- rosemary's baby
+- stupidity of
+- us any
+- first-time director
+- to add
+- and there's
+- will smith
+- in their
+- source of
+- still not
+- of america
+- as two
+- is hilarious
+- a stunning
+- give away
+- is quickly
+- a genuine
+- the adult
+- recent years
+- the villain
+- left with
+- wonder if
+- it even
+- it fails
+- this would
+- whole lot
+- a cheap
+- billy crystal
+- of acting
+- her that
+- see in
+- fast and
+- enjoy it
+- the beauty
+- first place
+- a horrible
+- bad enough
+- con air
+- the screenwriter
+- give this
+- not about
+- puts it
+- also wrote
+- we feel
+- makes her
+- of science
+- afraid to
+- wag the
+- and while
+- and although
+- first hour
+- more about
+- keeps the
+- seemed to
+- the fight
+- wrong with
+- guy and
+- his brother's
+- love hewitt
+- a potentially
+- but alas
+- beyond me
+- are basically
+- the trouble
+- have this
+- can save
+- wasn't a
+- series to
+- you'd be
+- my interest
+- over their
+- have anything
+- on by
+- it came
+- and basically
+- but also
+- the team
+- was just
+- got a
+- before it
+- i wanted
+- is bad
+- only one
+- who knows
+- set in
+- has always
+- film starts
+- of american
+- to happen
+- rest of
+- lack of
+- helps to
+- nigel hawthorne
+- range from
+- that era
+- and hilarious
+- wars is
+- science and
+- also does
+- stellan skarsgard
+- the pleasure
+- threat to
+- the slaves
+- an outsider
+- and political
+- jodie foster
+- niro is
+- steven spielberg's
+- three to
+- and place
+- but unlike
+- chan is
+- so different
+- the animators
+- the similarities
+- for fans
+- scenes is
+- are put
+- time period
+- a winner
+- be enjoyed
+- and charm
+- river kwai
+- will certainly
+- a caricature
+- elmore leonard
+- seen in
+- have no
+- about it
+- the city
+- guessed it
+- a lame
+- why was
+- kids in
+- an ounce
+- even one
+- taking over
+- year of
+- it forward
+- not help
+- resemblance to
+- didn't even
+- headed for
+- mena suvari
+- why are
+- is way
+- i'm talking
+- for much
+- any reason
+- recent films
+- of crime
+- idea why
+- evidence of
+- osmosis jones
+- good movies
+- to endure
+- acting ability
+- coming back
+- material is
+- jack is
+- plot with
+- the football
+- a straight
+- might as
+- then he
+- the formula
+- looked like
+- a mess
+- do with
+- that lacks
+- that fails
+- america's sweethearts
+- because i'm
+- is terribly
+- the cave
+- he's only
+- help that
+- we supposed
+- year olds
+- drunk and
+- a lousy
+- much else
+- flat and
+- bad it
+- in disbelief
+- of stuff
+- isn't one
+- this really
+- from under
+- a fake
+- of nothing
+- stupid that
+- unfortunately the
+- ask the
+- must die
+- i came
+- them like
+- gets worse
+- ado about
+- i'm sorry
+- universal soldier
+- romeo must
+- of studio
+- just some
+- can write
+- don't blame
+- save your
+- or interesting
+- the storm
+- i've already
+- other NUMBER
+- nutty professor
+- lost and
+- though it's
+- dream with
+- thinking of
+- john frankenheimer
+- ditto for
+- with director
+- great idea
+- would look
+- cruise ship
+- make much
+- big break
+- even bother
+- plan is
+- and ridiculous
+- english accent
+- they're on
+- science theater
+- telling them
+- simply too
+- all fairness
+- now there's
+- ridiculous and
+- like an
+- ben stiller
+- all around
+- no other
+- that makes
+- really isn't
+- new year's
+- would want
+- a sad
+- but nothing
+- on mars
+- able to
+- his own
+- the downside
+- cable guy
+- points and
+- his finest
+- race is
+- their young
+- toni collette
+- the normal
+- fondness for
+- "`star wars'"
+- rose dewitt
+- the revolution
+- these sequences
+- the cyborsuit
+- was first
+- zero effect
+- and mallory
+- both actors
+- over into
+- these issues
+- and subtle
+- most definitely
+- insurrection is
+- island is
+- peter weir
+- the rough
+- is stunning
+- the italian
+- that hits
+- flight attendant
+- winter guest
+- costume designer
+- of ordell's
+- meryl streep
+- of color
+- bowfinger is
+- saving the
+- of kung
+- kit ramsey
+- matrix is
+- man as
+- the wait
+- is nonetheless
+- the fingernail
+- is notable
+- are willing
+- telling her
+- embeth davidtz
+- feature films
+- adventure that
+- despite these
+- and easy
+- a fully
+- they became
+- effects by
+- workings of
+- his hometown
+- beautiful is
+- artist who
+- how well
+- excellent performance
+- muriel's wedding
+- are amazing
+- this reviewer
+- daisy is
+- regards to
+- allows us
+- will is
+- fine form
+- the deputy
+- spoon and
+- construction of
+- power that
+- that rare
+- my second
+- killing and
+- the rainmaker
+- with depth
+- and vulnerability
+- is sharp
+- so entertaining
+- are minor
+- for decades
+- her portrayal
+- american society
+- old hollywood
+- is flawless
+- is emotionally
+- iron monkey
+- with strong
+- to slip
+- reality that
+- de la
+- by creating
+- valentine_ is
+- disturbing images
+- american quilt
+- lancelot of
+- depicted in
+- which requires
+- the cauldron
+- pleasure of
+- district attorney
+- david mamet
+- van doren
+- wasn't sure
+- men have
+- the heart'
+- fun movie
+- gem of
+- notions of
+- "`music of"
+- and detailed
+- a revelation
+- the muppet
+- north america
+- loving wife
+- more accessible
+- bulworth is
+- john hurt
+- isn't perfect
+- movie screen
+- in venice
+- isn't afraid
+- crimson tide
+- admits that
+- than likely
+- visit his
+- the forefront
+- human spirit
+- oscar is
+- both children
+- shop owner
+- perfect film
+- fantasia NUMBER
+- come out
+- obvious that
+- movie like
+- doesn't really
+- to pass
+- be good
+- natasha henstridge
+- just when
+- the writer
+- to get
+- that the
+- the king
+- or at
+- watching this
+- because of
+- NUMBER year
+- and funny
+- in NUMBER
+- during the
+- jackie chan
+- of us
+- i mean
+- the special
+- the horse
+- not enough
+- because he's
+- out as
+- who in
+- laurence fishburne
+- born killers
+- movie than
+- message is
+- his favorite
+- shall we
+- really makes
+- believes in
+- family films
+- james cameron's
+- his world
+- get shorty
+- terrific as
+- to heaven
+- strong and
+- and touching
+- is strong
+- aided by
+- ">from the"
+- is destined
+- something he
+- the rocky
+- october sky
+- and scenes
+- and last
+- effective as
+- the images
+- crisp and
+- the apes
+- about this
+- begin with
+- john malkovich
+- the mob
+- the mummy
+- or even
+- voice of
+- his job
+- there's not
+- off in
+- but no
+- that point
+- of having
+- but because
+- the future
+- worth seeing
+- to pull
+- without any
+- little too
+- even a
+- original and
+- in american
+- journey to
+- animation is
+- it right
+- a normal
+- is highly
+- the event
+- relationship is
+- minnie driver
+- rocky horror
+- a tale
+- ever seen
+- united states
+- is solid
+- than life
+- the period
+- horizon is
+- cinematography is
+- black is
+- though there
+- depth to
+- the federation
+- captures the
+- albert brooks
+- of special
+- asks him
+- and intelligent
+- the angry
+- from dusk
+- the consequences
+- the costumes
+- begins in
+- gives an
+- edward norton
+- the outside
+- jar jar
+- the drama
+- a quiet
+- of friends
+- i think
+- everything about
+- sitting through
+- hair and
+- like he's
+- loud and
+- is wasted
+- sure the
+- taken over
+- up an
+- have something
+- jennifer love
+- the bugs
+- this movie's
+- movie could
+- their time
+- facts about
+- in them
+- isn't very
+- director peter
+- get any
+- very bad
+- better off
+- it wouldn't
+- nothing in
+- the central
+- a true
+- plot is
+- the rest
+- an impressive
+- robert de
+- with great
+- act of
+- it happens
+- be much
+- to hide
+- it look
+- makers of
+- has done
+- as such
+- created a
+- performance of
+- the war
+- but even
+- a poor
+- has one
+- and i'm
+- the jungle
+- from this
+- and for
+- going for
+- nature of
+- i've ever
+- but that
+- world of
+- as she
+- but with
+- at one
+- images of
+- family and
+- he's all
+- i hated
+- of sexy
+- frank langella
+- kline is
+- keep cool
+- bad action
+- anything at
+- had potential
+- wit or
+- for improvement
+- bull durham
+- a ludicrous
+- convoluted and
+- the live
+- decent action
+- talk on
+- say or
+- mariah carey
+- here a
+- bad actors
+- featured a
+- ludicrous and
+- the mansion
+- schwarzenegger and
+- of godzilla
+- and saw
+- wishes he
+- thinking the
+- wasn't funny
+- interesting ideas
+- capitalize off
+- a full-length
+- anything interesting
+- strung together
+- free clinic
+- gwen and
+- move and
+- have trouble
+- worst that
+- look pretty
+- couldn't figure
+- before him
+- mayor ebert
+- brother's death
+- money train
+- let out
+- nobody is
+- his shotgun
+- read this
+- an amish
+- dumb enough
+- unrealistic and
+- neither scary
+- just awful
+- and way
+- jack carter
+- probably should
+- harry block
+- bad this
+- dune is
+- major film
+- michael jai
+- much room
+- to rake
+- old guy
+- he possibly
+- titus sinclair
+- american outlaws
+- john mctiernan
+- the brothers'
+- no interesting
+- is guilty
+- badly acted
+- sit there
+- favorite martian
+- thriller of
+- i seem
+- big for
+- basketball players
+- chill factor
+- that wants
+- is laughable
+- fast times
+- no effect
+- manchurian candidate
+- they send
+- the anaconda
+- nothing there
+- go ahead
+- the investigators
+- whines about
+- hint that
+- cheap thrills
+- a whim
+- who cried
+- confesses to
+- whipped cream
+- a wannabe
+- little reason
+- dissolves into
+- gag about
+- patch is
+- possibly could
+- to comment
+- marry his
+- melodrama that
+- snipes and
+- me on
+- nobody ever
+- big party
+- was nine
+- skeet ulrich
+- young female
+- same cannot
+- inept and
+- copy editor
+- with here
+- story just
+- this dud
+- positive side
+- a wrestling
+- one redeeming
+- clarence williams
+- the awkward
+- walked into
+- anthony heald
+- wouldn't it
+- the casino
+- for little
+- is forgotten
+- computer geek
+- hard NUMBER
+- movie sucks
+- was boring
+- the relic
+- don't waste
+- particularly bad
+- killer was
+- marlon wayans
+- only adds
+- by poor
+- tracks of
+- a first-rate
+- any part
+- throwing in
+- flubber is
+- guess he
+- oh no
+- wait a
+- camera zooms
+- done was
+- so awful
+- flying rubber
+- this ridiculous
+- as bruce
+- it belongs
+- asks harry
+- the klumps
+- spend your
+- practically every
+- capsule review
+- top the
+- with kevin
+- strictly for
+- the minors
+- is but
+- fern mayo
+- terror train
+- too predictable
+- be humorous
+- peter facinelli
+- stay home
+- contains spoilers
+- a sweat
+- of steven
+- can at
+- if director
+- kim delaney
+- then becomes
+- cape cod
+- bad writing
+- supposedly a
+- anywhere near
+- instinct is
+- put my
+- probably supposed
+- take into
+- that note
+- weighed down
+- a shameless
+- in fairness
+- us two
+- erotic thrillers
+- of van
+- more things
+- the videotapes
+- blame them
+- "`the skulls'"
+- hype and
+- jeff b
+- his abilities
+- would work
+- burly hero
+- its worst
+- or great
+- favourite martian
+- getting so
+- grows tiresome
+- a rabid
+- great plot
+- bargain basement
+- you rent
+- do one
+- is teamed
+- tiresome and
+- wishing for
+- would know
+- i miss
+- plot involves
+- i care
+- script isn't
+- her again
+- to arrest
+- and stallone
+- impossible NUMBER
+- story had
+- carpenter has
+- any energy
+- or it
+- west canaan
+- phil ohlmyer
+- batman movies
+- plain stupid
+- first ace
+- have really
+- do better
+- simply don't
+- i paid
+- a hodgepodge
+- its only
+- this crap
+- set foot
+- cardboard cut-outs
+- martha is
+- reagan high
+- because every
+- paul brenner
+- he forgot
+- of mediocre
+- robbins and
+- the connection
+- no personality
+- have set
+- soap operas
+- no intention
+- ad in
+- doctor dolittle
+- invisible man
+- betty thomas
+- were either
+- are utterly
+- "`bats' is"
+- nice special
+- little fun
+- and kaplan
+- script gives
+- everyone seems
+- pray that
+- weak script
+- an obviously
+- in harlem
+- actually funny
+- turned on
+- add insult
+- fatal charm
+- steal from
+- stale and
+- stanley tucci
+- lots and
+- response is
+- due in
+- known better
+- the snowman
+- movie then
+- good way
+- n' roll
+- rock n'
+- and familiar
+- thing was
+- slightly less
+- the wayans
+- was awful
+- filmmakers wanted
+- the cold-hearted
+- drowning in
+- batman series
+- killing the
+- family comedy
+- the lamest
+- de bont's
+- godzilla can
+- no story
+- arnold is
+- dial m
+- de wynter
+- thing worth
+- and pretentious
+- m for
+- a coincidence
+- alcohol and
+- and poorly
+- home shopping
+- paul is
+- phone conversations
+- to bad
+- bad a
+- them go
+- they forgot
+- emma peel
+- year's worst
+- fat woman
+- even good
+- mommie dearest
+- tom green
+- a bat
+- bachelor' is
+- NUMBER days'
+- stand there
+- and unexciting
+- as dull
+- to mars'
+- the chosen
+- "`mission to"
+- are painfully
+- movie looks
+- NUMBER action
+- a sensitive
+- the contrived
+- point was
+- the ceiling
+- spot is
+- magoo is
+- thought i'd
+- few decent
+- the sculptress
+- godzilla NUMBER
+- the trap
+- suzy amis
+- sad state
+- being completely
+- the waterboy
+- mr jones
+- least be
+- spawn is
+- jai white
+- basketball diaries
+- tries very
+- a wasted
+- the proceedings
+- in films
+- this new
+- to fall
+- whom he
+- new film
+- different from
+- some of
+- i know
+- the daughter
+- the television
+- of style
+- advice to
+- could've been
+- that didn't
+- renee zellweger
+- krippendorf's tribe
+- if that's
+- and let
+- the benefit
+- ounce of
+- like one
+- are these
+- to anything
+- a wall
+- barrage of
+- hand in
+- there any
+- length of
+- the token
+- nowhere to
+- the tagline
+- bad in
+- saddled with
+- of cliches
+- my giant
+- in life
+- scream NUMBER
+- to mention
+- like that
+- up for
+- de palma
+- if it's
+- is called
+- a marvelous
+- from others
+- and convincing
+- hollywood in
+- and inventive
+- begun to
+- by george
+- unlike any
+- will to
+- she isn't
+- loyal to
+- it offers
+- to perfection
+- hedwig and
+- has crafted
+- who won
+- of doom
+- and juliet
+- joel osment
+- djimon hounsou
+- olivia williams
+- the gas
+- allows for
+- about love
+- country is
+- chronicles the
+- in great
+- great fun
+- a husband
+- a grim
+- a soft
+- the roman
+- chan and
+- story unfolds
+- his journey
+- call to
+- two decades
+- hollywood films
+- we like
+- best for
+- first rate
+- of jesus
+- brothers have
+- waking ned
+- stand by
+- carrying a
+- a soldier
+- and drama
+- a virtual
+- something we
+- second act
+- scenes that
+- film as
+- the spirit
+- performances from
+- the songs
+- the attention
+- approach to
+- change of
+- deal of
+- is always
+- as much
+- may have
+- we see
+- love for
+- makes this
+- event horizon
+- i got
+- like he
+- is little
+- to check
+- by having
+- go for
+- say this
+- sean connery
+- here's a
+- bad film
+- its way
+- she's all
+- they're all
+- don't make
+- as any
+- world war
+- the british
+- just didn't
+- good idea
+- when all
+- double jeopardy
+- a silly
+- how did
+- i get
+- it sounds
+- if anyone
+- looking back
+- perhaps the
+- quite a
+- to face
+- shows that
+- a summer
+- destined to
+- the academy
+- job and
+- the stage
+- other and
+- black and
+- than they
+- computer generated
+- theme of
+- is more
+- from his
+- to meet
+- the small
+- james earl
+- their stories
+- of marriage
+- jackie has
+- whose lives
+- this also
+- and worm
+- instead it
+- the shrew
+- are by
+- intelligent film
+- giorgio cantarini
+- the household
+- a b+
+- moulin rogue
+- was created
+- "`sleepy hollow'"
+- surprise for
+- keyser soze
+- the chickens
+- and sensibility
+- honest and
+- these five
+- addresses the
+- the citizens
+- moving and
+- is compelling
+- john doe
+- wong fei-hong
+- a lush
+- hard that
+- is appropriately
+- colors is
+- shared by
+- details that
+- right is
+- the funnest
+- director george
+- food is
+- david lean's
+- much different
+- the fence
+- george lucas'
+- ideas are
+- almost certainly
+- alex and
+- direct to
+- the glass
+- questioning the
+- more characters
+- with america
+- relationships with
+- and oliver
+- them was
+- reluctantly agrees
+- films this
+- joel and
+- a keen
+- island earth
+- tom wilkinson
+- the r
+- money into
+- hunting is
+- great thing
+- which sets
+- "`bringing out"
+- eight taels
+- the big-screen
+- the dead'
+- battle sequence
+- she deserves
+- life seems
+- very believable
+- about politics
+- closer and
+- is witty
+- moments like
+- italian horror
+- of danny
+- and closer
+- fiction is
+- prayer for
+- disturbing and
+- lets go
+- is beautifully
+- character which
+- their television
+- the hearts
+- than half
+- complicating matters
+- tense and
+- also written
+- and animation
+- wants nothing
+- graphic novel
+- the dove
+- red and
+- is endlessly
+- the personal
+- the serial
+- palmer joss
+- the gathering
+- several different
+- life he
+- first class
+- pop music
+- miserables is
+- frank and
+- stay out
+- debt to
+- using all
+- subtlety and
+- owes a
+- gloria stuart
+- while most
+- feature a
+- four stars
+- scene shows
+- fine film
+- those with
+- thrill ride
+- animators have
+- life becomes
+- moving from
+- a mean
+- adds another
+- van dorn
+- in jackie
+- of media
+- check this
+- the dude's
+- most satisfying
+- other men
+- dewitt bukater
+- a gas
+- of innocence
+- yet seen
+- force in
+- galaxy far
+- absolutely breathtaking
+- sean mcguire
+- better understanding
+- is among
+- a connection
+- brilliant and
+- is first-rate
+- en route
+- the thai
+- alien film
+- using my
+- and stretch
+- rachel griffiths
+- its lead
+- go a
+- refreshing and
+- than adequate
+- the grasshoppers
+- very special
+- the pet
+- supporting actress
+- james is
+- of detail
+- insightful and
+- lucas is
+- dangerous beauty
+- flynt and
+- girls town
+- and faith
+- some nasty
+- emotional and
+- an exceptional
+- can enjoy
+- almost the
+- by our
+- a concentration
+- suspects the
+- shows great
+- de sade
+- mini me
+- thirteenth floor'
+- quite some
+- ming-na wen
+- tony goldwyn
+- jack the
+- missile crisis
+- been even
+- ordinary people
+- noah emmerich
+- of fantasy
+- an equal
+- dream to
+- that carries
+- live a
+- both for
+- a pivotal
+- an underground
 label_document_count:
-  positive: 461
-  negative: 512
-  neutral: 2144
+  negative: 752
+  positive: 752
 label_feature_count:
-  positive:
-    so: 16
-    blackberry: 9
-    bit: 12
-    iphone: 40
-    not: 10
-    million: 6
-    smartphone: 9
-    if: 7
-    me: 33
-    do: 16
-    any: 3
-    appreciated: 4
-    today: 10
-    sweet: 7
-    time: 9
-    been: 7
-    nice: 15
-    thank: 13
-    replaced: 5
-    great: 24
-    want: 16
-    thanks: 27
-    after: 4
-    thx: 4
-    moving: 4
-    email: 6
-    loving: 11
-    update: 8
-    guy: 5
-    pretty: 8
-    love: 30
-    yeah: 5
-    they: 6
-    well: 13
-    amazing: 16
-    job: 12
-    far: 5
-    best: 13
-    customer: 4
-    technology: 8
-    icloud: 4
-    camera: 7
-    god: 5
-    ass: 3
-    itunes: 2
-    devices: 8
-    apps: 3
-    think: 11
-    i've: 6
-    awesome: 19
-    'no': 10
-    way: 11
-    fixed: 2
-    battery: 3
-    problem: 2
-    working: 3
-    looking: 8
-    forward: 5
-    work: 5
-    never: 2
-    worst: 2
-    pull: 4
-    bottom: 4
-    feature: 9
-    really: 20
-    issues: 2
-    beautiful: 6
-    good: 24
-    charge: 2
-    success: 5
-    finally: 11
-    v: 5
-    impressed: 5
-    since: 2
-    powered: 5
-    search: 11
-    recognition: 2
-    impressive: 6
-    power: 7
-    google+: 14
-    why: 4
-    usage: 8
-    only: 4
-    ics: 41
-    samsung: 37
-    ice: 36
-    cream: 36
-    sandwich: 41
-    here: 10
-    nexus: 43
-    galaxy: 26
-    galaxynexus: 16
-    icecreamsandwich: 27
-    looks: 20
-    missing: 2
-    ui: 6
-    google's: 9
-    smart: 6
-    os: 11
-    dear: 5
-    icecream: 7
-    excited: 5
-    introducing: 5
-    beyond: 5
-    went: 2
-    can't: 7
-    wait: 9
-    literally: 4
-    nothing: 2
-    shows: 9
-    tools: 7
-    contact: 4
-    dhilipsiva: 3
-    almost: 4
-    windowsphone: 6
-    ".ly/nejbye": 8
-    improvements: 10
-    full: 2
-    capabilities: 4
-    report: 2
-    stores: 7
-    holodesk: 5
-    science: 3
-    offer: 6
-    microsoftstores: 6
-    mango: 7
-    dev: 5
-    them: 3
-    ballmer: 2
-    vslive: 4
-    seriously: 2
-    sound: 2
-    uh: 2
-    w/: 2
-    shit: 5
-    sucks: 2
-    fuck: 3
-    fucking: 2
   negative:
-    so: 37
-    apparently: 6
-    sms: 6
-    update: 24
-    full: 7
-    went: 7
-    w/: 10
-    'no': 29
-    customer: 16
-    why: 35
-    do: 34
-    wait: 11
-    fail: 22
-    time: 24
-    iphone: 57
-    them: 15
-    only: 21
-    can't: 18
-    me: 51
-    after: 25
-    they: 18
-    want: 7
-    having: 15
-    issue: 8
-    charge: 6
-    pissed: 5
-    icloud: 17
-    wtf: 9
-    apps: 18
-    itunes: 15
-    really: 20
-    think: 6
-    battery: 15
-    late: 7
-    work: 15
-    stuck: 5
-    half: 7
-    sucks: 8
-    ":(": 11
-    reservation: 6
-    not: 54
-    working: 11
-    shows: 5
-    nothing: 9
-    shit: 18
-    fixed: 6
-    fuck: 12
-    already: 7
-    ups: 6
-    fucking: 16
-    feature: 2
-    missing: 6
-    since: 14
-    list: 5
-    doesn't: 14
-    software: 8
-    dead: 8
-    restore: 11
-    been: 21
-    around: 6
-    dear: 19
-    awesome: 2
-    crap: 4
-    great: 7
-    if: 29
-    camera: 4
-    love: 5
-    such: 7
-    job: 3
-    x: 5
-    hate: 16
-    far: 2
-    thank: 7
-    seriously: 9
-    sound: 5
-    quality: 4
-    samsung: 12
-    best: 4
-    issues: 12
-    almost: 2
-    any: 14
-    fix: 21
-    recognition: 8
-    worst: 6
-    problem: 10
-    ass: 7
-    good: 9
-    lion: 7
-    button: 5
-    won't: 10
-    here: 2
-    annoyed: 6
-    definitely: 4
-    sprint: 4
-    stores: 2
-    looks: 3
-    else: 10
-    yeah: 3
-    thx: 2
-    ugh: 5
-    hold: 8
-    terrible: 7
-    well: 6
-    looking: 2
-    connect: 5
-    network: 10
-    trouble: 6
-    way: 5
-    blue: 9
-    never: 10
-    today: 5
-    updating: 8
-    pretty: 4
-    hour: 7
-    failing: 4
-    excited: 2
-    worse: 4
-    usage: 2
-    lose: 6
-    thanks: 13
-    suck: 5
-    blackberry: 3
-    nexus: 3
-    point: 4
-    email: 2
-    failed: 7
-    able: 6
-    took: 5
-    ask: 7
-    os: 6
-    tried: 4
-    contact: 2
-    i've: 3
-    seems: 6
-    accounts: 6
-    pull: 2
-    sweet: 2
-    beautiful: 2
-    nice: 2
-    galaxynexus: 4
-    cream: 3
-    google+: 3
-    ics: 9
-    search: 4
-    ice: 2
-    sandwich: 2
-    icecreamsandwich: 5
-    google's: 2
-    crash: 5
-    literally: 2
-    adobe: 5
-    report: 6
-    hacked: 5
-    dev: 2
-    ui: 2
-    v: 2
-    neck: 5
-    mango: 2
-    finally: 2
-    eclipsed: 11
-    ballmer: 6
-    mentions: 5
-    retweets: 10
-    lil: 5
-    uh: 2
-    appreciated: 2
-  neutral:
-    powered: 6
-    wtf: 4
-    if: 55
-    after: 19
-    iphone: 105
-    having: 8
-    good: 36
-    ask: 6
-    apparently: 4
-    been: 24
-    working: 11
-    stores: 8
-    only: 20
-    hold: 6
-    me: 86
-    thanks: 22
-    best: 22
-    great: 40
-    amazing: 5
-    so: 59
-    adobe: 2
-    pretty: 7
-    time: 43
-    crap: 3
-    dear: 16
-    way: 19
-    samsung: 125
-    success: 5
-    well: 20
-    far: 4
-    apps: 14
-    since: 5
-    tried: 3
-    feature: 10
-    forward: 6
-    else: 5
-    do: 50
-    want: 35
-    doesn't: 6
-    not: 89
-    never: 13
-    blackberry: 9
-    battery: 8
-    problem: 4
-    thx: 5
-    hour: 5
-    wait: 7
-    already: 7
-    they: 34
-    w/: 12
-    went: 4
-    here: 39
-    thank: 17
-    why: 46
-    love: 23
-    icloud: 12
-    yeah: 6
-    them: 16
-    technology: 25
-    list: 4
-    million: 21
-    email: 6
-    pissed: 3
-    update: 19
-    button: 4
-    'no': 36
-    replaced: 2
-    really: 27
-    restore: 2
-    can't: 12
-    nice: 11
-    job: 8
-    bottom: 3
-    fail: 7
-    think: 18
-    beautiful: 3
-    google's: 13
-    today: 19
-    work: 16
-    fixed: 3
-    blue: 2
-    reservation: 2
-    camera: 10
-    nothing: 2
-    lil: 3
-    guy: 4
-    any: 21
-    shows: 13
-    issues: 3
-    looks: 11
-    loving: 3
-    ice: 116
-    cream: 123
-    seems: 4
-    such: 3
-    power: 5
-    network: 6
-    smart: 4
-    impressive: 2
-    i've: 6
-    awesome: 7
-    fix: 2
-    trouble: 2
-    galaxy: 119
-    shit: 9
-    lion: 5
-    devices: 23
-    x: 4
-    worse: 3
-    crash: 3
-    sms: 3
-    stuck: 4
-    failed: 4
-    improvements: 7
-    os: 14
-    sucks: 3
-    v: 4
-    impressed: 3
-    looking: 7
-    finally: 13
-    charge: 2
-    won't: 3
-    issue: 2
-    seriously: 5
-    sprint: 6
-    able: 3
-    sandwich: 115
-    nexus: 141
-    search: 40
-    google+: 49
-    icecreamsandwich: 50
-    smartphone: 11
-    galaxynexus: 27
-    ics: 61
-    dhilipsiva: 52
-    tools: 9
-    recognition: 8
-    ballmer: 81
-    itunes: 3
-    icecream: 7
-    moving: 3
-    ui: 6
-    mango: 15
-    introducing: 4
-    fuck: 8
-    capabilities: 3
-    missing: 3
-    bit: 6
-    ".ly/nejbye": 6
-    full: 5
-    half: 4
-    contact: 2
-    usage: 2
-    literally: 2
-    software: 8
-    windowsphone: 20
-    report: 4
-    quality: 3
-    around: 6
-    excited: 3
-    offer: 6
-    microsoftstores: 2
-    definitely: 3
-    appreciated: 2
-    science: 3
-    vslive: 2
-    holodesk: 3
-    dead: 3
-    took: 2
-    failing: 3
-    god: 4
-    beyond: 3
-    point: 3
-    connect: 2
-    updating: 5
-    ":(": 2
-    ass: 6
-    lose: 5
-    mentions: 3
-    hacked: 2
-    pull: 2
-    ugh: 2
-    retweets: 4
-    suck: 2
-    hate: 2
-    accounts: 2
-    almost: 2
-    neck: 2
+    year of: 11
+    science fiction: 21
+    a little: 151
+    of mediocre: 3
+    meant to: 34
+    to the: 481
+    this crap: 5
+    this movie: 234
+    life in: 15
+    is a: 507
+    is also: 70
+    is an: 135
+    of nothing: 6
+    nothing but: 29
+    around in: 29
+    as the: 319
+    want to: 136
+    to do: 206
+    at least: 209
+    some of: 137
+    of his: 216
+    would want: 10
+    is he: 20
+    in this: 277
+    has no: 53
+    maybe the: 17
+    of the: 688
+    the football: 8
+    at times: 38
+    they get: 30
+    and the: 463
+    the plot: 191
+    i suppose: 39
+    though it: 16
+    the studio: 15
+    the film: 488
+    ludicrous and: 6
+    and boring: 19
+    guys in: 6
+    of us: 27
+    of it: 106
+    may have: 43
+    the best: 129
+    best films: 5
+    wild wild: 9
+    wild west: 10
+    to pass: 22
+    of american: 8
+    american outlaws: 4
+    jesse james: 5
+    chill factor: 4
+    any sense: 16
+    sense of: 58
+    with only: 18
+    whipped cream: 6
+    and his: 149
+    the family: 17
+    the war: 8
+    in their: 64
+    over their: 11
+    the most: 215
+    go on: 32
+    could be: 67
+    a great: 98
+    through this: 23
+    in NUMBER: 91
+    NUMBER seconds: 10
+    the jackal: 9
+    to get: 185
+    us an: 5
+    grows tiresome: 6
+    tiresome and: 4
+    any energy: 4
+    to mention: 29
+    story of: 47
+    resemblance to: 9
+    the movie: 358
+    movie is: 139
+    of style: 9
+    set in: 28
+    comedy is: 10
+    special effects: 93
+    the world: 92
+    film and: 39
+    to care: 25
+    about them: 16
+    the future: 23
+    in his: 163
+    the two: 109
+    with her: 75
+    as he: 69
+    that he: 147
+    to him: 33
+    and then: 125
+    him as: 13
+    any kind: 17
+    a man: 82
+    it right: 6
+    afraid to: 5
+    come out: 14
+    so they: 28
+    have been: 259
+    could have: 142
+    have some: 30
+    those who: 39
+    "`the skulls'": 2
+    laughably bad: 7
+    me to: 38
+    are so: 57
+    attempt to: 74
+    from others: 2
+    that the: 287
+    it's just: 56
+    the script: 144
+    is so: 112
+    so bad: 39
+    bad it: 7
+    entertainment value: 11
+    to have: 158
+    little too: 17
+    why not: 17
+    have to: 137
+    but the: 233
+    enough to: 126
+    then there's: 36
+    to be: 510
+    a fun: 13
+    bad guy: 32
+    the young: 24
+    is bland: 7
+    a straight: 17
+    straight face: 10
+    or maybe: 24
+    thanks to: 22
+    a sense: 25
+    a lame: 8
+    while it: 7
+    just too: 20
+    seemed to: 34
+    tried to: 28
+    one of: 330
+    is very: 46
+    the novel: 14
+    none of: 82
+    is the: 363
+    not even: 64
+    is now: 23
+    had been: 50
+    watching this: 28
+    it does: 45
+    arnold schwarzenegger: 16
+    frank langella: 4
+    the only: 234
+    only thing: 45
+    say about: 16
+    is that: 204
+    it is: 329
+    a big: 91
+    schwarzenegger and: 2
+    with director: 8
+    that will: 29
+    due to: 36
+    this new: 8
+    will work: 6
+    if the: 114
+    of arnold: 5
+    funny or: 10
+    producers of: 10
+    to pull: 30
+    if it: 73
+    might have: 66
+    it wasn't: 35
+    at best: 29
+    running around: 10
+    the accompanying: 5
+    not funny: 19
+    i kept: 13
+    this turkey: 16
+    an action: 33
+    make a: 105
+    would have: 139
+    than this: 36
+    this mess: 20
+    is wasted: 10
+    wasted in: 14
+    if i: 47
+    as well: 121
+    a fine: 18
+    too bad: 45
+    any of: 74
+    on this: 50
+    the more: 31
+    in hollywood: 37
+    the filmmakers: 52
+    to make: 241
+    a bad: 101
+    bad film: 12
+    they certainly: 6
+    but unfortunately: 20
+    a movie: 191
+    should have: 96
+    go rent: 9
+    the blob: 2
+    the remake: 6
+    remake of: 27
+    a really: 30
+    in its: 66
+    its way: 14
+    have something: 12
+    something to: 48
+    do with: 54
+    there any: 8
+    as if: 87
+    a couple: 90
+    of holes: 7
+    the special: 50
+    bright spot: 9
+    of view: 12
+    is more: 48
+    i can: 78
+    that was: 67
+    but that: 44
+    attempts to: 55
+    i've already: 8
+    comes off: 36
+    more as: 8
+    badly acted: 5
+    and badly: 6
+    badly written: 6
+    was made: 16
+    a very: 104
+    reason that: 14
+    compensate for: 9
+    lack of: 73
+    doesn't work: 26
+    very well: 23
+    you want: 51
+    rent the: 5
+    rosemary's baby: 5
+    boring and: 15
+    and laughable: 9
+    mystery science: 6
+    science theater: 5
+    the bad: 65
+    bad films: 7
+    first hour: 8
+    a bunch: 60
+    bunch of: 63
+    like a: 164
+    about it: 56
+    least bit: 17
+    all this: 34
+    to give: 80
+    is way: 9
+    way too: 22
+    that's about: 12
+    about as: 37
+    the rest: 143
+    rest of: 126
+    i guess: 57
+    naked gun: 11
+    be fair: 18
+    quite as: 5
+    is still: 37
+    even the: 88
+    needs a: 14
+    and he: 72
+    the fugitive: 8
+    a married: 2
+    her husband: 19
+    the stage: 6
+    scenes that: 33
+    top the: 6
+    when a: 63
+    giant snake: 4
+    nothing to: 59
+    like an: 36
+    supposed to: 130
+    seem to: 106
+    the viewer: 34
+    to begin: 27
+    begin with: 20
+    nobody is: 5
+    going to: 135
+    and familiar: 5
+    that some: 19
+    are more: 17
+    the lost: 18
+    NUMBER minutes: 108
+    minutes of: 61
+    to justify: 9
+    a ludicrous: 5
+    nothing in: 14
+    dialogue from: 7
+    performances by: 5
+    without any: 29
+    i think: 86
+    look like: 48
+    find out: 42
+    have no: 37
+    no idea: 28
+    would they: 7
+    to his: 99
+    the car: 19
+    film is: 209
+    next to: 25
+    because of: 70
+    don't make: 15
+    they should: 28
+    last movie: 7
+    bad script: 9
+    bad acting: 15
+    here's a: 17
+    up for: 29
+    problems with: 30
+    early on: 32
+    beverly hills: 9
+    got to: 34
+    use of: 22
+    to kill: 64
+    appears to: 41
+    so what: 22
+    what about: 13
+    the bugs: 8
+    and their: 28
+    but this: 70
+    portrayal of: 9
+    trying to: 160
+    the importance: 2
+    bad guys: 35
+    end of: 88
+    has done: 12
+    this one: 97
+    as for: 39
+    skip it: 6
+    of america: 4
+    life and: 16
+    as much: 41
+    a creepy: 11
+    bob gunton: 5
+    from his: 47
+    even if: 41
+    lou diamond: 6
+    diamond phillips: 6
+    the bats: 3
+    save the: 46
+    ever seen: 27
+    seen in: 32
+    a bat: 4
+    bats are: 3
+    what do: 20
+    do they: 17
+    the hell: 30
+    stand there: 6
+    don't even: 23
+    what's going: 23
+    all we: 16
+    tries to: 106
+    doesn't really: 20
+    go anywhere: 7
+    bad that: 30
+    they take: 14
+    not help: 10
+    bad it's: 7
+    worse than: 27
+    i'm not: 63
+    quite frankly: 14
+    i know: 62
+    a script: 29
+    it happens: 11
+    i'm talking: 6
+    are also: 23
+    the odd: 7
+    this year: 23
+    but nothing: 11
+    the us: 9
+    movie was: 50
+    a cheap: 16
+    evidence of: 6
+    the whole: 108
+    to save: 55
+    the formula: 19
+    the history: 4
+    arnold is: 5
+    ends up: 59
+    killing the: 6
+    i should: 18
+    more about: 8
+    some sort: 32
+    NUMBER feet: 10
+    everyone else: 30
+    made me: 31
+    movie to: 32
+    wait for: 26
+    at all: 99
+    can with: 13
+    plot is: 60
+    is completely: 30
+    completely different: 2
+    different from: 7
+    they find: 11
+    happens to: 44
+    dennis hopper: 11
+    a plot: 47
+    no fun: 6
+    do better: 4
+    street fighter: 6
+    does a: 34
+    good job: 10
+    action scenes: 34
+    to show: 55
+    show off: 14
+    plot involves: 6
+    taken over: 11
+    for fans: 2
+    plot with: 9
+    first place: 26
+    the action: 74
+    even worth: 6
+    of van: 4
+    van damme: 13
+    many of: 31
+    during the: 84
+    to figure: 22
+    figure out: 30
+    to live: 25
+    jack is: 8
+    even worse: 34
+    asks harry: 6
+    harry to: 7
+    barrage of: 6
+    gives the: 18
+    and turns: 7
+    but here: 20
+    no one: 73
+    not explained: 5
+    that point: 17
+    he is: 162
+    able to: 96
+    positive side: 4
+    the dark: 16
+    a bit: 88
+    and out: 9
+    well as: 56
+    is always: 17
+    but even: 34
+    hint that: 6
+    that it's: 69
+    is supposed: 50
+    there would: 7
+    in life: 11
+    martin lawrence: 4
+    about an: 23
+    an hour: 49
+    there's a: 82
+    worst movie: 14
+    harlem nights: 2
+    life is: 26
+    to write: 24
+    be honest: 11
+    the screening: 12
+    recent films: 8
+    the studios: 8
+    only redeeming: 7
+    NUMBER year: 8
+    year olds: 7
+    an embarrassment: 4
+    he seems: 27
+    the british: 10
+    talk on: 6
+    but only: 21
+    the worst: 100
+    the small: 12
+    a terrible: 20
+    are wasted: 7
+    waste of: 50
+    to catch: 24
+    video games: 5
+    mortal kombat: 9
+    fight scenes: 17
+    it on: 33
+    world of: 25
+    an impressive: 9
+    liu kang: 4
+    the writers: 27
+    a video: 13
+    video game: 10
+    worst of: 27
+    movie tries: 7
+    first movie: 15
+    half as: 7
+    i mean: 40
+    practically every: 4
+    amounts to: 13
+    to nothing: 16
+    too little: 14
+    little of: 18
+    the poor: 17
+    i am: 58
+    the great: 25
+    a shameless: 5
+    give us: 18
+    reason to: 37
+    script isn't: 5
+    austin powers: 4
+    but with: 19
+    a cliff: 8
+    guy is: 21
+    he's only: 8
+    my interest: 11
+    his own: 78
+    just isn't: 21
+    isn't enough: 12
+    even a: 41
+    there's no: 46
+    check out: 17
+    is it: 60
+    and for: 28
+    lost in: 24
+    in space: 15
+    even good: 4
+    the avengers: 6
+    emma peel: 4
+    the american: 19
+    and witty: 2
+    a coincidence: 5
+    sir august: 3
+    de wynter: 4
+    sean connery: 13
+    there's some: 11
+    things that: 33
+    even less: 11
+    for some: 68
+    for no: 26
+    good reason: 10
+    but i: 118
+    idea why: 7
+    the voice: 10
+    invisible man: 4
+    at first: 36
+    one good: 11
+    the weather: 6
+    the right: 35
+    no spark: 4
+    the greatest: 12
+    between the: 66
+    no chemistry: 6
+    get any: 13
+    for critics: 6
+    been a: 73
+    warner brothers: 11
+    the television: 12
+    no reason: 26
+    to waste: 17
+    any part: 6
+    speed NUMBER: 10
+    worst film: 11
+    i've ever: 18
+    joel schumacher: 14
+    isn't very: 10
+    very good: 39
+    excuse for: 23
+    poison ivy: 8
+    down by: 18
+    nature of: 14
+    the point: 69
+    action scene: 9
+    like he's: 8
+    a young: 57
+    going for: 22
+    off that: 7
+    looks like: 54
+    that makes: 25
+    october sky: 2
+    of stupid: 7
+    NUMBER minute: 13
+    no other: 9
+    the ridiculous: 18
+    the proceedings: 21
+    convoluted and: 6
+    the pacific: 5
+    to work: 72
+    jackie chan: 15
+    rush hour: 4
+    the king: 10
+    the matrix: 14
+    romeo must: 3
+    must die: 4
+    the club: 8
+    the fight: 16
+    his brother's: 8
+    brother's death: 5
+    obvious that: 21
+    a way: 23
+    a poor: 16
+    best performance: 5
+    that should: 28
+    painfully obvious: 7
+    off in: 18
+    it's as: 21
+    as any: 10
+    and start: 9
+    left with: 22
+    mystery men: 5
+    as bad: 27
+    bad as: 24
+    first-time director: 6
+    a first-rate: 6
+    hank azaria: 13
+    english accent: 8
+    ben stiller: 6
+    wes studi: 5
+    the token: 8
+    insult to: 14
+    to injury: 7
+    the gas: 2
+    one big: 16
+    better off: 19
+    pretty much: 39
+    how about: 17
+    only one: 50
+    to sit: 24
+    sit through: 24
+    gives a: 22
+    bad writing: 4
+    maybe that: 4
+    first scene: 12
+    absolutely no: 25
+    why the: 37
+    and as: 34
+    i sat: 15
+    sat through: 6
+    popped up: 5
+    it wouldn't: 16
+    wouldn't have: 17
+    everything from: 2
+    this thing: 11
+    like that: 41
+    wouldn't be: 26
+    to disguise: 7
+    i've seen: 28
+    to check: 11
+    have the: 67
+    set foot: 4
+    the benefit: 7
+    throw in: 17
+    huge disappointment: 8
+    two hours: 35
+    about this: 60
+    thinking of: 6
+    even better: 8
+    is extremely: 10
+    common sense: 10
+    the tv: 22
+    tv series: 23
+    first NUMBER: 11
+    almost nothing: 6
+    movie then: 4
+    or at: 27
+    cast is: 19
+    nowhere to: 8
+    be seen: 16
+    fails to: 36
+    the spirit: 8
+    as she: 21
+    seven days: 6
+    the middle: 63
+    middle of: 48
+    sitting through: 10
+    chris tucker: 3
+    money talks: 3
+    just doesn't: 19
+    toy story: 5
+    some reason: 27
+    good idea: 13
+    wrong with: 24
+    not one: 39
+    the villains: 15
+    off as: 49
+    a more: 34
+    from under: 8
+    whole nine: 3
+    nine yards: 3
+    a comedy: 39
+    an amateur: 4
+    natasha henstridge: 12
+    amanda peet: 3
+    is little: 14
+    minutes and: 10
+    far superior: 18
+    a cliched: 7
+    the subplot: 8
+    three to: 2
+    of fun: 11
+    is awful: 10
+    an oscar: 12
+    oscar nomination: 4
+    the green: 4
+    green mile: 2
+    deal of: 13
+    what was: 41
+    absent minded: 3
+    NUMBER dalmatians: 7
+    up as: 31
+    because he's: 23
+    flying rubber: 5
+    flubber is: 3
+    can save: 11
+    interesting or: 7
+    at one: 44
+    why are: 10
+    are these: 10
+    turns in: 9
+    little to: 34
+    are very: 12
+    aspects of: 9
+    there's not: 20
+    this guy: 23
+    home alone: 14
+    some ways: 2
+    target audience: 15
+    seen on: 5
+    american werewolf: 4
+    werewolf in: 4
+    it even: 17
+    wishes he: 5
+    a werewolf: 5
+    work with: 30
+    with here: 4
+    a miss: 6
+    then becomes: 5
+    bad movie: 41
+    dubious distinction: 6
+    seen as: 3
+    of days: 10
+    dial m: 3
+    m for: 3
+    and there's: 24
+    not much: 30
+    think that: 49
+    then he: 13
+    to happen: 34
+    action and: 7
+    make much: 7
+    you'd think: 20
+    would think: 14
+    why would: 17
+    out as: 22
+    got a: 25
+    action sequences: 49
+    donald sutherland: 9
+    reindeer games: 5
+    scream NUMBER: 9
+    or even: 44
+    with no: 48
+    you thought: 10
+    the writer: 12
+    the screenwriter: 14
+    than to: 27
+    steal from: 4
+    much better: 47
+    how did: 10
+    whole thing: 16
+    is beautiful: 6
+    freddie prinze: 12
+    prinze jr: 12
+    police academy: 7
+    so badly: 12
+    it may: 22
+    gary sinise: 11
+    charlize theron: 10
+    and very: 13
+    what he: 44
+    might as: 16
+    is what: 32
+    a stupid: 15
+    though it's: 7
+    john frankenheimer: 6
+    director who: 10
+    the manchurian: 5
+    manchurian candidate: 4
+    major film: 6
+    strung together: 3
+    problem is: 44
+    no purpose: 13
+    and to: 33
+    to remind: 11
+    them like: 8
+    an extraordinary: 2
+    snake eyes: 9
+    stock characters: 7
+    my giant: 4
+    in romania: 3
+    billy crystal: 9
+    gheorghe muresan: 4
+    performance as: 23
+    steven seagal: 12
+    a poorly: 8
+    attempts at: 32
+    at humor: 10
+    on mars: 10
+    whole lot: 18
+    totally wasted: 6
+    wasted as: 8
+    the makers: 19
+    makers of: 14
+    i wonder: 20
+    throwing in: 5
+    their names: 5
+    peter hyams: 9
+    the relic: 6
+    it just: 46
+    and insulting: 6
+    there isn't: 28
+    source of: 6
+    the bowels: 5
+    that didn't: 11
+    gives an: 5
+    little or: 10
+    downey jr: 2
+    to anything: 9
+    knock off: 5
+    before i: 19
+    film of: 24
+    but alas: 9
+    was supposed: 21
+    an explanation: 5
+    best movies: 3
+    a clue: 10
+    clue as: 6
+    even one: 9
+    it's too: 27
+    be funny: 25
+    no redeeming: 6
+    crisp and: 3
+    his worst: 5
+    worst films: 11
+    at worst: 6
+    patch adams: 6
+    jakob the: 2
+    the liar: 2
+    world war: 9
+    in great: 2
+    to hide: 14
+    good will: 5
+    will hunting: 5
+    and love: 7
+    a wannabe: 4
+    last year's: 27
+    it tries: 14
+    character study: 3
+    but because: 10
+    it fails: 7
+    star trek: 14
+    only hope: 11
+    an insult: 8
+    which will: 8
+    is his: 23
+    they're on: 6
+    saddled with: 10
+    very bad: 17
+    doesn't help: 20
+    help that: 9
+    series to: 8
+    a waste: 28
+    mommie dearest: 2
+    main problem: 18
+    too late: 19
+    the life: 13
+    life of: 14
+    direction is: 11
+    flat and: 7
+    in fairness: 6
+    the adult: 4
+    the perfect: 17
+    a horrible: 7
+    if that's: 7
+    de palma: 8
+    cast and: 14
+    red planet: 14
+    to mars: 14
+    major problem: 8
+    falls flat: 11
+    like this: 91
+    while all: 7
+    and dull: 9
+    young einstein: 2
+    became the: 2
+    of paul: 7
+    but also: 26
+    stupid and: 16
+    has created: 4
+    created a: 9
+    degenerates into: 6
+    inane plot: 6
+    music video: 12
+    sure the: 8
+    put my: 6
+    NUMBER cigarettes: 3
+    big party: 4
+    martha plimpton: 3
+    but no: 21
+    of having: 17
+    to face: 7
+    new year's: 8
+    unrealistic and: 5
+    painful to: 13
+    a true: 9
+    dull and: 13
+    and uninteresting: 10
+    share the: 2
+    night before: 6
+    least be: 5
+    and most: 28
+    film goes: 10
+    no apparent: 12
+    and move: 7
+    move and: 6
+    all around: 8
+    "`hanging up'": 2
+    diane keaton: 6
+    five minutes: 22
+    her dog: 6
+    ditto for: 8
+    a promising: 10
+    phone conversations: 5
+    have at: 7
+    virus is: 3
+    space station: 5
+    needs to: 44
+    before it: 33
+    they're all: 14
+    rip-off of: 13
+    deep rising: 5
+    the genre: 14
+    after that: 19
+    the central: 13
+    get there: 7
+    good movies: 9
+    worth seeing: 9
+    you rent: 6
+    the sixth: 5
+    NUMBER is: 28
+    these movies: 11
+    turns into: 18
+    have nothing: 12
+    focus of: 6
+    the devil: 17
+    pray that: 3
+    the haunting: 10
+    of special: 4
+    this movie's: 10
+    take into: 3
+    though he: 23
+    have had: 17
+    days in: 13
+    a haunted: 6
+    the mansion: 5
+    catherine zeta-jones: 9
+    lili taylor: 8
+    really isn't: 14
+    isn't much: 15
+    jan de: 10
+    de bont: 9
+    not scary: 8
+    were just: 10
+    entire movie: 23
+    is something: 21
+    of rocks: 7
+    star wars: 14
+    if it's: 19
+    no looking: 3
+    looking back: 7
+    lauren holly: 5
+    bon jovi: 4
+    makes the: 34
+    than they: 4
+    bland and: 14
+    is bad: 18
+    robin tunney: 7
+    ten minutes: 22
+    sit there: 5
+    in disbelief: 9
+    was getting: 5
+    throws in: 9
+    it look: 12
+    also very: 7
+    is destined: 2
+    destined to: 3
+    jericho cane: 6
+    christine york: 5
+    do this: 20
+    catholic church: 5
+    a terrific: 5
+    a boring: 13
+    something else: 14
+    and gives: 6
+    here it: 7
+    whom he: 7
+    which really: 5
+    nothing new: 21
+    some great: 5
+    with its: 25
+    we need: 13
+    how do: 16
+    all right: 17
+    security guard: 12
+    the casino: 4
+    most memorable: 5
+    the shelf: 6
+    hair and: 6
+    things worse: 7
+    stupidity of: 5
+    ridiculous and: 7
+    worse is: 10
+    to fall: 10
+    to meet: 12
+    the bathtub: 6
+    weak script: 5
+    known better: 5
+    kevin dunn: 5
+    her that: 6
+    often and: 8
+    no sense: 29
+    stare at: 7
+    isn't given: 12
+    an oil: 7
+    oil tanker: 5
+    very little: 47
+    movie could: 11
+    of material: 9
+    the cold: 5
+    drunk and: 5
+    quite a: 27
+    who knows: 18
+    working from: 8
+    the manic: 7
+    not surprisingly: 7
+    be said: 23
+    a cheesy: 8
+    tired and: 4
+    best movie: 2
+    that movie: 21
+    of war: 7
+    a ridiculously: 5
+    high on: 7
+    killer was: 5
+    having her: 7
+    stupid that: 5
+    dialogue and: 31
+    isn't one: 8
+    only good: 12
+    walked into: 5
+    i got: 21
+    can't save: 8
+    a total: 19
+    total waste: 8
+    action packed: 7
+    a pointless: 9
+    snipes and: 2
+    some movies: 11
+    call it: 21
+    try and: 8
+    deserves better: 6
+    his shotgun: 5
+    wonder if: 17
+    guy and: 7
+    like he: 19
+    i've got: 10
+    a wall: 7
+    of godzilla: 5
+    come on: 18
+    bad movies: 14
+    an uninteresting: 4
+    really bad: 15
+    rebecca gayheart: 8
+    dissolves into: 4
+    the cheap: 11
+    called it: 10
+    or something: 28
+    the brothers: 11
+    film starts: 7
+    some decent: 6
+    just not: 21
+    attempt at: 26
+    well written: 3
+    a beautiful: 12
+    when all: 12
+    female lead: 10
+    than life: 3
+    spot is: 5
+    saying much: 7
+    the sculptress: 2
+    like one: 11
+    a stunning: 4
+    thing worth: 5
+    isn't even: 19
+    bad enough: 18
+    be fun: 14
+    and adults: 2
+    that bad: 20
+    movie NUMBER: 2
+    except the: 5
+    wasn't a: 11
+    its only: 6
+    has one: 17
+    the animation: 7
+    this bad: 9
+    animation is: 6
+    be much: 11
+    this trash: 4
+    the tagline: 7
+    a mess: 18
+    and although: 14
+    great idea: 6
+    sloppy and: 8
+    the edge: 10
+    just goes: 6
+    edward norton: 5
+    variety of: 7
+    beyond me: 10
+    they come: 18
+    good actors: 14
+    a solid: 12
+    had no: 20
+    continues to: 9
+    some potential: 4
+    rocky horror: 5
+    keeps the: 10
+    neither scary: 4
+    it's nothing: 12
+    a ridiculous: 13
+    is terrible: 11
+    really blame: 7
+    the problem: 47
+    the hour: 9
+    capsule review: 4
+    everything about: 12
+    and ugly: 9
+    advice to: 8
+    the federation: 3
+    all for: 13
+    the magic: 5
+    to top: 15
+    explanation for: 6
+    trust me: 14
+    little fun: 6
+    the jedi: 5
+    went wrong: 10
+    for acting: 4
+    idea what: 13
+    much time: 18
+    time on: 23
+    al simmons: 4
+    batman film: 6
+    why is: 20
+    the blame: 16
+    time it: 10
+    michael jai: 4
+    jai white: 4
+    in films: 11
+    we see: 42
+    loud and: 11
+    like i: 20
+    live action: 11
+    least the: 18
+    be good: 14
+    the costumes: 4
+    the little: 17
+    deep impact: 12
+    comet is: 4
+    plan is: 8
+    that maybe: 7
+    a reporter: 7
+    ask the: 6
+    and i'm: 15
+    mission to: 18
+    the cave: 3
+    we watch: 7
+    they thinking: 4
+    only problem: 6
+    may not: 20
+    a sweat: 4
+    a summer: 6
+    their time: 9
+    of acting: 15
+    movie looks: 6
+    only saving: 12
+    saving grace: 20
+    they could: 25
+    the musical: 3
+    begins to: 30
+    jeff goldblum: 9
+    else to: 13
+    jackie brown: 5
+    guessed it: 8
+    the actions: 6
+    don't bother: 11
+    skeet ulrich: 4
+    and kills: 12
+    my friend: 10
+    you seen: 5
+    are basically: 5
+    over time: 6
+    doesn't even: 28
+    facts about: 12
+    makes this: 8
+    william forsythe: 6
+    with as: 3
+    as quickly: 6
+    of money: 31
+    jean reno: 8
+    the japanese: 4
+    headed for: 8
+    mayor ebert: 5
+    the city: 29
+    the army: 5
+    godzilla has: 5
+    good doctor: 8
+    i could: 50
+    so full: 6
+    maria pitillo: 5
+    screening i: 7
+    godzilla is: 7
+    death wish: 5
+    why does: 13
+    be over: 9
+    godzilla can: 3
+    why was: 6
+    as godzilla: 6
+    for both: 5
+    beast is: 5
+    his most: 5
+    little life: 6
+    double jeopardy: 3
+    no effect: 3
+    think they: 12
+    go for: 15
+    makes us: 3
+    pretty bad: 11
+    wrote a: 7
+    could a: 5
+    anything about: 10
+    john carpenter's: 6
+    us any: 3
+    film as: 21
+    say this: 16
+    so poorly: 7
+    bothered to: 5
+    can at: 4
+    mess of: 14
+    the outside: 5
+    i sure: 7
+    couldn't figure: 6
+    no interesting: 4
+    no tension: 6
+    saving private: 5
+    private ryan: 6
+    in them: 12
+    urban legend: 9
+    you did: 18
+    did last: 18
+    last summer: 19
+    still know: 9
+    jennifer love: 9
+    love hewitt: 9
+    is called: 19
+    a sad: 13
+    sad state: 5
+    movie like: 20
+    no story: 6
+    except to: 9
+    from this: 37
+    a world: 7
+    world that: 2
+    famke janssen: 7
+    short of: 10
+    and lifeless: 5
+    the men: 9
+    dull as: 6
+    man who: 49
+    we're supposed: 12
+    a failure: 7
+    point was: 5
+    an outsider: 2
+    simply irresistible: 3
+    an obviously: 6
+    edge of: 8
+    life as: 4
+    have anything: 9
+    plot device: 13
+    the stupid: 6
+    movie sucks: 5
+    lame and: 6
+    tom hanks: 6
+    plain stupid: 4
+    battlefield earth: 6
+    the psychlo: 3
+    are still: 10
+    case here: 6
+    the iron: 2
+    the disney: 4
+    the flubber: 3
+    lots and: 6
+    give this: 13
+    a brilliant: 9
+    given very: 9
+    we supposed: 6
+    can write: 4
+    up my: 5
+    a paycheck: 6
+    suspense is: 7
+    cheap thrills: 6
+    they fail: 5
+    potentially interesting: 6
+    theme of: 5
+    don't care: 19
+    a soldier: 2
+    coming back: 8
+    would work: 4
+    be humorous: 4
+    original script: 6
+    in fear: 9
+    here's the: 8
+    his mind: 7
+    a disaster: 13
+    least it: 13
+    and let: 8
+    i'm sorry: 8
+    script as: 6
+    the wonderful: 4
+    do one: 4
+    here comes: 5
+    to heaven: 3
+    the united: 16
+    united states: 17
+    a tad: 3
+    more appropriate: 13
+    is poorly: 10
+    the full: 7
+    full monty: 3
+    a tale: 4
+    forgot to: 11
+    the contrived: 5
+    major league: 5
+    the chosen: 4
+    the connection: 5
+    director peter: 11
+    bargain basement: 4
+    and while: 13
+    good director: 6
+    the psychlos: 4
+    story just: 5
+    the apes: 7
+    basketball players: 3
+    there's the: 26
+    mercury rising: 5
+    miko hughes: 4
+    as two: 3
+    the event: 5
+    the cold-hearted: 6
+    to generate: 12
+    last man: 4
+    man standing: 4
+    hard rain: 5
+    booty call: 3
+    comedy or: 8
+    ace ventura: 5
+    why do: 18
+    robert de: 7
+    de niro: 7
+    taxi driver: 2
+    raging bull: 2
+    his father: 20
+    the mob: 4
+    done was: 4
+    niro is: 2
+    weighed down: 6
+    with nothing: 13
+    story had: 4
+    batman and: 16
+    and robin: 17
+    they forgot: 6
+    as bruce: 4
+    script doesn't: 8
+    alicia silverstone: 9
+    to add: 25
+    batman series: 5
+    a classic: 16
+    erotic thrillers: 4
+    the previous: 15
+    by having: 12
+    shows that: 5
+    joe eszterhas: 8
+    no suspense: 7
+    i wanted: 15
+    tim robbins: 7
+    decent action: 5
+    interesting ideas: 4
+    of fighting: 5
+    don't tell: 6
+    carpenter has: 4
+    was better: 11
+    perhaps i: 6
+    stanley tucci: 4
+    cruise ship: 4
+    movie wants: 7
+    if anyone: 11
+    anyone ever: 6
+    show is: 4
+    a wonderful: 18
+    contains spoilers: 6
+    bad dialogue: 16
+    the omegahedron: 2
+    complete with: 22
+    can only: 33
+    this nonsense: 5
+    die hard: 16
+    filmmakers wanted: 5
+    entertaining and: 9
+    so awful: 6
+    was nine: 5
+    film wasn't: 8
+    was just: 22
+    not once: 11
+    fatal charm: 2
+    alan smithee: 4
+    which should: 8
+    this dud: 6
+    of focus: 7
+    a personal: 7
+    anaconda is: 2
+    the anaconda: 2
+    had some: 16
+    helps to: 2
+    the snake: 4
+    everyone seems: 5
+    impression of: 9
+    computer generated: 7
+    movie had: 14
+    the doubt: 5
+    wasn't the: 10
+    just when: 13
+    titus sinclair: 4
+    a wasted: 5
+    eric bischoff: 3
+    the wcw: 5
+    into consideration: 4
+    dumb enough: 5
+    professional wrestling: 4
+    probably should: 4
+    poor man's: 6
+    a wrestling: 5
+    rose mcgowan: 12
+    wouldn't it: 6
+    the true: 11
+    the villain: 19
+    event horizon: 9
+    universal soldier: 3
+    he's all: 6
+    a genuine: 3
+    the jury: 4
+    his mother: 13
+    coming up: 7
+    contrast to: 2
+    doing in: 11
+    so well: 10
+    pulp fiction: 11
+    is barely: 10
+    or it: 4
+    not enough: 29
+    great plot: 5
+    or great: 2
+    supposedly a: 5
+    never makes: 6
+    stay home: 5
+    the songs: 6
+    songs are: 2
+    didn't even: 10
+    act of: 7
+    something he: 3
+    especially in: 4
+    fast times: 5
+    to comment: 5
+    me on: 5
+    jason biggs: 8
+    his apartment: 2
+    much ado: 4
+    ado about: 3
+    about nothing: 7
+    the trouble: 10
+    it came: 9
+    the general's: 6
+    general's daughter: 6
+    this would: 14
+    director simon: 6
+    simon west: 7
+    he forgot: 6
+    paul brenner: 5
+    is teamed: 6
+    teamed with: 6
+    so why: 25
+    the deep: 7
+    only adds: 4
+    i say: 23
+    clarence williams: 4
+    the mod: 6
+    mod squad: 6
+    young female: 4
+    does so: 4
+    least he: 8
+    the investigators: 4
+    have saved: 7
+    a fantastic: 2
+    should know: 13
+    NUMBER warrior: 4
+    eaters of: 4
+    it sounds: 11
+    not when: 4
+    john mctiernan: 4
+    big daddy: 5
+    save your: 7
+    your money: 10
+    mel brooks: 6
+    worst movies: 4
+    perhaps the: 22
+    by poor: 5
+    funny and: 11
+    well worth: 2
+    even bother: 7
+    are supposed: 23
+    and touching: 2
+    than just: 9
+    of love: 12
+    that lacks: 7
+    thing was: 6
+    was lost: 7
+    enjoy it: 5
+    with great: 7
+    the rocky: 2
+    just didn't: 12
+    hedwig and: 2
+    i came: 5
+    a musical: 3
+    be enjoyed: 2
+    really funny: 11
+    "`ready to": 2
+    to rumble': 2
+    adam sandler: 8
+    robbins and: 4
+    now there's: 7
+    the awkward: 5
+    copy editor: 3
+    a private: 5
+    job and: 5
+    would actually: 9
+    and funny: 8
+    an excellent: 7
+    a potentially: 10
+    is guilty: 5
+    captures the: 4
+    the attention: 7
+    us two: 5
+    the images: 2
+    images of: 7
+    a silly: 11
+    bad action: 5
+    but none: 19
+    anything interesting: 6
+    worst thing: 6
+    are utterly: 6
+    make any: 15
+    few chuckles: 6
+    much else: 7
+    is terribly: 4
+    itself off: 6
+    jane march: 4
+    hard NUMBER: 4
+    absolute power: 2
+    new film: 11
+    he sees: 6
+    ed harris: 2
+    cinematography is: 4
+    to arrest: 5
+    have set: 5
+    a trap: 8
+    one but: 6
+    the trap: 3
+    the daughter: 12
+    original and: 5
+    what's the: 17
+    no intention: 4
+    tries very: 5
+    kissing a: 5
+    most films: 3
+    bit part: 5
+    be acceptable: 9
+    look pretty: 6
+    is o: 4
+    for improvement: 4
+    that tries: 11
+    would look: 6
+    and stupid: 12
+    one redeeming: 4
+    but despite: 2
+    you give: 7
+    makes for: 5
+    makes her: 5
+    paul is: 3
+    mena suvari: 10
+    the characters': 3
+    be about: 9
+    and basically: 9
+    haunting of: 6
+    nice to: 11
+    for best: 5
+    best supporting: 2
+    of hill: 6
+    hill house: 6
+    response is: 5
+    makes no: 15
+    the storm: 4
+    is highly: 5
+    saved this: 5
+    is but: 4
+    from dusk: 4
+    a place: 3
+    though there: 4
+    over it: 13
+    a reckless: 6
+    the force: 6
+    strictly for: 4
+    have trouble: 4
+    and stallone: 4
+    boiler room: 2
+    isn't worth: 6
+    approach to: 6
+    i care: 4
+    just some: 6
+    favorite martian: 4
+    hudson hawk: 4
+    if director: 4
+    and entertaining: 7
+    this script: 10
+    title character: 5
+    chemistry with: 3
+    and poorly: 5
+    strange days: 5
+    schindler's list: 4
+    remotely interesting: 7
+    black and: 7
+    never seems: 2
+    few decent: 5
+    perfect murder: 2
+    least that: 9
+    the inane: 4
+    not interesting: 5
+    hand to: 9
+    sliding doors: 2
+    in bad: 8
+    although the: 17
+    also quite: 2
+    have this: 10
+    puts it: 4
+    on by: 8
+    hand in: 8
+    due in: 5
+    the iceberg: 2
+    the mummy: 4
+    god forbid: 6
+    find themselves: 6
+    most people: 7
+    that era: 2
+    the female: 13
+    also wrote: 3
+    tarzan and: 3
+    lost city: 3
+    poorly written: 10
+    bad in: 8
+    has absolutely: 8
+    absolutely nothing: 19
+    and j: 4
+    black is: 3
+    the jungle: 14
+    it belongs: 3
+    their wedding: 3
+    and unexciting: 5
+    the river: 2
+    that day: 8
+    in modern: 2
+    generate any: 8
+    young man: 10
+    his abilities: 5
+    life for: 2
+    scenes is: 2
+    to endure: 7
+    even care: 10
+    as such: 12
+    on cable: 7
+    she's all: 11
+    reagan high: 4
+    julie benz: 4
+    fern mayo: 4
+    really matter: 10
+    of studio: 6
+    and always: 3
+    uninteresting and: 6
+    burn hollywood: 3
+    hollywood burn: 3
+    and says: 12
+    just awful: 6
+    nigel hawthorne: 2
+    kids in: 7
+    the woman's: 6
+    the ceiling: 6
+    your time: 13
+    fails in: 7
+    be scary: 4
+    i get: 12
+    a winner: 2
+    he just: 18
+    this ridiculous: 4
+    cruel intentions: 5
+    john malkovich: 4
+    who won: 2
+    of crime: 5
+    a hodgepodge: 3
+    hodgepodge of: 5
+    the limey: 3
+    featured a: 4
+    excess baggage: 3
+    the lamest: 5
+    probably supposed: 4
+    wasn't funny: 5
+    anything at: 5
+    a lousy: 6
+    final cut: 6
+    particularly bad: 5
+    don't blame: 7
+    best film: 6
+    his world: 3
+    jack frost: 2
+    kelly preston: 5
+    joseph cross: 4
+    that wants: 4
+    charlie and: 5
+    the snowman: 2
+    family is: 5
+    the live: 4
+    you feel: 5
+    who cried: 2
+    voice of: 13
+    john turturro: 2
+    vegas vacation: 3
+    chevy chase: 6
+    randy quaid: 7
+    running gag: 7
+    a fake: 7
+    fact is: 9
+    movie isn't: 13
+    girl NUMBER: 3
+    why did: 12
+    groundhog day: 2
+    first attempt: 5
+    mulholland drive: 3
+    david lynch: 4
+    same cannot: 5
+    the musketeer: 6
+    kung fu: 6
+    justin chambers: 6
+    the musketeers: 5
+    NUMBER action: 4
+    blade squad: 2
+    james cameron's: 2
+    squad is: 5
+    original sin: 3
+    how bad: 14
+    inspector gadget: 5
+    can't make: 7
+    only gets: 6
+    say or: 6
+    what makes: 14
+    his favorite: 2
+    a sensitive: 4
+    odd couple: 3
+    couple ii: 2
+    is horrible: 5
+    of evidence: 6
+    and pretentious: 4
+    to entertain: 4
+    an ounce: 10
+    ounce of: 9
+    of bad: 19
+    mess that: 8
+    message in: 4
+    still not: 3
+    a bottle: 5
+    alcohol and: 3
+    shows some: 5
+    and unnecessary: 5
+    pop culture: 4
+    and scream: 6
+    the team: 22
+    west canaan: 3
+    taking over: 8
+    i seem: 5
+    of cliches: 11
+    decided that: 8
+    the accident: 2
+    for little: 4
+    little reason: 4
+    read this: 5
+    is dull: 10
+    of fort: 5
+    top it: 11
+    teenage boys: 7
+    performance of: 6
+    ghosts of: 6
+    of mars: 8
+    a headache: 7
+    we like: 2
+    of talent: 12
+    natural born: 3
+    born killers: 3
+    nothing much: 9
+    the path: 2
+    leo and: 3
+    a crap: 3
+    really makes: 2
+    a dud: 5
+    a mother: 2
+    her again: 5
+    this sorry: 7
+    we're going: 7
+    he possibly: 6
+    whines about: 3
+    possibly could: 5
+    you'd be: 12
+    looked like: 12
+    your hard-earned: 6
+    screen in: 4
+    the dude: 2
+    one star: 7
+    mars attacks: 2
+    finds that: 3
+    a toy: 3
+    his true: 2
+    the academy: 5
+    best picture: 3
+    family and: 5
+    inept and: 3
+    all fairness: 8
+    pretentious and: 6
+    i hated: 6
+    sebastian valmont: 2
+    this really: 6
+    and intelligent: 4
+    harry block: 4
+    the stories: 6
+    not worth: 13
+    those involved: 6
+    stupid plot: 5
+    the black: 14
+    an intelligent: 8
+    weak and: 6
+    spawn is: 3
+    thought i'd: 6
+    laugh once: 5
+    good way: 4
+    sphere is: 4
+    peter coyote: 5
+    have really: 5
+    director barry: 7
+    actually did: 3
+    will smith: 12
+    sex jokes: 2
+    artemus gordon: 7
+    although it: 14
+    kline is: 5
+    of great: 5
+    fright night: 2
+    part NUMBER: 4
+    roddy mcdowall: 2
+    a whim: 4
+    the period: 4
+    the roman: 2
+    give me: 9
+    a rabid: 4
+    renee zellweger: 8
+    searching for: 7
+    an artist: 3
+    his job: 13
+    and irene: 6
+    effective as: 2
+    that both: 5
+    trouble when: 7
+    forrest gump: 2
+    thriller of: 5
+    little mermaid: 6
+    john smith: 3
+    fairy tale: 2
+    and way: 3
+    your typical: 3
+    up an: 9
+    journey to: 5
+    sets the: 3
+    some nice: 14
+    nice special: 5
+    anakin skywalker: 3
+    wars is: 2
+    the drama: 4
+    to bad: 3
+    dark side: 3
+    jar jar: 4
+    are painfully: 5
+    actors don't: 6
+    tracks of: 2
+    old guy: 4
+    before him: 6
+    length of: 6
+    is able: 11
+    phil ohlmyer: 4
+    are put: 2
+    joan of: 4
+    of arc: 4
+    "`the messenger'": 2
+    drowning in: 5
+    monkey bone: 2
+    let out: 4
+    had potential: 5
+    well by: 2
+    stuart little: 3
+    phantom menace: 6
+    gets worse: 8
+    a full-length: 5
+    found it: 7
+    south park: 3
+    that godzilla: 5
+    godzilla NUMBER: 3
+    screen is: 7
+    is solid: 4
+    acting ability: 7
+    thousand times: 8
+    material is: 9
+    the doom: 3
+    doom generation: 3
+    that note: 6
+    the annoying: 8
+    bad actors: 4
+    money train: 2
+    add anything: 5
+    the horse: 6
+    depth to: 4
+    bang bang: 2
+    character doesn't: 4
+    oh no: 5
+    wait a: 6
+    and ridiculous: 5
+    big lebowski: 2
+    wings of: 2
+    slightly less: 6
+    chris o'donnell: 9
+    only interesting: 7
+    she isn't: 2
+    as dull: 5
+    saturday morning: 5
+    the angry: 3
+    begins in: 5
+    them go: 3
+    family comedy: 3
+    detroit rock: 4
+    rock city: 4
+    rock n': 2
+    n' roll: 2
+    actually funny: 5
+    for much: 8
+    would know: 4
+    wishing for: 4
+    ernie hudson: 4
+    charles bronson: 5
+    simply too: 7
+    was boring: 5
+    unfortunately the: 6
+    believes in: 2
+    image of: 6
+    zooms in: 4
+    boogie nights: 9
+    who in: 3
+    is amazing: 2
+    not about: 4
+    the grinch: 2
+    love for: 10
+    the thieves: 5
+    anthony heald: 4
+    think back: 6
+    blame them: 5
+    some promise: 5
+    the waterboy: 3
+    once or: 5
+    or twice: 5
+    performances from: 4
+    extremely well: 3
+    kudos to: 2
+    truman show: 4
+    glen or: 3
+    or glenda: 3
+    the truman: 4
+    a deep: 3
+    artie lange: 4
+    give away: 4
+    other and: 4
+    big for: 5
+    get NUMBER: 5
+    story NUMBER: 2
+    a bug's: 3
+    bug's life: 3
+    batman forever: 8
+    big break: 6
+    idea how: 9
+    because every: 3
+    a hilarious: 9
+    an important: 7
+    american dream: 2
+    sixth sense: 4
+    other NUMBER: 6
+    first ace: 2
+    is often: 8
+    guess he: 4
+    production designer: 2
+    go ahead: 3
+    nothing there: 2
+    see in: 5
+    tomorrow never: 2
+    never dies: 2
+    and charm: 2
+    hollow man: 3
+    the pointless: 6
+    i miss: 4
+    schumacher has: 3
+    this series: 2
+    angelina jolie: 8
+    simply don't: 6
+    is stuck: 12
+    creates a: 6
+    dark city: 3
+    camera zooms: 3
+    his mission: 3
+    no attempt: 4
+    ryan and: 7
+    and sometimes: 7
+    missed opportunity: 5
+    do little: 7
+    thin red: 4
+    red line: 4
+    we feel: 5
+    is great: 6
+    was awful: 4
+    thirteenth floor: 2
+    is laughable: 4
+    ad in: 4
+    computer geek: 2
+    marry his: 4
+    clan of: 2
+    cave bear: 2
+    to capitalize: 11
+    a safe: 2
+    only notable: 5
+    early the: 3
+    nobody ever: 5
+    stretched out: 6
+    matthew mcconaughey: 4
+    capitalize off: 5
+    bad this: 5
+    confesses to: 3
+    haunted house: 8
+    darth vader: 3
+    that fails: 5
+    brown is: 3
+    might not: 5
+    bad a: 3
+    tomb raider: 3
+    these three: 3
+    lara croft: 3
+    con air: 9
+    batman movies: 4
+    the minors: 2
+    portrayed by: 2
+    it's nice: 3
+    bull durham: 5
+    deep end: 2
+    of stuff: 5
+    waste your: 8
+    nine months: 4
+    telling them: 8
+    much room: 4
+    krippendorf's tribe: 4
+    allows for: 2
+    species NUMBER: 2
+    is perfect: 2
+    shall we: 3
+    change of: 4
+    pain and: 2
+    and unconvincing: 5
+    relationship is: 4
+    they're just: 9
+    the bachelor: 3
+    in american: 5
+    of friends: 3
+    people vs: 2
+    larry flynt: 2
+    norm macdonald: 5
+    recent years: 4
+    will and: 2
+    script gives: 5
+    cape cod: 3
+    summer catch: 4
+    worst part: 7
+    you thinking: 5
+    spend your: 4
+    daughter is: 7
+    a tribute: 2
+    tribute to: 2
+    osmosis jones: 3
+    laurence fishburne: 3
+    wit or: 6
+    a delightful: 2
+    the animators: 2
+    the farrellys: 5
+    mariah carey: 3
+    worst that: 4
+    they send: 4
+    is hilarious: 4
+    to perfection: 2
+    of fancy: 5
+    his story: 5
+    i paid: 4
+    kate winslet: 2
+    add insult: 4
+    minnie driver: 3
+    of doom: 2
+    a spectacular: 2
+    king kong: 6
+    the deedles: 3
+    low point: 4
+    and inventive: 2
+    denzel washington: 4
+    seagal is: 4
+    belief in: 2
+    any reason: 7
+    fast and: 6
+    martha is: 3
+    the coen: 3
+    a spice: 3
+    the spice: 4
+    spice girls: 3
+    their first: 6
+    with kevin: 4
+    red corner: 3
+    cameron diaz: 5
+    matthew modine: 7
+    unlike any: 2
+    the brothers': 4
+    thinking the: 5
+    and saw: 5
+    the consequences: 4
+    a fat: 7
+    left behind: 3
+    a couch: 4
+    the beauty: 5
+    a gambling: 6
+    lela rochon: 3
+    gag about: 4
+    pie NUMBER: 4
+    to rake: 3
+    time period: 2
+    he creates: 3
+    the north: 2
+    real mccoy: 3
+    an amish: 3
+    or when: 2
+    the hurricane: 3
+    melodrama that: 4
+    is forgotten: 5
+    the tension: 2
+    could've been: 5
+    too predictable: 3
+    a quiet: 4
+    nothing short: 3
+    of steven: 4
+    time it's: 5
+    the reality: 2
+    hype and: 4
+    giant lizard: 6
+    never explored: 4
+    cardboard cut-outs: 6
+    no personality: 4
+    and great: 2
+    turned on: 2
+    hanks and: 2
+    love and: 7
+    isn't as: 4
+    to detail: 2
+    incredibly stupid: 5
+    the shark: 2
+    she loves: 2
+    matt damon: 3
+    were either: 4
+    soap operas: 4
+    almost heroes: 3
+    _saving private: 3
+    private ryan_: 3
+    die for: 2
+    waking ned: 2
+    ned devine: 2
+    message is: 2
+    it offers: 2
+    the sweet: 4
+    has always: 5
+    jim west: 4
+    kim delaney: 4
+    ">from the": 3
+    country is: 2
+    so different: 2
+    powerful and: 3
+    and place: 2
+    beautiful and: 2
+    of nuclear: 2
+    west is: 4
+    own way: 4
+    barb wire: 3
+    loyal to: 2
+    stick to: 8
+    because i'm: 9
+    de bont's: 5
+    patch is: 2
+    free clinic: 2
+    asks him: 4
+    pig in: 3
+    the wayans: 4
+    here a: 3
+    is quickly: 2
+    seven years: 2
+    before she: 2
+    the tradition: 3
+    wing commander: 4
+    the finest: 4
+    movie than: 3
+    mad slasher: 2
+    urban legends: 3
+    the babysitter: 4
+    elmore leonard: 2
+    get shorty: 2
+    princess diaries: 3
+    comes through: 2
+    keep cool: 2
+    the bookseller: 2
+    is superb: 3
+    stale and: 2
+    a caricature: 2
+    quite well: 3
+    this subplot: 2
+    joel osment: 2
+    wag the: 2
+    ice cube: 4
+    the marriage: 2
+    of pace: 3
+    a refreshing: 2
+    and last: 3
+    "`mission to": 2
+    to mars': 2
+    call to: 2
+    the titanic: 2
+    eyes is: 2
+    but unlike: 2
+    real blonde: 4
+    a normal: 3
+    doctor dolittle: 3
+    betty thomas: 3
+    albert brooks: 3
+    nutty professor: 5
+    animated feature: 4
+    and overly: 5
+    something we: 2
+    cathrine zeta: 3
+    quiz show: 2
+    the rugrats: 2
+    rugrats movie: 3
+    its worst: 4
+    brings a: 2
+    stand by: 2
+    bye bye: 3
+    marlon wayans: 3
+    favourite martian: 2
+    blood simple: 2
+    don't waste: 5
+    the emperor: 2
+    christopher lambert: 3
+    saving silverman: 2
+    neil diamond: 2
+    robert altman: 2
+    being completely: 5
+    anywhere near: 4
+    bye love: 2
+    of sexy: 2
+    sexy beast: 2
+    horizon is: 3
+    instinct is: 3
+    getting so: 3
+    impossible NUMBER: 2
+    whole new: 2
+    steven spielberg's: 2
+    home shopping: 4
+    magoo is: 2
+    his wife's: 2
+    great fun: 2
+    by george: 2
+    year's worst: 4
+    final destination: 2
+    "`down to": 2
+    to you': 2
+    kevin spacey: 3
+    more things: 3
+    family films: 2
+    an outstanding: 2
+    or interesting: 5
+    the show's: 2
+    funny the: 2
+    a magnificent: 2
+    a capital: 4
+    carrying a: 2
+    america's sweethearts: 3
+    gwen and: 3
+    of science: 2
+    hanging up: 2
+    a husband: 2
+    damon and: 2
+    a joy: 2
+    joy to: 2
+    precinct NUMBER: 2
+    big gorilla: 2
+    threat to: 2
+    perfect for: 2
+    di pego: 3
+    special edition: 2
+    vision of: 3
+    alien NUMBER: 2
+    a grim: 2
+    lost and: 2
+    obi-wan kenobi: 2
+    is strong: 2
+    stellan skarsgard: 2
+    hollywood in: 2
+    peter facinelli: 2
+    range from: 2
+    best for: 2
+    mr jones: 2
+    horse whisperer: 2
+    aided by: 2
+    becomes one: 2
+    two decades: 2
+    enjoyment of: 2
+    all year: 2
+    fat suit: 3
+    and provides: 2
+    the pleasure: 2
+    jack carter: 2
+    get carter: 2
+    chan is: 2
+    the castle: 2
+    disney animated: 2
+    become one: 2
+    and juliet: 2
+    buster buster: 2
+    r rating: 2
+    suzy amis: 2
+    chronicles the: 2
+    the wrestlers: 2
+  positive:
+    a fully: 8
+    the movie: 316
+    movie was: 36
+    to the: 554
+    often hilarious: 9
+    it is: 397
+    is an: 203
+    title character: 17
+    but also: 49
+    also wrote: 13
+    a really: 25
+    as the: 414
+    a mess: 9
+    and his: 220
+    of the: 709
+    he is: 268
+    has always: 24
+    his father: 35
+    like an: 33
+    end of: 84
+    and the: 526
+    is more: 88
+    to his: 163
+    his mother: 25
+    the more: 60
+    is that: 205
+    a movie: 177
+    you feel: 14
+    a comedy: 22
+    this one: 89
+    in NUMBER: 127
+    steven spielberg's: 8
+    the united: 33
+    united states: 31
+    la amistad: 3
+    the slaves: 3
+    djimon hounsou: 6
+    the africans: 4
+    van buren: 4
+    nigel hawthorne: 6
+    NUMBER year: 21
+    the two: 159
+    the american: 34
+    to be: 492
+    matthew mcconaughey: 14
+    tries to: 79
+    the supreme: 7
+    supreme court: 5
+    the film: 543
+    is a: 565
+    sets the: 18
+    as well: 158
+    at times: 78
+    film is: 278
+    is very: 95
+    and very: 33
+    his finest: 8
+    is also: 141
+    that carries: 5
+    is superb: 14
+    is outstanding: 9
+    the rest: 117
+    rest of: 101
+    cast is: 47
+    is brilliant: 9
+    to make: 191
+    even the: 61
+    but that: 34
+    one of: 435
+    kudos to: 12
+    the right: 65
+    good job: 31
+    all around: 18
+    deep impact: 5
+    is the: 407
+    in this: 235
+    this year: 50
+    the only: 162
+    and their: 66
+    the most: 280
+    vision of: 15
+    of america: 12
+    the television: 8
+    source of: 20
+    of doom: 8
+    that will: 60
+    but the: 199
+    owes a: 6
+    debt to: 5
+    a solid: 21
+    job and: 14
+    special effects: 81
+    that makes: 58
+    a genuine: 13
+    even if: 71
+    if it: 67
+    isn't as: 19
+    a little: 182
+    that deserves: 8
+    wings of: 7
+    the dove: 4
+    fits the: 7
+    the british: 15
+    ends up: 35
+    the cold: 11
+    because he's: 13
+    trying to: 132
+    is still: 68
+    in venice: 8
+    has no: 42
+    a couple: 78
+    enough to: 85
+    reluctantly agrees: 4
+    that the: 291
+    finds that: 22
+    painful to: 3
+    from his: 69
+    left with: 8
+    as such: 24
+    a promising: 3
+    so they: 17
+    the whole: 83
+    i am: 44
+    a wonderful: 35
+    of acting: 7
+    but i: 104
+    performances from: 18
+    at first: 57
+    as if: 68
+    as much: 73
+    and sensibility: 7
+    the stories: 15
+    story of: 78
+    of us: 41
+    the viewer: 52
+    a way: 50
+    a very: 138
+    of marriage: 3
+    well written: 10
+    michelle pfeiffer: 7
+    during the: 118
+    the bad: 23
+    want to: 116
+    or at: 16
+    at least: 134
+    than they: 16
+    his story: 18
+    their stories: 3
+    is highly: 16
+    we see: 72
+    sense of: 103
+    that hits: 8
+    the script: 100
+    is so: 88
+    it wasn't: 23
+    first NUMBER: 4
+    NUMBER minutes: 77
+    the writers: 11
+    would have: 104
+    have been: 196
+    best picture: 16
+    around in: 17
+    a man: 110
+    man who: 87
+    the sixth: 13
+    sixth sense: 11
+    the world: 141
+    what he: 64
+    most powerful: 13
+    as she: 44
+    to portray: 13
+    the academy: 15
+    superb acting: 5
+    is beautifully: 7
+    the hearts: 6
+    will certainly: 6
+    become one: 11
+    and although: 25
+    a deep: 11
+    are still: 25
+    recent years: 15
+    the novel: 26
+    that he: 204
+    i can: 62
+    in its: 90
+    in modern: 11
+    shallow grave: 6
+    young man: 30
+    black and: 16
+    have to: 116
+    to do: 152
+    have anything: 4
+    rachel griffiths: 3
+    in life: 24
+    going to: 106
+    in his: 194
+    kate winslet: 10
+    some nasty: 4
+    problems with: 15
+    get any: 5
+    happens to: 29
+    to him: 56
+    of it: 82
+    is his: 42
+    even worse: 12
+    there's no: 30
+    needs to: 25
+    a big: 57
+    with her: 110
+    the best: 226
+    performance of: 27
+    a wonderfully: 18
+    whom he: 22
+    those who: 66
+    i guess: 30
+    to give: 66
+    this movie: 175
+    movie is: 127
+    addresses the: 6
+    searching for: 16
+    i wanted: 8
+    like this: 73
+    film as: 37
+    gives a: 48
+    a stunning: 12
+    i mean: 27
+    the r: 5
+    r rating: 7
+    the mpaa: 9
+    i'm not: 52
+    a bad: 42
+    perhaps the: 43
+    cast and: 10
+    world that: 13
+    to get: 172
+    are put: 8
+    to happen: 19
+    begins in: 13
+    pretty much: 27
+    do with: 42
+    continues to: 22
+    the plot: 155
+    give away: 15
+    and then: 105
+    are more: 34
+    ever seen: 47
+    are so: 49
+    that it's: 42
+    give us: 5
+    much time: 9
+    the previous: 30
+    as for: 21
+    a sense: 43
+    a caricature: 6
+    and most: 50
+    is supposed: 18
+    supposed to: 53
+    to have: 125
+    of having: 12
+    seemed to: 23
+    but nothing: 4
+    wonder if: 13
+    if the: 59
+    made me: 13
+    has done: 25
+    film and: 68
+    of talent: 4
+    very good: 61
+    first hour: 21
+    makes the: 62
+    many of: 80
+    and he: 127
+    direction is: 38
+    he seems: 17
+    cinematography is: 13
+    it just: 27
+    the perfect: 39
+    while most: 7
+    attempts to: 42
+    is appropriately: 6
+    so why: 5
+    why not: 7
+    between the: 101
+    the lost: 15
+    to live: 41
+    that era: 9
+    taxi driver: 9
+    robert de: 11
+    de niro: 12
+    driver in: 5
+    the dark: 32
+    dark side: 13
+    bright spot: 2
+    life is: 46
+    his mission: 13
+    jodie foster: 8
+    became the: 11
+    for some: 51
+    reality of: 13
+    could have: 105
+    set in: 58
+    the consequences: 12
+    brilliant performance: 9
+    for both: 19
+    but despite: 13
+    is something: 49
+    and out: 22
+    presents the: 8
+    but only: 8
+    advice to: 4
+    like a: 143
+    excuse for: 10
+    world of: 45
+    that should: 16
+    lost in: 17
+    lack of: 61
+    is bad: 10
+    the future: 41
+    his world: 8
+    of his: 275
+    of great: 13
+    use of: 50
+    the greatest: 40
+    because of: 92
+    two decades: 7
+    things that: 17
+    action sequences: 25
+    i think: 71
+    a bit: 126
+    but even: 20
+    about it: 45
+    tomorrow never: 5
+    never dies: 5
+    and always: 17
+    like he's: 4
+    by creating: 7
+    wag the: 4
+    james is: 5
+    wai lin: 4
+    michelle yeoh: 6
+    jackie chan: 11
+    relationship is: 14
+    to mention: 21
+    and for: 56
+    at one: 36
+    only one: 32
+    a more: 53
+    for no: 12
+    no reason: 4
+    the action: 62
+    go on: 19
+    so what: 8
+    is great: 22
+    is notable: 8
+    chemistry with: 10
+    i've seen: 53
+    not one: 21
+    is nonetheless: 8
+    some of: 180
+    early on: 13
+    the filmmakers: 26
+    to show: 30
+    just too: 6
+    movie like: 12
+    and oliver: 4
+    enjoyment of: 13
+    rose mcgowan: 2
+    the wcw: 2
+    able to: 117
+    why would: 5
+    him as: 31
+    and clever: 11
+    a great: 150
+    the genre: 30
+    pop culture: 15
+    black is: 6
+    remake of: 12
+    and love: 21
+    a private: 17
+    focus of: 17
+    when a: 46
+    the force: 14
+    his own: 114
+    toni collette: 5
+    off as: 32
+    and believable: 14
+    performance as: 55
+    little to: 13
+    doesn't even: 8
+    an action: 19
+    does a: 71
+    it's just: 29
+    about them: 7
+    with its: 48
+    even a: 30
+    this bad: 2
+    the writer: 7
+    see in: 18
+    different from: 20
+    right time: 7
+    seen in: 49
+    is terrific: 23
+    terrific as: 10
+    attempt to: 41
+    it may: 53
+    a quiet: 14
+    by george: 7
+    it's as: 5
+    or something: 14
+    in films: 20
+    jude law: 5
+    the accident: 12
+    the life: 39
+    life of: 44
+    his job: 27
+    but with: 40
+    as he: 116
+    there isn't: 14
+    easily be: 13
+    the point: 36
+    life in: 23
+    have the: 54
+    down by: 7
+    best performance: 25
+    creates a: 22
+    a horrible: 5
+    think that: 33
+    would actually: 2
+    on this: 34
+    a world: 27
+    and as: 67
+    the full: 14
+    only thing: 13
+    jeff goldblum: 4
+    about this: 53
+    plot is: 48
+    could be: 62
+    and to: 58
+    the drama: 14
+    the animation: 20
+    be seen: 32
+    the animators: 8
+    also very: 22
+    a fine: 39
+    are very: 33
+    the voice: 18
+    voice of: 21
+    the songs: 14
+    songs are: 11
+    and while: 29
+    nice to: 23
+    the musical: 16
+    both for: 6
+    and adults: 10
+    the mob: 8
+    is quickly: 14
+    the deputy: 3
+    is now: 34
+    our own: 15
+    it does: 86
+    does so: 21
+    by our: 3
+    and vulnerability: 6
+    we feel: 13
+    makes us: 7
+    image of: 13
+    disturbing images: 8
+    images of: 15
+    doesn't really: 11
+    if it's: 12
+    is endlessly: 6
+    is is: 6
+    even less: 4
+    brings a: 15
+    a mature: 6
+    would want: 6
+    and sometimes: 23
+    captures the: 13
+    how about: 9
+    movie isn't: 3
+    make a: 70
+    life and: 34
+    the young: 47
+    we watch: 17
+    than just: 24
+    whose lives: 6
+    last year's: 13
+    for best: 16
+    have something: 4
+    which will: 22
+    her husband: 40
+    before she: 11
+    no other: 19
+    very well: 47
+    at all: 77
+    very little: 26
+    the edge: 30
+    edge of: 20
+    any of: 59
+    crimson tide: 6
+    world war: 13
+    well as: 85
+    great thing: 5
+    NUMBER is: 19
+    which sets: 5
+    how do: 9
+    do they: 12
+    they get: 17
+    an excellent: 29
+    of fun: 30
+    though it: 34
+    what's going: 11
+    look like: 26
+    science fiction: 31
+    much better: 22
+    movie than: 11
+    way a: 9
+    a beautiful: 32
+    gretchen mol: 7
+    the cheap: 4
+    a failure: 2
+    of view: 28
+    emotional and: 6
+    with no: 35
+    love for: 24
+    of fantasy: 7
+    film of: 45
+    in their: 100
+    or even: 26
+    extremely well: 14
+    a pivotal: 5
+    turns in: 23
+    wonderful job: 7
+    the worst: 25
+    in fine: 11
+    a clue: 3
+    the emperor: 11
+    that rare: 8
+    change of: 15
+    but this: 47
+    the mystical: 7
+    gives the: 42
+    the little: 24
+    the family: 41
+    family is: 21
+    the beauty: 14
+    better off: 5
+    of money: 17
+    and easy: 8
+    only hope: 3
+    got a: 17
+    telling her: 6
+    her that: 16
+    i got: 13
+    to pass: 5
+    at best: 8
+    wouldn't have: 5
+    had some: 7
+    no one: 54
+    that bad: 7
+    a mother: 12
+    are also: 50
+    star trek: 16
+    tv series: 13
+    series to: 4
+    seven years: 10
+    insurrection is: 4
+    as bad: 4
+    bad as: 5
+    most people: 24
+    and witty: 13
+    works well: 12
+    it fails: 7
+    fondness for: 7
+    points and: 7
+    setting of: 8
+    the federation: 7
+    a young: 90
+    barrage of: 3
+    and provides: 8
+    the tv: 13
+    becomes one: 9
+    short of: 33
+    star wars: 33
+    phantom menace: 14
+    for fans: 7
+    may have: 36
+    their television: 2
+    though there: 8
+    carrying a: 9
+    have no: 31
+    no idea: 13
+    idea what: 5
+    men have: 5
+    to kill: 38
+    to meet: 27
+    are easily: 7
+    due to: 68
+    the special: 37
+    are amazing: 6
+    isn't very: 5
+    although the: 54
+    up for: 49
+    the city: 35
+    seem to: 87
+    could've been: 4
+    movie to: 16
+    most films: 9
+    of mars: 3
+    on mars: 4
+    red planet: 3
+    it on: 18
+    begins to: 61
+    with as: 9
+    natasha henstridge: 5
+    quite well: 16
+    as quickly: 2
+    i say: 11
+    gives an: 13
+    the glass: 5
+    than likely: 6
+    don't even: 11
+    if i: 25
+    quite a: 41
+    director peter: 5
+    has crafted: 9
+    the wonderful: 13
+    seen on: 17
+    i know: 48
+    you did: 11
+    did last: 9
+    last summer: 10
+    to sit: 14
+    sit through: 8
+    film starts: 17
+    jennifer love: 2
+    love hewitt: 2
+    freddie prinze: 3
+    prinze jr: 3
+    they find: 21
+    find themselves: 21
+    to add: 13
+    the proceedings: 12
+    and last: 11
+    most memorable: 20
+    is able: 36
+    ten minutes: 14
+    minutes of: 37
+    been a: 54
+    i've ever: 35
+    urban legend: 6
+    the great: 46
+    worth seeing: 25
+    be fair: 5
+    attempt at: 11
+    high fidelity: 3
+    being john: 5
+    john malkovich: 8
+    i suppose: 21
+    quite as: 16
+    leading men: 6
+    tom hanks: 16
+    hanks and: 3
+    a variation: 7
+    before it: 17
+    albert brooks: 8
+    looks like: 41
+    like he: 12
+    ben stiller: 15
+    character study: 15
+    to figure: 12
+    figure out: 15
+    the true: 30
+    it offers: 7
+    this guy: 12
+    jan de: 3
+    de bont: 3
+    catherine zeta-jones: 3
+    portrayal of: 42
+    tim robbins: 2
+    to work: 46
+    the poor: 8
+    little too: 30
+    but alas: 3
+    con air: 5
+    funny and: 24
+    all this: 27
+    still not: 12
+    resemblance to: 2
+    fine film: 6
+    that was: 52
+    it happens: 5
+    en route: 6
+    the thai: 2
+    the tension: 20
+    lou diamond: 2
+    diamond phillips: 2
+    is he: 11
+    study of: 15
+    of american: 19
+    it wouldn't: 9
+    wouldn't be: 12
+    theme of: 17
+    blend of: 10
+    first place: 16
+    who knows: 12
+    comes off: 20
+    worse than: 13
+    contrast to: 10
+    freedom of: 7
+    the spirit: 12
+    why the: 24
+    i could: 43
+    the history: 17
+    like that: 25
+    the magic: 13
+    not enough: 13
+    the shark: 3
+    dream to: 6
+    a refreshing: 8
+    pure entertainment: 7
+    von bulow: 2
+    as any: 21
+    his wife's: 11
+    the normal: 5
+    is extremely: 27
+    movie could: 3
+    without any: 17
+    should have: 26
+    who in: 12
+    tried to: 18
+    plan is: 2
+    found it: 18
+    belief in: 10
+    depth to: 13
+    unlike any: 9
+    bad guys: 25
+    to remind: 3
+    how well: 5
+    up against: 10
+    for decades: 7
+    all year: 13
+    a fun: 32
+    bad guy: 18
+    is perfect: 26
+    perfect for: 20
+    got to: 9
+    to pull: 20
+    apt pupil: 4
+    boogie nights: 6
+    the adult: 9
+    is completely: 15
+    robert altman: 8
+    entertainment value: 4
+    in american: 13
+    american history: 9
+    the characters': 16
+    aspects of: 28
+    there's a: 62
+    the period: 5
+    people vs: 7
+    larry flynt: 7
+    a unique: 10
+    none of: 34
+    not about: 12
+    a hilarious: 27
+    shows great: 5
+    really isn't: 5
+    NUMBER minute: 5
+    that some: 8
+    most definitely: 6
+    a musical: 11
+    disney animated: 10
+    from others: 9
+    most famous: 15
+    and drama: 8
+    is among: 5
+    very best: 8
+    best films: 26
+    in space: 9
+    chris tucker: 9
+    regards to: 8
+    lame and: 2
+    me to: 22
+    check this: 5
+    had been: 33
+    and juliet: 6
+    a fat: 3
+    call to: 8
+    a personal: 16
+    about an: 9
+    meant to: 14
+    a pleasure: 8
+    trust me: 7
+    the forefront: 7
+    the problem: 29
+    problem is: 28
+    shop owner: 5
+    just when: 5
+    a joy: 10
+    very effective: 12
+    a bunch: 25
+    bunch of: 26
+    food is: 4
+    shared by: 5
+    her family: 13
+    construction of: 7
+    instead it: 7
+    while it: 20
+    and basically: 4
+    thanks to: 45
+    the benefit: 4
+    is solid: 11
+    it's nice: 13
+    a normal: 15
+    unfortunately the: 2
+    with great: 22
+    performances by: 24
+    an oscar: 34
+    was just: 15
+    moving and: 5
+    love and: 30
+    is what: 47
+    say this: 6
+    quite frankly: 2
+    my second: 5
+    few movies: 8
+    have nothing: 2
+    going for: 14
+    the cave: 2
+    and kills: 3
+    the north: 5
+    closer and: 5
+    and closer: 5
+    was supposed: 12
+    my interest: 4
+    north america: 6
+    and detailed: 7
+    what makes: 39
+    have some: 14
+    really makes: 12
+    makes this: 23
+    not even: 29
+    austin powers: 10
+    up as: 18
+    has one: 10
+    of war: 21
+    hanks is: 3
+    is stunning: 5
+    a soldier: 4
+    private ryan: 11
+    matt damon: 16
+    the war: 18
+    pain and: 9
+    best movie: 11
+    might have: 36
+    action and: 24
+    work with: 9
+    the reality: 12
+    like i: 9
+    a classic: 26
+    kevin spacey: 12
+    to waste: 2
+    might as: 9
+    five minutes: 9
+    his mind: 23
+    action scenes: 19
+    so well: 20
+    strong and: 12
+    also does: 10
+    about as: 14
+    many critics: 11
+    good will: 12
+    will hunting: 12
+    patch adams: 3
+    go a: 6
+    an outsider: 10
+    of friends: 15
+    some reason: 14
+    although it: 36
+    bob gunton: 2
+    the villain: 10
+    two hours: 21
+    it tries: 7
+    oscar nomination: 19
+    the us: 13
+    a spectacular: 10
+    the jedi: 11
+    universal soldier: 2
+    very believable: 5
+    the big-screen: 5
+    hollywood in: 8
+    own way: 15
+    isn't afraid: 7
+    afraid to: 13
+    these three: 8
+    more about: 19
+    a terrific: 21
+    is compelling: 6
+    is crisp: 10
+    crisp and: 11
+    and memorable: 9
+    van damme: 5
+    is called: 11
+    what was: 17
+    here's the: 3
+    are basically: 3
+    to catch: 13
+    in hollywood: 24
+    the studio: 11
+    the similarities: 9
+    an extraordinary: 9
+    is it: 39
+    a revelation: 6
+    i should: 7
+    distract from: 6
+    bad enough: 7
+    throw in: 6
+    needs a: 8
+    tense and: 6
+    die hard: 8
+    life he: 3
+    the strongest: 9
+    the stage: 14
+    stay out: 6
+    subtlety and: 5
+    even better: 24
+    the laserman: 2
+    life becomes: 6
+    chan is: 6
+    everything from: 19
+    though he: 10
+    don't care: 13
+    jason biggs: 3
+    his favorite: 9
+    an equal: 6
+    be acceptable: 3
+    reason to: 11
+    the roman: 3
+    a poor: 8
+    too late: 5
+    to save: 40
+    who won: 8
+    mel gibson's: 6
+    the pain: 11
+    the matrix: 16
+    feature films: 5
+    fine performances: 8
+    scream NUMBER: 11
+    to entertain: 21
+    very similar: 13
+    pleasure to: 9
+    and scream: 3
+    i wonder: 6
+    there any: 3
+    something we: 6
+    be good: 7
+    that movie: 6
+    what about: 5
+    jackie brown: 9
+    pulp fiction: 26
+    fiction is: 5
+    jackie is: 7
+    money into: 6
+    fails to: 20
+    or maybe: 7
+    max cherry: 6
+    can with: 5
+    niro is: 7
+    wasted in: 6
+    a brilliant: 26
+    hardly ever: 6
+    in jackie: 4
+    in pulp: 10
+    the small: 29
+    this script: 2
+    just isn't: 7
+    is way: 3
+    way too: 9
+    makes for: 19
+    dialogue and: 18
+    and scenes: 12
+    threat to: 10
+    of nuclear: 8
+    fairy tale: 15
+    animated feature: 12
+    from this: 28
+    voice work: 5
+    princess fiona: 4
+    lord farquaad: 4
+    other and: 15
+    journey to: 16
+    his true: 12
+    the central: 26
+    cameron diaz: 13
+    power that: 6
+    and entertaining: 18
+    a plot: 24
+    olivia williams: 6
+    an important: 16
+    be enjoyed: 7
+    intelligent film: 5
+    of bad: 9
+    guy and: 4
+    the funnest: 5
+    the rough: 6
+    as two: 13
+    this movie's: 5
+    and funny: 22
+    music video: 6
+    the middle: 52
+    be honest: 3
+    the king: 12
+    some nice: 6
+    and turns: 19
+    through this: 6
+    the devil: 11
+    dog of: 5
+    get carter: 2
+    reindeer games: 3
+    your typical: 12
+    deal of: 30
+    of days: 5
+    can only: 21
+    be much: 5
+    why is: 8
+    were just: 5
+    scenes that: 23
+    wasn't sure: 7
+    saying much: 2
+    fun movie: 7
+    whole lot: 7
+    a disaster: 6
+    middle of: 33
+    save the: 31
+    least the: 6
+    a waste: 6
+    waste of: 6
+    simon birch: 2
+    he just: 11
+    just doesn't: 7
+    find out: 29
+    an outstanding: 15
+    is flawless: 6
+    is excellent: 16
+    any age: 7
+    a magnificent: 9
+    may seem: 15
+    to begin: 10
+    glam rock: 2
+    family and: 18
+    they became: 8
+    everyone else: 18
+    the deep: 11
+    dull and: 3
+    a symbol: 9
+    symbol of: 8
+    complete with: 10
+    a boring: 2
+    appears to: 24
+    but no: 13
+    seen as: 8
+    an era: 10
+    the personal: 6
+    than to: 13
+    message is: 9
+    to write: 11
+    the revolution: 2
+    honest and: 5
+    de la: 5
+    that point: 10
+    the controversial: 9
+    the marriage: 7
+    approach to: 16
+    life for: 11
+    the fight: 12
+    comes through: 9
+    come out: 32
+    may not: 46
+    the sweet: 13
+    sweet hereafter: 9
+    missile crisis: 4
+    to capitalize: 3
+    really enjoyed: 7
+    the makers: 7
+    makers of: 6
+    an intelligent: 19
+    the finest: 20
+    not say: 6
+    chicken run: 3
+    the chickens: 3
+    a concentration: 6
+    the fence: 5
+    least bit: 5
+    has created: 20
+    created a: 25
+    and film: 8
+    nothing to: 25
+    to fall: 18
+    a soft: 7
+    suspects the: 6
+    a delightful: 10
+    both children: 6
+    animation is: 16
+    is first-rate: 7
+    to detail: 11
+    a bug's: 12
+    bug's life: 12
+    toy story: 12
+    story NUMBER: 10
+    something to: 27
+    can enjoy: 5
+    enjoy it: 16
+    it even: 9
+    you want: 23
+    the men: 22
+    come on: 7
+    he sees: 16
+    day when: 8
+    is beautiful: 12
+    stellan skarsgard: 8
+    some ways: 12
+    not much: 16
+    characters with: 11
+    beverly hills: 6
+    which requires: 6
+    some sort: 23
+    puts it: 12
+    video game: 3
+    edward norton: 12
+    entertaining and: 20
+    an impressive: 18
+    attempts at: 8
+    is often: 23
+    of love: 28
+    the hell: 14
+    a potentially: 4
+    not once: 4
+    stand by: 7
+    the green: 9
+    green mile: 5
+    saving private: 10
+    brothers have: 6
+    forrest gump: 12
+    excellent film: 7
+    a connection: 6
+    a true: 25
+    life as: 15
+    aided by: 11
+    the costumes: 12
+    share the: 8
+    they come: 6
+    isn't perfect: 7
+    try and: 21
+    can save: 4
+    his brother's: 4
+    sure the: 4
+    wants nothing: 6
+    is stuck: 2
+    especially in: 18
+    jimmy stewart: 5
+    to perfection: 7
+    perfect as: 6
+    the dude: 8
+    here's a: 5
+    but here: 10
+    she isn't: 9
+    you'd think: 7
+    quite some: 5
+    to generate: 2
+    is amazing: 11
+    fast and: 16
+    final destination: 7
+    and worm: 3
+    damon and: 9
+    plot device: 5
+    save your: 2
+    what's the: 5
+    the coen: 6
+    the coens: 6
+    john turturro: 10
+    and gives: 16
+    and there's: 13
+    is wasted: 4
+    first class: 6
+    natural born: 6
+    born killers: 6
+    and subtle: 5
+    and mallory: 2
+    killing and: 5
+    catholic church: 2
+    the republic: 5
+    everyday life: 7
+    his most: 17
+    the gas: 8
+    hand in: 3
+    portrayed by: 13
+    the mib: 5
+    will smith: 8
+    of special: 14
+    helps to: 7
+    of crime: 3
+    act of: 18
+    the political: 18
+    hand to: 2
+    with america: 3
+    an hour: 20
+    whole new: 10
+    than half: 7
+    sliding doors: 6
+    this new: 16
+    its way: 6
+    are minor: 7
+    the screenwriter: 4
+    off in: 10
+    first scene: 4
+    and creative: 6
+    worst of: 9
+    too bad: 11
+    new film: 21
+    almost the: 5
+    anything about: 3
+    the fugitive: 8
+    hollywood films: 8
+    don't make: 4
+    kids in: 2
+    there's not: 12
+    wait for: 10
+    mission to: 9
+    no purpose: 4
+    except to: 3
+    nature of: 29
+    the actions: 2
+    dark city: 9
+    darkness of: 6
+    best film: 21
+    naked gun: 2
+    was first: 6
+    moving from: 4
+    flight attendant: 6
+    minutes and: 3
+    thirteenth floor': 2
+    thrill ride: 4
+    thirteenth floor: 4
+    is always: 32
+    turns into: 7
+    between these: 8
+    a marvelous: 10
+    recreation of: 7
+    and intelligent: 12
+    or when: 9
+    a husband: 9
+    paul d: 2
+    was created: 5
+    but unlike: 11
+    completely different: 10
+    is eventually: 7
+    yet seen: 3
+    of paul: 2
+    groundhog day: 4
+    isn't given: 4
+    perfect film: 7
+    that both: 15
+    tribute to: 9
+    but because: 20
+    four stars: 6
+    using all: 7
+    with strong: 5
+    the outside: 13
+    only problem: 19
+    and convincing: 7
+    dolores claiborne: 3
+    surprise for: 6
+    gary sinise: 4
+    begin with: 7
+    this reviewer: 5
+    of studio: 2
+    also quite: 11
+    main problem: 5
+    special edition: 10
+    ed harris: 12
+    they should: 13
+    intense and: 7
+    nuclear war: 4
+    james cameron's: 10
+    the trouble: 4
+    allows for: 9
+    effective and: 9
+    out as: 13
+    time on: 5
+    zero effect: 2
+    a safe: 9
+    insightful and: 7
+    mercury rising: 4
+    some great: 15
+    to nothing: 4
+    nothing in: 7
+    are supposed: 9
+    next to: 10
+    evidence of: 3
+    sitting through: 5
+    bad in: 3
+    a lush: 4
+    feature a: 6
+    die for: 10
+    the muse: 4
+    supporting actress: 4
+    a mean: 6
+    witty and: 11
+    a married: 11
+    you thought: 5
+    sharp and: 8
+    material is: 3
+    destined to: 11
+    of danny: 7
+    allows us: 7
+    jabba the: 8
+    the hutt: 8
+    a testament: 11
+    reason that: 3
+    this would: 9
+    country is: 8
+    american dream: 10
+    movie screen: 7
+    memorable as: 6
+    director james: 6
+    nothing short: 20
+    there would: 3
+    titanic is: 8
+    the titanic: 7
+    went down: 3
+    rose dewitt: 6
+    dewitt bukater: 5
+    gloria stuart: 3
+    cal hockley: 5
+    jack dawson: 5
+    she loves: 10
+    the iceberg: 6
+    boiler room: 5
+    the pleasure: 10
+    pleasure of: 7
+    brown is: 5
+    one good: 2
+    of ordell's: 5
+    elmore leonard: 6
+    real treat: 8
+    didn't even: 2
+    not help: 3
+    mars attacks: 5
+    we need: 5
+    refreshing to: 9
+    a toy: 6
+    three kings: 4
+    the horse: 5
+    horse whisperer: 4
+    a terrible: 7
+    the wait: 8
+    well worth: 19
+    excellent performance: 6
+    nowhere to: 4
+    her portrayal: 7
+    the disney: 10
+    a bottle: 5
+    quiz show: 7
+    the images: 9
+    van doren: 3
+    michael j: 6
+    stuart little: 2
+    live action: 5
+    computer generated: 12
+    a script: 8
+    and animation: 3
+    flynt and: 4
+    a video: 5
+    the cider: 3
+    and honest: 6
+    are willing: 6
+    is sharp: 7
+    the tagline: 4
+    best for: 8
+    darth vader: 14
+    to face: 14
+    depicted in: 5
+    great fun: 9
+    so entertaining: 5
+    the car: 10
+    a grim: 7
+    comedy is: 6
+    and dull: 2
+    except the: 2
+    something he: 11
+    is little: 6
+    cruel intentions: 2
+    simply irresistible: 2
+    the mod: 2
+    mod squad: 2
+    she's all: 4
+    the shrew: 4
+    to top: 5
+    top it: 2
+    beautiful and: 13
+    complicating matters: 7
+    the realistic: 7
+    fat suit: 2
+    and moving: 9
+    beautiful is: 5
+    roberto benigni: 7
+    the attention: 15
+    the italian: 5
+    giorgio cantarini: 7
+    concentration camp: 7
+    human spirit: 7
+    maybe the: 7
+    be about: 2
+    the army: 9
+    mulan is: 6
+    young daughter: 6
+    ming-na wen: 5
+    batman and: 5
+    best movies: 12
+    notions of: 5
+    and place: 9
+    might not: 19
+    a tale: 16
+    they take: 5
+    just some: 2
+    ">from the": 12
+    their first: 23
+    ford is: 6
+    a b+: 4
+    watching this: 10
+    asks him: 14
+    the ridiculous: 3
+    and charm: 8
+    after that: 11
+    worst film: 3
+    to endure: 3
+    this island: 4
+    island earth: 3
+    chronicles the: 6
+    a tad: 22
+    the team: 12
+    more accessible: 6
+    these sequences: 4
+    fight scenes: 9
+    contact is: 8
+    be said: 12
+    looking back: 5
+    makes her: 10
+    palmer joss: 5
+    weak and: 2
+    of science: 11
+    deep end: 7
+    it sounds: 4
+    and i'm: 10
+    questioning the: 4
+    prayer for: 2
+    mini me: 3
+    schindler's list: 14
+    the event: 10
+    the spanish: 5
+    the prisoners: 4
+    the legal: 6
+    and political: 7
+    effective as: 12
+    sean connery: 5
+    entire movie: 10
+    david cronenberg: 6
+    had no: 11
+    new year's: 4
+    just didn't: 5
+    despite these: 7
+    ideas are: 5
+    bad acting: 4
+    bad movies: 3
+    original and: 12
+    least it: 4
+    matrix is: 5
+    the haunting: 8
+    kung fu: 7
+    force in: 4
+    evil dead: 6
+    your time: 3
+    variety of: 12
+    relationships with: 6
+    best supporting: 9
+    he creates: 10
+    obvious that: 8
+    a ridiculous: 3
+    more characters: 5
+    movie had: 3
+    will and: 8
+    the brothers: 5
+    their time: 5
+    scenes is: 7
+    joel osment: 6
+    second act: 5
+    his journey: 7
+    bread and: 4
+    left behind: 11
+    be over: 2
+    of pace: 8
+    say about: 11
+    do this: 5
+    district attorney: 4
+    acting ability: 3
+    check out: 5
+    john doe: 3
+    agent kay: 3
+    director barry: 2
+    get shorty: 6
+    saving the: 7
+    well by: 8
+    other men: 4
+    alien film: 5
+    screen in: 14
+    if anyone: 5
+    all right: 7
+    not your: 4
+    would think: 3
+    much different: 5
+    guy is: 8
+    the avengers: 2
+    a tribute: 7
+    billy crystal: 5
+    absolutely breathtaking: 7
+    and let: 3
+    dangerous beauty: 3
+    nothing but: 16
+    a summer: 10
+    andrew niccol: 7
+    peter weir: 5
+    laura linney: 8
+    noah emmerich: 6
+    any reason: 3
+    the duke: 4
+    life seems: 6
+    old fashioned: 5
+    plays with: 7
+    doesn't help: 5
+    keeps the: 22
+    but none: 4
+    man as: 6
+    and inventive: 7
+    the gathering: 5
+    their young: 6
+    isn't much: 4
+    this really: 2
+    hank azaria: 4
+    there's some: 8
+    some movies: 3
+    rip-off of: 3
+    taken over: 4
+    in fear: 3
+    impressive is: 7
+    to care: 12
+    never seems: 13
+    something else: 6
+    a fantastic: 12
+    as great: 8
+    any kind: 5
+    memorable moments: 8
+    shows some: 2
+    nutty professor: 2
+    also written: 4
+    a political: 8
+    make any: 4
+    bulworth is: 3
+    admits that: 5
+    screen is: 2
+    no sense: 7
+    the general's: 2
+    general's daughter: 2
+    character which: 5
+    red and: 5
+    the serial: 5
+    it look: 5
+    better understanding: 7
+    with director: 2
+    the river: 8
+    believes in: 10
+    a place: 14
+    of flanders: 2
+    an artist: 10
+    is destined: 9
+    jesse james: 3
+    only good: 2
+    is strong: 9
+    family films: 5
+    and touching: 11
+    than this: 11
+    the iron: 5
+    iron giant: 4
+    an underground: 6
+    stupid and: 5
+    doesn't work: 7
+    go rent: 2
+    both actors: 8
+    all we: 5
+    cable guy: 3
+    and robin: 5
+    really bad: 6
+    whole thing: 6
+    these issues: 7
+    little mermaid: 4
+    south park: 9
+    drunken master: 3
+    master ii: 2
+    almost certainly: 5
+    wong fei-hong: 2
+    of kung: 2
+    i've already: 2
+    pulls it: 6
+    is hilarious: 13
+    jackie has: 3
+    fine form: 8
+    it's nothing: 2
+    are by: 4
+    the citizens: 5
+    should know: 4
+    which should: 3
+    joel and: 7
+    and great: 14
+    saddled with: 4
+    its lead: 5
+    refreshing and: 6
+    plot with: 2
+    the truman: 14
+    first movie: 11
+    from dusk: 7
+    wasted as: 2
+    the club: 5
+    half as: 2
+    arnold schwarzenegger: 4
+    fantasia NUMBER: 2
+    segment is: 4
+    double jeopardy: 2
+    the female: 4
+    isn't even: 7
+    and furious: 7
+    wars is: 4
+    effects by: 7
+    galaxy far: 6
+    even one: 2
+    have had: 13
+    the japanese: 7
+    wonder boys: 3
+    hollow man: 2
+    the daughter: 9
+    story unfolds: 7
+    lost her: 8
+    direct to: 5
+    there's the: 14
+    belong to: 5
+    david lean's: 3
+    river kwai: 4
+    the importance: 11
+    prison camp: 4
+    of stuff: 2
+    mystery men: 2
+    the downside: 7
+    coming back: 3
+    over their: 3
+    about love: 4
+    jakob the: 2
+    the liar: 2
+    embeth davidtz: 6
+    think they: 3
+    warner brothers: 2
+    production designer: 10
+    joy to: 10
+    pay it: 2
+    it forward: 2
+    bowfinger is: 4
+    very bad: 5
+    downey jr: 7
+    kit ramsey: 4
+    bad movie: 5
+    his hometown: 5
+    on by: 4
+    wrong with: 13
+    be funny: 4
+    rebecca gayheart: 3
+    charlize theron: 4
+    loving wife: 7
+    disturbing and: 6
+    producers of: 3
+    from under: 2
+    i sat: 4
+    "`sleepy hollow'": 2
+    throws in: 3
+    why did: 2
+    to slip: 7
+    rush hour: 5
+    bad film: 5
+    length of: 4
+    of jesus: 6
+    live a: 3
+    minnie driver: 13
+    and butthead: 5
+    seen by: 8
+    good reason: 2
+    keyser soze: 2
+    his apartment: 8
+    to heaven: 7
+    les miserables: 4
+    miserables is: 3
+    go for: 6
+    david mamet: 4
+    to hide: 5
+    else to: 2
+    of cliches: 3
+    the villains: 6
+    one which: 11
+    over into: 4
+    about politics: 4
+    old hollywood: 7
+    so different: 5
+    than life: 11
+    guys in: 2
+    common sense: 3
+    than adequate: 5
+    lead the: 5
+    alex and: 3
+    a winner: 8
+    cruise ship: 2
+    adventure that: 4
+    taking over: 2
+    famke janssen: 5
+    the black: 15
+    not funny: 2
+    george lucas': 3
+    obi-wan kenobi: 10
+    anakin skywalker: 9
+    jedi knight: 6
+    jar jar: 5
+    the path: 7
+    details that: 7
+    blood simple: 5
+    big lebowski: 6
+    dude is: 4
+    good idea: 6
+    the dude's: 4
+    artist who: 6
+    the jungle: 6
+    shows that: 15
+    before i: 6
+    adam sandler: 2
+    the cauldron: 2
+    if that's: 4
+    thin red: 5
+    red line: 5
+    why are: 3
+    visit his: 5
+    science and: 8
+    will to: 7
+    and cinematographer: 8
+    truly a: 10
+    begun to: 8
+    mena suvari: 2
+    costume designer: 6
+    with depth: 7
+    not surprisingly: 2
+    them was: 5
+    was better: 2
+    these five: 4
+    oscar is: 3
+    that day: 4
+    go anywhere: 2
+    tom wilkinson: 5
+    full monty: 4
+    we like: 6
+    the winter: 4
+    workings of: 6
+    to check: 5
+    it right: 7
+    have this: 4
+    and hilarious: 8
+    adds another: 7
+    truman show: 12
+    a keen: 4
+    and ridiculous: 2
+    looked like: 7
+    any sense: 5
+    days in: 3
+    tobey maguire: 8
+    a jedi: 7
+    will is: 6
+    the formula: 8
+    sean mcguire: 5
+    up an: 3
+    by having: 6
+    the grasshoppers: 4
+    they could: 9
+    time period: 7
+    security guard: 5
+    that few: 9
+    show is: 12
+    ace ventura: 4
+    tony goldwyn: 5
+    and boring: 2
+    why was: 3
+    hunting is: 4
+    the rainmaker: 4
+    of style: 4
+    this also: 4
+    island is: 5
+    the apes: 5
+    is emotionally: 6
+    animators have: 5
+    black cauldron: 2
+    mess of: 5
+    my giant: 3
+    powerful and: 10
+    james earl: 5
+    alien NUMBER: 6
+    of detail: 4
+    give this: 5
+    right is: 2
+    worst films: 3
+    "`bringing out": 2
+    the dead': 2
+    ghosts of: 3
+    frank and: 5
+    why do: 6
+    target audience: 4
+    absolutely no: 6
+    the soviet: 8
+    first rate: 7
+    martin lawrence: 2
+    when all: 4
+    a straight: 9
+    makes no: 2
+    the odd: 2
+    spoon and: 2
+    and stretch: 2
+    event horizon: 4
+    laurence fishburne: 7
+    horizon is: 2
+    then he: 8
+    david lynch: 2
+    linda fiorentino: 5
+    that fails: 2
+    the show's: 9
+    call it: 7
+    race is: 7
+    denzel washington: 7
+    and uninteresting: 2
+    the hurricane: 4
+    the angry: 2
+    hard that: 5
+    she deserves: 4
+    winter guest: 2
+    just not: 7
+    headed for: 3
+    strong supporting: 6
+    i kept: 6
+    with nothing: 4
+    floating life: 2
+    the household: 4
+    army and: 7
+    a poker: 7
+    how did: 5
+    an ounce: 3
+    ounce of: 4
+    flat and: 2
+    female lead: 2
+    is barely: 2
+    forgot to: 2
+    rocky horror: 3
+    your money: 2
+    battle sequence: 4
+    more appropriate: 2
+    scene shows: 3
+    meryl streep: 6
+    i get: 5
+    a wall: 3
+    several different: 5
+    like one: 4
+    truman burbank: 9
+    a fake: 2
+    de sade: 2
+    idea how: 2
+    the bugs: 3
+    we realize: 8
+    absolutely nothing: 5
+    to mars: 4
+    brilliant and: 5
+    even bother: 2
+    shall we: 5
+    we dance: 3
+    message in: 4
+    gem of: 7
+    not disappoint: 4
+    nothing new: 4
+    you'd be: 4
+    in them: 4
+    or interesting: 2
+    one big: 5
+    a virtual: 7
+    john hurt: 6
+    very special: 6
+    have at: 2
+    reminder of: 8
+    a creepy: 4
+    then there's: 8
+    chris o'donnell: 3
+    the gingerbread: 5
+    gingerbread man: 6
+    ordinary people: 6
+    been even: 6
+    an exceptional: 5
+    all for: 4
+    worse is: 2
+    director who: 3
+    history x: 5
+    american society: 5
+    films this: 5
+    NUMBER feet: 2
+    i've got: 2
+    dalai lama: 4
+    the dalai: 4
+    wasn't a: 4
+    donald sutherland: 4
+    fallen angels: 5
+    how bad: 2
+    primary colors: 5
+    colors is: 3
+    de palma: 5
+    recent films: 3
+    show off: 3
+    so bad: 9
+    mel brooks: 2
+    lets go: 6
+    graphic novel: 4
+    _the caveman's: 2
+    caveman's valentine_: 2
+    valentine_ is: 2
+    they're all: 6
+    but unfortunately: 3
+    of media: 4
+    most satisfying: 6
+    can't save: 2
+    a gas: 6
+    of innocence: 6
+    telling them: 2
+    don't blame: 2
+    little of: 7
+    that's about: 5
+    spanish prisoner: 3
+    why does: 2
+    in great: 7
+    that lacks: 2
+    that once: 7
+    reality that: 4
+    of color: 4
+    everything about: 4
+    he allows: 8
+    my friend: 3
+    of material: 2
+    princess caraboo: 2
+    john lithgow: 5
+    range from: 8
+    the token: 4
+    loud and: 4
+    hair and: 4
+    parker and: 3
+    wasn't the: 2
+    it's too: 7
+    little or: 3
+    daughter is: 2
+    a cheap: 7
+    knock off: 2
+    are these: 4
+    monty is: 3
+    bad dialogue: 3
+    i'm sorry: 2
+    "`music of": 2
+    the heart': 2
+    not worth: 2
+    this thing: 4
+    the cyborsuit: 2
+    home alone: 5
+    called it: 2
+    film goes: 3
+    and faith: 5
+    lancelot of: 2
+    impression of: 2
+    the tradition: 11
+    three to: 3
+    director george: 4
+    a sad: 3
+    with only: 6
+    steven seagal: 2
+    chan and: 4
+    deep rising: 4
+    italian horror: 3
+    the storm: 2
+    major league: 2
+    the castle: 4
+    pop music: 2
+    straight face: 3
+    can write: 2
+    using my: 3
+    the jackal: 4
+    and stupid: 2
+    the rocky: 3
+    ask the: 2
+    over time: 2
+    those with: 3
+    bad that: 6
+    flynt is: 3
+    the apostle: 3
+    jean reno: 2
+    them like: 2
+    hard rain: 4
+    lucas is: 3
+    mess that: 2
+    is poorly: 2
+    far superior: 5
+    daisy is: 2
+    wes studi: 2
+    alan smithee: 2
+    the muppet: 2
+    about nothing: 2
+    good movies: 3
+    the farrellys: 2
+    big break: 2
+    nine months: 2
+    muriel's wedding: 3
+    death wish: 2
+    and horrifying: 5
+    too little: 2
+    dream with: 2
+    jack the: 4
+    of nothing: 2
+    don't bother: 2
+    NUMBER dalmatians: 2
+    is awful: 2
+    mystery science: 2
+    science theater: 2
+    these movies: 3
+    what do: 7
+    waking ned: 3
+    ned devine: 3
+    a silly: 4
+    ghost dog: 3
+    final cut: 2
+    beyond me: 3
+    facts about: 3
+    a lame: 3
+    a pointless: 2
+    moments like: 3
+    to anything: 2
+    october sky: 4
+    more as: 2
+    a lousy: 2
+    other NUMBER: 2
+    has absolutely: 2
+    godzilla is: 2
+    boring and: 2
+    the screening: 4
+    would look: 2
+    running gag: 3
+    a total: 3
+    that didn't: 3
+    was made: 4
+    running around: 3
+    and j: 2
+    over it: 2
+    the shelf: 2
+    it came: 4
+    and says: 2
+    NUMBER seconds: 2
+    a reporter: 2
+    went wrong: 2
+    no apparent: 2
+    in bad: 2
+    is witty: 4
+    the football: 2
+    guessed it: 2
+    urban legends: 2
+    simply too: 2
+    battlefield earth: 2
+    good actors: 2
+    renee zellweger: 2
+    insult to: 2
+    bad script: 2
+    pig in: 3
+    stick to: 2
+    dennis hopper: 2
+    least he: 2
+    great idea: 2
+    really funny: 2
+    the blame: 5
+    doing in: 2
+    time it: 2
+    and start: 2
+    romeo must: 2
+    must die: 2
+    sweet sweetback: 2
+    drunk and: 2
+    that tries: 2
+    loyal to: 5
+    idea why: 2
+    the mummy: 2
+    help that: 2
+    the hour: 2
+    still know: 3
+    give me: 3
+    last movie: 2
+    robin tunney: 2
+    "`star wars'": 2
+    we're supposed: 2
+    because i'm: 2
+    isn't enough: 3
+    only gets: 2
+    year of: 2
+    krippendorf's tribe: 2
+    jack is: 2
+    wing jing: 2
+    angelina jolie: 2
+    for much: 2
+    worst thing: 2
+    raging bull: 4
+    now there's: 2
+    la motta: 2
+    so badly: 2
+    pretty bad: 3
+    moulin rogue: 2
+    ridiculous and: 2
+    i came: 2
+    the snake: 2
+    film wasn't: 2
+    be fun: 2
+    the pet: 2
+    some decent: 2
+    make much: 2
+    is terribly: 2
+    ryan and: 2
+    ditto for: 2
+    "`final destination'": 2

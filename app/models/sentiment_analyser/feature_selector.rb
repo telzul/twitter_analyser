@@ -45,13 +45,14 @@ class SentimentAnalyser::FeatureSelector
             ngram_fd(ngram),
             label_fd(label),
             total_ngram_count
-        ).chi_square
+        ).zscore
     end.sort_by{|a| -a}.inject(:-)
   end
 
   private
 
   def is_relevant?(ngram)
-    ngram_fd(ngram) > 5 && ngram_fd(ngram) < total_ngram_count*0.005
+    return true
+    #ngram_fd(ngram) > 5 && ngram_fd(ngram) < total_ngram_count*0.005
   end
 end

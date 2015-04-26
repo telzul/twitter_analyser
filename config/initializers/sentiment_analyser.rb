@@ -1,6 +1,8 @@
 require 'sentiment_analyser/naive_bayes_classifier'
 
 SentimentAnalyser.configure do |config|
+  SentimentAnalyser::NaiveBayesClassifier
+
   model = YAML.load(File.open(File.join(Rails.root,"config","model.yml")))
   model.try(:ensure_default_values)
 
