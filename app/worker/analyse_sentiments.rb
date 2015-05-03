@@ -10,8 +10,9 @@ class AnalyseSentiments
     posts.map! do |post|
       text = post["raw_message"]
       post["sentiment"] = SentimentAnalyser.model.classify(segmentiser.segmentize(text))
+      post
     end
 
-    discussion.set(:posts,posts)
+    discussion.posts = posts
   end
 end

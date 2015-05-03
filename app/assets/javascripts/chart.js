@@ -2,7 +2,7 @@
 function loadchart(chartdata)
 {
 var datacolours=["green","yellow","red","lightblue"];
-var labels=["positive","neutral","negative","null"];
+var labels=["positive","negative","null"];
 
 var width = 500,
     height = 500,

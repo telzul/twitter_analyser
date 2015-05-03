@@ -35,6 +35,7 @@ class SentimentAnalyser::NaiveBayesClassifier
       sum + Math.log(a/b)
     end
 
+    p prior + likelihood
     prior + likelihood
   end
 

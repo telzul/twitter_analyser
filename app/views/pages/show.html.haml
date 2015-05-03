@@ -1,10 +1,29 @@
 -if @discussion.get("status") != "created"
-  We are still bussy collecting the data. Please stand by
+  We are still busy collecting the data. Please stand by
 
   :javascript
     window.track_status("#{@discussion.url}");
 
 
 -else
-  This is the discussion
+  -statistic = DiscussionStatistics.new(@discussion)
+
+  %section.container
+    %h2= @discussion.url
+    %small= "#{@discussion.posts.count} Posts"
+
+    %h3='Visualisierung'
+    %h4='Balkendiagramm: Verteilung der Sentiments'
+    %section.container
+      %svg.vis#chart{:style => "border:1px black solid;"}
+
+    / Hier werden die Daten für das Chart zusammengebaut
+    %h4='Baumdiagramm des Gesprächsverlaufs'
+    %section.container
+      %svg.vis#tree{:style => "border:1px black solid;"}
+      :javascript
+        var chartdata = #{statistic.sentiment_data.to_json};
+        var data=#{statistic.tree_data.to_json};
+        loadchart(chartdata);
+        loadtree(data);
 
