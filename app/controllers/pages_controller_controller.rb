@@ -3,4 +3,9 @@ class PagesControllerController < ApplicationController
 
   def index
   end
+
+  def search
+    url = params[:q]
+
+  end
 end

@@ -1,0 +1,9 @@
+development:
+  api_secret: 'OAb6Aviw1wpF1B6kEcIxw85y2ckUpBR44zFuuFEWbO97JmOZusVTQxioCiqWDbt3'
+  api_key: 'cpanY1339ygudz8A2kHiGkqAUPyHGFLhWkYeBszL845cihqTuVU3p4Wntz1CoFby'
+  access_token: '4589587798c149e39dfad7388fad8197'
+
+production:
+  api_secret: production_secret_key
+  api_key: 'public key'
+  access_token: 'token from app settings'
