@@ -9,8 +9,8 @@ class ParseThreadId
     output.chomp!
     result = output.split("\n")
     discussion = Discussion.new(url)
-    discussion.forum_name = result[0]
-    discussion.thread_ident = result[1]
+    discussion.set("forum_name", result[0])
+    discussion.set("thread_ident", result[1])
   end
 
 end

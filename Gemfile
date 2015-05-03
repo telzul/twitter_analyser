@@ -20,6 +20,7 @@ gem 'sinatra', :require => nil
 
 
 gem 'sidekiq'
+gem 'sidekiq-superworker'
 
 gem 'disqus_api'
 gem 'open4'

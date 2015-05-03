@@ -11,6 +11,10 @@ class SentimentAnalyser
     config.model.classify(config.segmentiser.segmentize(text))
   end
 
+  def self.model
+    self.config.model
+  end
+
   class Configuration
     attr_accessor :model, :segmentiser
   end

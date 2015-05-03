@@ -6,12 +6,12 @@ class Discussion
     return false if exists?(url)
 
     Sidekiq.redis do |conn|
-      multi do
+      conn.multi do
         conn.set url, Time.now.to_i, :ex => expiry
         conn.set "#{url}:status", "in_creation", :ex => expiry
       end
 
-      #TODO Enqueue Job
+      DiscussionPipeline.perform_async(url)
 
       return true
     end
@@ -23,7 +23,7 @@ class Discussion
 
   def self.exists?(url)
     Sidekiq.redis do |conn|
-      conn.exists? url
+      conn.exists url
     end
   end
 
@@ -31,45 +31,23 @@ class Discussion
     @url = url
   end
 
-  def status
+  def set(attribute,value)
     Sidekiq.redis do |conn|
-      conn.get "#{url}:status"
+      conn.set "#{url}:#{attribute}", value, :ex => self.class.expiry
     end
   end
 
-  def forum_name=(name)
+  def get(attribute)
     Sidekiq.redis do |conn|
-      conn.set "#{url}:forum_name", "name", :ex => self.class.expiry
-    end
-  end
-
-  def forum_name
-    Sidekiq.redis do |conn|
-      conn.get "#{url}:forum_name"
-    end
-  end
-
-  def thread_ident=(ident)
-    Sidekiq.redis do |conn|
-      conn.set "#{url}:thread_ident", "ident", :ex => self.class.expiry
-    end
-  end
-
-  def thread_ident
-    Sidekiq.redis do |conn|
-      conn.get "#{url}:thread_ident"
+      conn.get "#{url}:#{attribute}"
     end
   end
 
   def posts=(posts)
-    Sidekiq.redis do |conn|
-      conn.set "#{url}:posts", posts.to_json, :ex => self.class.expiry
-    end
+    set(:posts,posts.to_json)
   end
 
   def posts
-    Sidekiq.redis do |conn|
-      JSON.parse(conn.get "#{url}:posts") rescue nil
-    end
+      JSON.parse(get(:posts)) rescue nil
   end
 end

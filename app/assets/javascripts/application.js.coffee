@@ -18,7 +18,7 @@
 
 window.track_status = (url) =>
   setInterval ->
-    $.getJSON "/status", {url:url}, (data) ->
-      location.reload(true) if data is "created"
+    $.get "/status.json", {url:url}, (data) ->
+      location.reload(true) if data["status"] is "created"
   , 5000
 
