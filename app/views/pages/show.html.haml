@@ -1,0 +1,10 @@
+-if @discussion.status != "created"
+  We are still bussy collecting the data. Please stand by
+
+  :javascript
+    window.track_status("#{@discussion.url}");
+
+
+-else
+  This is the discussion
+

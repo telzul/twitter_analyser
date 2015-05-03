@@ -1,9 +1,0 @@
-.splash-container
-  .splash-row
-    = image_tag "logo.png", style: "width:600px"
-    =form_tag "/", :method => :get, :class => "form" do |f|
-      .input-group
-        .input-group-addon
-          =fa_icon "search"
-        = text_field_tag "URL","", :class => "col-lg-12 form-control", :placeholder => "Enter Content URL"
-
