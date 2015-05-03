@@ -1,7 +1,0 @@
-%section.container
-  %h3
-    = "Tweet by " + @tweet.user.name
-    %small
-      = link_to "Source" , "https://twitter.com/#{@tweet.user.name}/status/#{@tweet.twitter_id}"
-  %blockquote
-    = @tweet.text

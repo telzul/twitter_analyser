@@ -2,19 +2,19 @@ require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
 require "active_model/railtie"
+require "active_job/railtie"
 # require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
-#require "neo4j/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module TwitterAnalyser
+module DisqusAnalyser
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -27,15 +27,5 @@ module TwitterAnalyser
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-#    config.neo4j.storage_path = "#{config.root}/db/neo4j-#{Rails.env}"
-    config.neo4j.session_type = :server_db
-    config.neo4j.session_path = 'http://localhost:7474/'
-      #File.expand_path('neo4j-db', Rails.root)
-    config.app_generators do |g|
-      g.orm :neo4j
-      g.test_framework :rspec
-    end
-
-    
   end
 end
