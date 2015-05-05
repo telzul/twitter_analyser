@@ -10,14 +10,15 @@ def testing
     docs.sort_by! { rand(10000000) }
     train_data[label] = docs[(0..docs.count*0.75)]
     test_data[label] = docs[(docs.count*0.75+1..-1)]
+    p "#{label} - #{test_data[label].count}"
   end
 
   train_corpus = SentimentAnalyser::LabeledCorpus.new(train_data)
   test_corpus = SentimentAnalyser::LabeledCorpus.new(test_data)
 
 
-  [100,200,500,1000,2000,3000,5000,10000].each do |feature_count|
-    features = SentimentAnalyser::FeatureSelector.new(corpus).significant_ngrams(feature_count)
+  [100,200,500,1000,2000,3000,5000].each do |feature_count|
+    features = SentimentAnalyser::FeatureSelector.new(train_corpus).significant_ngrams(feature_count)
     model = SentimentAnalyser::NaiveBayesClassifier.new(corpus.labels,features)
 
     train_corpus.data.each_pair do |label,docs|
