@@ -11,8 +11,8 @@ class DiscussionStatistics
 
   def tree_data
     @discussion.posts.map do |post|
-      if post[:parent] == nil
-        post[:parent]=@discussion.url
+      if post["parent"] == nil
+        post["parent"]=@discussion.url
       end
 
       post[:color] = COLORS[post[:sentiment]]
