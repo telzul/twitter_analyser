@@ -3,6 +3,6 @@ class FinaliseDiscussion
 
   def perform(url)
     discussion= Discussion.new(url)
-    discussion.set(:status,"created") unless discussion.get(:status) == 'in_creation'
+    discussion.set(:status,"created") if discussion.get(:status) == 'in_creation'
   end
 end
