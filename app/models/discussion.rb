@@ -32,14 +32,27 @@ class Discussion
   end
 
   def set(attribute,value)
+    key = "#{url}:#{attribute}"
     Sidekiq.redis do |conn|
-      conn.set "#{url}:#{attribute}", value, :ex => self.class.expiry
+      if value.is_a? Hash
+        conn.mapped_hmset key, value
+        conn.expire key, self.class.expiry
+      else
+        conn.set key, value, :ex => self.class.expiry
+      end
     end
   end
 
   def get(attribute)
+    key = "#{url}:#{attribute}"
     Sidekiq.redis do |conn|
-      conn.get "#{url}:#{attribute}"
+      type = conn.type key
+
+      if type=="string"
+        conn.get key
+      elsif type == "hash"
+        conn.hgetall key
+      end
     end
   end
 
@@ -48,6 +61,6 @@ class Discussion
   end
 
   def posts
-      JSON.parse(get(:posts)) rescue nil
+    JSON.parse(get(:posts)) rescue nil
   end
 end

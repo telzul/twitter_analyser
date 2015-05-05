@@ -2,6 +2,7 @@ class FinaliseDiscussion
   include Sidekiq::Worker
 
   def perform(url)
-    Discussion.new(url).set(:status,"created")
+    discussion= Discussion.new(url)
+    discussion.set(:status,"created") unless discussion.get(:status) == 'in_creation'
   end
 end
