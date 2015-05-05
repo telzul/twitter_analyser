@@ -23,12 +23,12 @@ class DiscussionStatistics
   def sentiment_data
     data=Hash.new(0)
     @discussion.posts.map do |post|
-      if post[:sentiment] == 'positive'
-        data[:positive]+=1
-      elsif post[:sentiment] =='negative'
-        data[:negative] += 1
+      if post["sentiment"] == 'positive'
+        data["positive"] +=1
+      elsif post["sentiment"] =='negative'
+        data["negative"] += 1
       else
-        data[:nothing] +=1
+        data["nothing"] +=1
       end
     end
     data
