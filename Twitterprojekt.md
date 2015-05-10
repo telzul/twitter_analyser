@@ -23,8 +23,29 @@ Die dennoch gesammelten Daten offenbarten ein weiteres Problem, über die Stream
 Als Ergebnis bleibt schließlich eine flache Struktur von einzeln stehenden Tweets übrig, nur vereinzelt mit Bezugsinformation, Visualisierungen sind kaum sinnvoll.
 Als Herausforderung blieb die Sentimentanalyse auf den Nachrichten, wie zu erwarten war, erwies diese sich als schwierig, da die Tweets durch ihre Kürze selten leicht klassifizierbare Sätze enthalten.
 
+## Änderung der Projektausrichtung
+In Folge der oben Beschriebenen Probleme musste das Projekt in eine andere Richtung gelenkt werden, damit sichtbare Ergebnisse produziert werden können. Die Entscheidung fiel die Grundsätzliche Idee beizubehalten, dabei aber die Datenbasis zu ändern in der Hoffnung, dass diese die gewünschte Struktur aufweisen kann. Dazu wurden verschiedene Möglichkeiten evaluiert: Es existieren protokollierte Chatkorpora im _Dortmunder Chatkorpus_[5] zu verschiedenen Themen, etwa politische Diskussionen. Hier sind zwar Sprecher nachverfolgbar, jedoch weist ein klassischer Chat nicht die gewünschte Struktur auf, die verschiedene Richtungen der Konversation deutlich macht. Eine weitere Alternative wäre der Amazonrezensionskorpus[6] der Universität Stanford möglich gewesen. Zwar sind die Texte typischerweise länger, sodass eine Sentimentanalyse dort deutlich zuverlässiger funktionieren kann, aber die Beiträge beziehen sich selten aufeinander, sodass ein Zeitverlauf kaum sinnvoll erscheint.
+Stattdessen fiel die Wahl auf _Disqus_[7] eine Kommentarplattform, die auf anderen Webseiten eingebunden werden kann, etwa in Blogs oder Nachrichtenseiten. Es werden dabei verschachtelte Gespräche möglich und eine vielfalt verschiedener Themen kann untersucht werden. Als zusätzlicher Vorteil gegenüber Twitter müssen die Daten nicht Live mitgeschnitten werden, sondern sind asynchron verfügbar. Die Textlängen variieren relativ stark, was für die Sentimentanalyse ein Hindernis sein kann, dies muss evaluiert werden. Auf dem Disqus eigenen Portal existieren weitere Diskussionsthemen unabhängig von externen Seiten. Die Verbreitung des Dienstes ermöglicht eine Bandbreite an verschiedenen Gesprächen zu betrachten, auch in sehr unterschiedlicher Größe. So gibt es Themen mit Beiträgen im zweistelligen Bereich, jedoch auch mehrere Tausend sind möglich.
+
+### Datenbank
+reicht eigentlich als kleiner punkt
+* Daten sind stark strukturiert
+* Daten vorhalten unnötig
+* Deshalb keine persistente speicherung sondern nur in redis mit ablaufdatum
+* die jsons werden dann nur für die anzeige verarbeitet
+
+### Disqus-API
+TODO evtl
+
+### Gelöste Probleme
+* muss nicht mehr zwischen prozessen kommunizieren, abfrage von disqus kann einfach im Hintergrund stattfinden
+* klares Ende der diskussion, bzw. aktueller stand
+* hierarchie möglich und sichtbar
 
 https://dev.twitter.com/rest/public/search
 https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
 [3] https://dev.twitter.com/streaming/overview/connecting
 [4] https://github.com/tweetstream/tweetstream
+[5] http://www.chatkorpus.tu-dortmund.de/korpora.html
+[6] https://snap.stanford.edu/data/web-Amazon.html
+[7] https://disqus.com/home/discover/
