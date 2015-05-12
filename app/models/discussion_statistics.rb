@@ -31,7 +31,7 @@ class DiscussionStatistics
         data["nothing"] +=1
       end
     end
-    data
+    data.map {|k,v| {"sentiment" => k, "value" => v}}
   end
 
 end

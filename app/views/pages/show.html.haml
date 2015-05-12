@@ -6,7 +6,7 @@
 
 
 -else
-  -statistic = DiscussionStatistics.new(@discussion)
+  -statistics = DiscussionStatistics.new(@discussion)
 
   %section.container
     %h2= @discussion.url
@@ -15,15 +15,14 @@
     %h3='Visualisierung'
     %h4='Balkendiagramm: Verteilung der Sentiments'
     %section.container
-      %svg.vis#chart{:style => "border:1px black solid;"}
+      .vis#chart
 
     / Hier werden die Daten für das Chart zusammengebaut
     %h4='Baumdiagramm des Gesprächsverlaufs'
     %section.container
       %svg.vis#tree{:style => "border:1px black solid;"}
       :javascript
-        var chartdata = #{statistic.sentiment_data.to_json};
-        var data=#{statistic.tree_data.to_json};
-        loadchart(chartdata);
-        loadtree(data);
-
+        var chartdata = #{statistics.sentiment_data.to_json};
+        var treedata=#{statistics.tree_data.to_json};
+        load_chart(chartdata);
+        loadtree(treedata);
