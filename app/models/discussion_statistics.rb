@@ -9,15 +9,19 @@ class DiscussionStatistics
     @discussion = discussion
   end
 
-  def tree_data
+  def tree_data_old
     @discussion.posts.map do |post|
       if post["parent"] == nil
         post["parent"]=@discussion.url
       end
-
       post[:color] = COLORS[post[:sentiment]]
-      post
     end. << ({"id"=>@discussion.url, "parent" => nil })
+  end
+
+  def tree_data
+    @root=  [{"parent" => nil, "name" => @discussion.url}]
+    @data=  @discussion.posts.map { |t| {sentiment: t["sentiment"],parent: t["parent"]==nil ? @discussion.url : t["parent"]  ,name: t["id"],color:COLORS[t["sentiment"]],text:t["raw_message"]}}
+    @data.inject(@root,:<<) 
   end
 
   def sentiment_data
