@@ -324,7 +324,10 @@ return d.target.id;
 // Enter any new links at the parent's previous position.
 link.enter().insert("path", "g")
 .attr("class", "link")
+<<<<<<< HEAD
 .style("stroke", function(d) { return d.target.color; })
+=======
+>>>>>>> 47cc26728b06662c60a3981d0c730517fa9f284b
 .attr("d", function(d) {
 var o = {
 x: source.x0,
