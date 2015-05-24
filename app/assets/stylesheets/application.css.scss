@@ -42,8 +42,18 @@
   shape-rendering: crispEdges;
 }
 .bar rect {
-  fill: steelblue;
+  fill: #0d2c54;
   shape-rendering: crispEdges;
+}
+
+.positive-bar {
+  fill: #7fb800;
+}
+.negative-bar {
+  fill: #f6511d;
+}
+.nothing-bar {
+  fill: #bbb;
 }
 
 .bar text {

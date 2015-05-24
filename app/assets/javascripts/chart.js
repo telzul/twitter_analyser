@@ -8,7 +8,7 @@ function load_chart(chartdata) {
       left: 30
     },
     width = 460 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    height = 460 - margin.top - margin.bottom;
 
 
   var x = d3.scale.ordinal().rangeRoundBands([0, width], .05),

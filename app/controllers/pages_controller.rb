@@ -14,6 +14,7 @@ class PagesController < ApplicationController
   def status
     @discussion = Discussion.new(params.require :url)
 
+
     respond_to do |format|
       format.json {render :json => {:status => @discussion.get("status")}}
     end

@@ -13,18 +13,35 @@
     %small= "#{@discussion.posts.count} Posts"
 
     %h3='Visualisierung'
-    %h4='Balkendiagramm: Verteilung der Sentiments'
-    %section.container
-      .vis#chart
+    .row
+      .col-md-6
+        %h4='Balkendiagramm: Verteilung der Sentiments'
+        %section
+          .vis#chart
 
-    / Hier werden die Daten für das Chart zusammengebaut
-    %h4='Baumdiagramm des Gesprächsverlaufs'
-    %section.container
-      %svg.vis#tree{:style => "border:1px black solid;"}
-      :javascript
-        var chartdata = #{statistics.sentiment_data.to_json};
-        var treedata=#{statistics.tree_data.to_json};
-        load_chart(chartdata);
-        loadtree(treedata);
+      .col-md-6
+        %h4="Sunburst des Gesprächsverlaufs"
+        #sequence
+        #sunburst
+          #explanation{style:"visibility:hidden;"}
+            %span#percentage
 
-      #{statistics.tree_data.to_json}
+    .row
+      .col-md-12
+        %h4="Sentimente der Benutzer"
+        #user_sentiments
+
+    .row
+      .col-md-12
+        %h4='Baumdiagramm des Gesprächsverlaufs'
+        %section
+          %svg.vis#tree{:style => "border:1px black solid;"}
+
+
+  :javascript
+    var chartdata = #{statistics.sentiment_data.to_json};
+    var treedata=#{statistics.tree_data.to_json};
+    Sunburst(#{statistics.sunburst_data.to_json});
+    load_chart(chartdata);
+    loadtree(treedata);
+    UserSentiments(#{statistics.user_sentiments.to_json});
