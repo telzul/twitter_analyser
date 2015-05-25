@@ -1,0 +1,13 @@
+@import "colors";
+
+#user_sentiments {
+  .positive-bar {
+    fill: $positive;
+  }
+  .negative-bar {
+    fill: $negative;
+  }
+  .nothing-bar {
+    fill: $nothing;
+  }
+}

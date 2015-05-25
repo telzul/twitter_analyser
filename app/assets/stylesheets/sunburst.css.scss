@@ -1,20 +1,21 @@
+@import "colors";
 #sunburst {
   position: relative;
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    background-color: #fff;
-    width: 960px;
-    height: 700px;
-    margin-top: 10px;
-  }
   #main {
     float: left;
     width: 750px;
   }
   path {
     stroke: #fff;
+  }
+  .positive {
+    fill: $positive;
+  }
+  .negative {
+    fill: $negative;
+  }
+  .nothing {
+    fill: $nothing;
   }
   #explanation {
     position: absolute;

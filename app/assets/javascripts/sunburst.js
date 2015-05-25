@@ -56,7 +56,7 @@ Sunburst = function(data) { // Dimensions of sunburst.
         return (d.dx > 0.005); // 0.005 radians = 0.29 degrees
       });
 
-    var path = vis.data([json]).selectAll("path")
+    var path = vis.data([nodes]).selectAll("#sunburst path")
       .data(nodes)
       .enter().append("svg:path")
       .attr("display", function(d) {
@@ -64,8 +64,8 @@ Sunburst = function(data) { // Dimensions of sunburst.
       })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) {
-        return d.color;
+      .attr("class", function(d) {
+        return d.sentiment;
       })
       .style("opacity", 1)
       .on("mouseover", mouseover);
@@ -79,7 +79,6 @@ Sunburst = function(data) { // Dimensions of sunburst.
 
   // Fade all but the current sequence, and show it in the breadcrumb trail.
   function mouseover(d) {
-    console.log(d)
 
     d3.select("#percentage")
       .text(d.username);
@@ -90,24 +89,28 @@ Sunburst = function(data) { // Dimensions of sunburst.
     var sequenceArray = getAncestors(d);
 
     // Fade all the segments.
-    d3.selectAll("path")
+    d3.selectAll("#sunburst path")
       .style("opacity", 0.3);
 
     // Then highlight only those that are an ancestor of the current segment.
-    vis.selectAll("path")
+    vis.selectAll("#sunburst path")
       .filter(function(node) {
         return (sequenceArray.indexOf(node) >= 0);
       })
       .style("opacity", 1);
+
+    // set text
+    d3.select("#sunburst-text")
+      .text(d.text);
   }
 
   // Restore everything to full opacity when moving off the visualization.
   function mouseleave(d) {
     // Deactivate all segments during transition.
-    d3.selectAll("path").on("mouseover", null);
+    d3.selectAll("#sunburst path").on("mouseover", null);
 
     // Transition each segment to full opacity and then reactivate it.
-    d3.selectAll("path")
+    d3.selectAll("#sunburst path")
       .transition()
       .duration(200)
       .style("opacity", 1)

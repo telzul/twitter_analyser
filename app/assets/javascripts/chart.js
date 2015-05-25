@@ -3,16 +3,16 @@ function load_chart(chartdata) {
 
   var margin = {
       top: 20,
-      right: 30,
+      right: 80,
       bottom: 30,
-      left: 30
+      left: 80
     },
-    width = 460 - margin.left - margin.right,
-    height = 460 - margin.top - margin.bottom;
+    width = 960 - margin.left - margin.right,
+    height = 200 - margin.top - margin.bottom;
 
 
-  var x = d3.scale.ordinal().rangeRoundBands([0, width], .05),
-    y = d3.scale.linear().range([height, 0]);
+  var x = d3.scale.linear().range([0, width]),
+    y = d3.scale.ordinal().rangeRoundBands([height, 0], 0.25);
 
   var xAxis = d3.svg.axis()
     .scale(x)
@@ -29,15 +29,15 @@ function load_chart(chartdata) {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  x.domain(labels);
-  y.domain([0, d3.max(chartdata, function(d){return d.value})]);
+  y.domain(labels);
+  x.domain([0, d3.max(chartdata, function(d) {
+    return d.value
+  })]);
 
   svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
     .call(xAxis)
-    .selectAll("text")
-    .style("text-anchor", "end");
 
   svg.append("g")
     .attr("class", "y axis")
@@ -47,7 +47,6 @@ function load_chart(chartdata) {
     .attr("y", 6)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
-    .text("Count");
 
   var bar = svg.selectAll("bar")
     .data(chartdata)
@@ -56,20 +55,28 @@ function load_chart(chartdata) {
 
   bar.append("rect")
     .attr("x", function(d) {
-      return x(d.sentiment);
+      return 0;
     })
-    .attr("width", x.rangeBand())
+    .attr("width", function(d) {
+      return x(d.value);
+    })
     .attr("y", function(d) {
-      return y(d.value);
+      return y(d.sentiment);
     })
-    .attr("height", function(d) {
-      return height - y(d.value);
+    .attr("height", y.rangeBand())
+    .attr("class", function(d) {
+      return d.sentiment;
     });
-
   bar.append("text")
     .attr("dy", ".75em")
-    .attr("y", function(d){return y(d.value) - 13})
-    .attr("x", function(d){return x(d.sentiment) + x.rangeBand()/2;})
+    .attr("y", function(d) {
+      return y(d.sentiment) + 12
+    })
+    .attr("x", function(d) {
+      return x(d.value) + y.rangeBand() / 2;
+    })
     .attr("text-anchor", "middle")
-    .text(function(d) { return d.value; });
+    .text(function(d) {
+      return d.value;
+    });
 }

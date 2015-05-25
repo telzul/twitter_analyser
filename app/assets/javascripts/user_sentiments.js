@@ -33,7 +33,6 @@ function UserSentiments(data) {
 
   x.domain(labels);
   y.domain([0, d3.max(data, function(d) {
-    console.log(d)
     return (+d.positive + d.negative + d.nothing);
   })]);
   svg.append("g")

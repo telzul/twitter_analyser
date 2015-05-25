@@ -15,13 +15,6 @@ class DiscussionStatistics
     @discussion = discussion
   end
 
-  def tree_data_old
-    @discussion.posts.map do |post|
-      post['parent'] = @discussion.url if post['parent'].nil?
-      post[:color] = COLORS[post[:sentiment]]
-    end. << ({ 'id' => @discussion.url, 'parent' => nil })
-  end
-
   def tree_data
     @root = [{ 'parent' => nil, 'name' => @discussion.url }]
     @data = @discussion.posts.map do |t|
@@ -41,14 +34,8 @@ class DiscussionStatistics
       mem[post['author']['username']][CLEAN_SENTIMENTS[post['sentiment']]] += 1
       mem
     end
-    # result = []
     data.values.sort { |b, a| (a['positive'] + a['negative'] + a['nothing']) <=> (b['positive'] + b['negative'] + b['nothing']) }
-    # .each do |entry|
-    #   result << {"username" => entry["username"], "sentiment" => "positive", "count" => entry["positive"]}
-    #   result << {"username" => entry["username"], "sentiment" => "negative", "count" => entry["negative"]}
-    #   result << {"username" => entry["username"], "sentiment" => "nothing", "count" => entry["nothing"]}
-    # end
-    # result
+      .select { |user| (user['positive'] + user['negative'] + user['nothing']) > 1 }
   end
 
   def sunburst_data
@@ -56,10 +43,10 @@ class DiscussionStatistics
     entries = Hash.new do |hash, key|
       hash[key['id']] = {
         username: key['author']['username'],
-        sentiment: key['sentiment'],
+        sentiment: CLEAN_SENTIMENTS[key['sentiment']],
         children: [],
         parent: key['parent'],
-        color: COLORS[key['sentiment']] }
+        text: key['raw_message']}
     end
     result = @discussion.posts.reduce(entries) do |mem, post|
       mem[post]
@@ -70,14 +57,29 @@ class DiscussionStatistics
         root[:children] << entry
       elsif result.key? entry[:parent].to_s
         result[entry[:parent].to_s][:children] << entry
-      else
-        puts entry
       end
     end
     result.each do |_key, entry|
-      entry[:size] = 1 if entry[:children].empty?
+      count = count_parents(entry, result)
+      if entry[:children].empty? && entry[:parent] == nil
+        root[:children].delete entry
+      end
+      entry[:size] = count if entry[:children].empty?
+      # entry[:size] = 1 if entry[:children].empty?
     end
     root
+  end
+
+  # evaluate if this is is better, i think not.
+  def count_parents(entry, tree)
+    count = 1
+    current = entry
+    loop do
+      break if !current[:parent] || !tree.key?(current[:parent].to_s)
+      current = tree[current[:parent].to_s]
+      count += 1
+    end
+    count
   end
 
   def sentiment_data

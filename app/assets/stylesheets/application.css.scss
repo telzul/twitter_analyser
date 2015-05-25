@@ -16,6 +16,7 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "colors";
 
 .splash-container {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -41,20 +42,22 @@
   stroke: #555;
   shape-rendering: crispEdges;
 }
-.bar rect {
-  fill: #0d2c54;
-  shape-rendering: crispEdges;
+.bar {
+  rect {
+    shape-rendering: crispEdges;
+  }
+  .positive {
+    fill: $positive;
+  }
+  .negative {
+    fill: $negative;
+  }
+  .nothing {
+    fill: $nothing;
+  }
 }
 
-.positive-bar {
-  fill: #7fb800;
-}
-.negative-bar {
-  fill: #f6511d;
-}
-.nothing-bar {
-  fill: #bbb;
-}
+
 
 .bar text {
   fill: #000;

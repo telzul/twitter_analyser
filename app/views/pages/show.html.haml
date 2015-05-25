@@ -14,21 +14,25 @@
 
     %h3='Visualisierung'
     .row
-      .col-md-6
+      .col-md-12
         %h4='Balkendiagramm: Verteilung der Sentiments'
         %section
           .vis#chart
-
-      .col-md-6
+    .row
+      .col-md-12
         %h4="Sunburst des Gesprächsverlaufs"
-        #sequence
-        #sunburst
-          #explanation{style:"visibility:hidden;"}
-            %span#percentage
+        .row
+          .col-md-6
+            #sunburst
+              #explanation{style:"visibility:hidden;"}
+                %span#percentage
+          .col-md-6
+            #sunburst-text
 
     .row
       .col-md-12
         %h4="Sentimente der Benutzer"
+        %small mit mehr als 1 Beitrag
         #user_sentiments
 
     .row
