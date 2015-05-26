@@ -28,24 +28,28 @@ In Folge der oben Beschriebenen Probleme musste das Projekt in eine andere Richt
 Stattdessen fiel die Wahl auf _Disqus_[7] eine Kommentarplattform, die auf anderen Webseiten eingebunden werden kann, etwa in Blogs oder Nachrichtenseiten. Es werden dabei verschachtelte Gespräche möglich und eine vielfalt verschiedener Themen kann untersucht werden. Als zusätzlicher Vorteil gegenüber Twitter müssen die Daten nicht Live mitgeschnitten werden, sondern sind asynchron verfügbar. Die Textlängen variieren relativ stark, was für die Sentimentanalyse ein Hindernis sein kann, dies muss evaluiert werden. Auf dem Disqus eigenen Portal existieren weitere Diskussionsthemen unabhängig von externen Seiten. Die Verbreitung des Dienstes ermöglicht eine Bandbreite an verschiedenen Gesprächen zu betrachten, auch in sehr unterschiedlicher Größe. So gibt es Themen mit Beiträgen im zweistelligen Bereich, jedoch auch mehrere Tausend sind möglich.
 
 ### Datenbank
-reicht eigentlich als kleiner punkt
-* Daten sind stark strukturiert
-* Daten vorhalten unnötig
-* Deshalb keine persistente speicherung sondern nur in redis mit ablaufdatum
-* die jsons werden dann nur für die anzeige verarbeitet
+Die von Disqus übermittelten Daten sind im JSON-Format stark strukturiert. Sicherlich wäre es möglich diese Struktur in ein Datenbankschema zu überführen, da eine Threadvisualisierung einzeln für sich steht, können alle dafür notwendigen Daten im ganzen als JSON gespeichert werden und erst zur Verarbeitung interpretiert werden. Auch ein längerfristig persistentes Speichern ist nicht notwendig. Daher haben wir uns entschieden die Daten als Text in eine Redis-Datenbank[8] zu speichern. Sie sind dort mit einem Ablaufdatum versehen und werden dementsprechend nach Ablauf dieser gelöscht. Um auf bereits heruntergeladene Daten zuzugreifen wird als Schlüssel die abgefragte URL verwendet.  
 
 ### Disqus-API
 TODO evtl
 
 ### Gelöste Probleme
-* muss nicht mehr zwischen prozessen kommunizieren, abfrage von disqus kann einfach im Hintergrund stattfinden
-* klares Ende der diskussion, bzw. aktueller stand
-* hierarchie möglich und sichtbar
+Über die Disqus-API wird auf den aktuellen Zustand der Diskussion zugegriffen, dies war bei Twitter nicht im Nachhinein möglich, wie erwähnt war nur _streamen_ möglich, was jedoch zu neuen Problemen führte. Die Vereinfachung auf einen diskreten Zustand erleichtert die Programmlogik deutlich, Es gibt eine Phase, in der im Hintergrund die Daten geladen werden, danach können die Ergebnisse angezeigt werden.
+In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau bestimmen auf welchen Kommentar sie antworten. So treten Baumstrukturen hier wesentlich deutlicher auf und bieten sich so für Visualisierungen an.
 
+
+## Quellen
 https://dev.twitter.com/rest/public/search
 https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
+
 [3] https://dev.twitter.com/streaming/overview/connecting
+
 [4] https://github.com/tweetstream/tweetstream
+
 [5] http://www.chatkorpus.tu-dortmund.de/korpora.html
+
 [6] https://snap.stanford.edu/data/web-Amazon.html
+
 [7] https://disqus.com/home/discover/
+
+[8] http://redis.io/
