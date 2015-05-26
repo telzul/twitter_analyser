@@ -7,7 +7,7 @@ function UserSentiments(data) {
       top: 20,
       right: 30,
       bottom: 130,
-      left: 30
+      left: 40
     },
     width = 1000 - margin.left - margin.right,
     height = 460 - margin.top - margin.bottom;
@@ -49,9 +49,7 @@ function UserSentiments(data) {
     .append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", 6)
-    .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text("Count");
+    .attr("dy", ".71em");
 
   //ab hier balken zeichnen
   var bar = svg.selectAll("bar")

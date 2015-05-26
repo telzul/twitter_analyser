@@ -101,7 +101,7 @@ Sunburst = function(data) { // Dimensions of sunburst.
 
     // set text
     d3.select("#sunburst-text")
-      .text(d.text);
+      .html("<h4>"+d.username+"</h4>"+d.text);
   }
 
   // Restore everything to full opacity when moving off the visualization.

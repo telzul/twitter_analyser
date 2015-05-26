@@ -1,6 +1,15 @@
 @import "colors";
 
 #user_sentiments {
+  .axis {
+    font: 10px sans-serif;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #555;
+    shape-rendering: crispEdges;
+  }
   .positive-bar {
     fill: $positive;
   }

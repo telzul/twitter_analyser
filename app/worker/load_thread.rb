@@ -15,5 +15,6 @@ class LoadThread
 
     posts = DisqusApi.v3.threads.listPosts(query).all
     discussion.posts = posts
+    discussion.details = DisqusApi.v3.threads.details(query)["response"]
   end
 end

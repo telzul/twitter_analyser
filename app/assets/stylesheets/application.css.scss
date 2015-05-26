@@ -19,8 +19,8 @@
 @import "colors";
 
 .splash-container {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
 
   position: relative;
 
@@ -32,33 +32,27 @@
   }
 }
 
-.axis {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #555;
-  shape-rendering: crispEdges;
-}
-.bar {
-  rect {
-    shape-rendering: crispEdges;
+header {
+  background-color: #00a6ed;
+  color: #fff;
+  font-weight: bold;
+  border-bottom-width: 1px;
+  border-color: #ddd;
+  border-bottom-style: solid;
+  .text {
+    margin: 10px;
   }
-  .positive {
-    fill: $positive;
-  }
-  .negative {
-    fill: $negative;
-  }
-  .nothing {
-    fill: $nothing;
+  a, a:hover, a:focus {
+    text-decoration: none;
+    color: #fff;
   }
 }
 
+footer {
+  height: 50px;
+  text-align: center;
 
-
-.bar text {
-  fill: #000;
+  .text {
+    padding-top: 15px;
+  }
 }

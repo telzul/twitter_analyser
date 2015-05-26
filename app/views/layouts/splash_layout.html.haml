@@ -19,10 +19,16 @@
 
 
   %body
+    %header
+      .container
+        .text
+          %span{class: "glyphicon glyphicon-search"}
+          =link_to "DisqusAnalyser", root_url
     .container
       =yield
 
     %footer
-      %p
-        TwitterAnalyser by Thomas Döring, Max Kießling, Robert Terbach
-        = Date.today.year
+      .container
+        .text
+          DisqusAnalyser by Thomas Döring, Max Kießling, Robert Terbach.
+          = Date.today.year

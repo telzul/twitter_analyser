@@ -1,3 +1,4 @@
+
 -if @discussion.get("status") != "created"
   We are still busy collecting the data. Please stand by
 
@@ -8,38 +9,38 @@
 -else
   -statistics = DiscussionStatistics.new(@discussion)
 
-  %section.container
-    %h2= @discussion.url
-    %small= "#{@discussion.posts.count} Posts"
+  %h2
+    =@discussion.details["clean_title"]
+    %small=link_to("url", @discussion.url, target: "_blank")
+  %small= "#{@discussion.posts.count} Posts"
 
-    %h3='Visualisierung'
-    .row
-      .col-md-12
-        %h4='Balkendiagramm: Verteilung der Sentiments'
-        %section
-          .vis#chart
-    .row
-      .col-md-12
-        %h4="Sunburst des Gesprächsverlaufs"
-        .row
-          .col-md-6
-            #sunburst
-              #explanation{style:"visibility:hidden;"}
-                %span#percentage
-          .col-md-6
-            #sunburst-text
+  .row
+    .col-md-12
+      %h4='Balkendiagramm: Verteilung der Sentiments'
+      %section
+        .vis#chart
+  .row
+    .col-md-12
+      %h4="Sunburst des Gesprächsverlaufs"
+      .row
+        .col-md-6
+          #sunburst
+            #explanation{style:"visibility:hidden;"}
+              %span#percentage
+        .col-md-6
+          #sunburst-text
 
-    .row
-      .col-md-12
-        %h4="Sentimente der Benutzer"
-        %small mit mehr als 1 Beitrag
-        #user_sentiments
+  .row
+    .col-md-12
+      %h4="Sentimente der Benutzer"
+      %small top 75
+      #user_sentiments
 
-    .row
-      .col-md-12
-        %h4='Baumdiagramm des Gesprächsverlaufs'
-        %section
-          %svg.vis#tree{:style => "border:1px black solid;"}
+  .row
+    .col-md-12
+      %h4='Baumdiagramm des Gesprächsverlaufs'
+      %section
+        %svg.vis#tree{:style => "border:1px black solid;"}
 
 
   :javascript

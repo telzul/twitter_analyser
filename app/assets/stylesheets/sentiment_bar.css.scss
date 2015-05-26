@@ -1,0 +1,29 @@
+@import "colors";
+#chart {
+  .axis {
+    font: 10px sans-serif;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #555;
+    shape-rendering: crispEdges;
+  }
+  .bar {
+    rect {
+      shape-rendering: crispEdges;
+    }
+    .positive {
+      fill: $positive;
+    }
+    .negative {
+      fill: $negative;
+    }
+    .nothing {
+      fill: $nothing;
+    }
+    text {
+      fill: #000;
+    }
+  }
+}

@@ -35,7 +35,7 @@ class DiscussionStatistics
       mem
     end
     data.values.sort { |b, a| (a['positive'] + a['negative'] + a['nothing']) <=> (b['positive'] + b['negative'] + b['nothing']) }
-      .select { |user| (user['positive'] + user['negative'] + user['nothing']) > 1 }
+      .select { |user| (user['positive'] + user['negative'] + user['nothing']) > 1 }[0..75]
   end
 
   def sunburst_data
