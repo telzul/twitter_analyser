@@ -67,6 +67,7 @@ class Discussion
     set(:details, details.to_json)
   end
 
+  # details contain information like title of the discussion
   def details
     JSON.parse(get(:details)) rescue nil
   end

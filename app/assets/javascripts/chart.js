@@ -1,3 +1,5 @@
+// data input:
+// [{"sentiment"=>"positive", "value"=>73}, {"sentiment"=>"nothing", "value"=>76}, {"sentiment"=>"negative", "value"=>129}] 
 function load_chart(chartdata) {
   var labels = ["positive", "negative", "nothing"];
 

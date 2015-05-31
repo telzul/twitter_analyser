@@ -1,3 +1,5 @@
+// input:
+// [{"username": "name", "positive": 2, "negative": 4, "nothing": 1}, …]
 function UserSentiments(data) {
   var labels = data.map(function(entry) {
     return entry.username;
