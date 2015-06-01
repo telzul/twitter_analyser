@@ -26,6 +26,17 @@ class Discussion
     end
   end
 
+  def self.delete!(url)
+    Sidekiq.redis do |conn|
+      conn.del url
+    end
+  end
+
+  def self.recreate(url)
+    Discussion.delete!(url)
+    Discussion.new(url)
+  end
+
   def initialize(url)
     @url = url
   end

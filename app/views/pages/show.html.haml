@@ -1,6 +1,8 @@
 
 -if @discussion.get("status") != "created"
-  We are still busy collecting the data. Please stand by
+  .splash-container
+    .splash-row
+      We are still busy collecting the data. Please stand by
 
   :javascript
     window.track_status("#{@discussion.url}");
@@ -12,6 +14,7 @@
   %h2
     =@discussion.details["clean_title"]
     %small=link_to("url", @discussion.url, target: "_blank")
+    %small=link_to("refresh", refresh_url( url: @discussion.url))
   %small= "#{@discussion.posts.count} Posts"
 
   .row

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/search', :to => 'pages#show'
   get '/status', :to => 'pages#status'
+  get '/refresh', :to => 'pages#refresh'
 
   root 'pages#index'
 end

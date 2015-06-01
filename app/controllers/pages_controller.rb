@@ -19,4 +19,11 @@ class PagesController < ApplicationController
       format.json {render :json => {:status => @discussion.get("status")}}
     end
   end
+
+  def refresh
+    url = params.require(:url)
+    Discussion.recreate url
+    redirect_to action: "show", url: url
+  end
+
 end

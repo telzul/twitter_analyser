@@ -32,11 +32,25 @@ Die von Disqus übermittelten Daten sind im JSON-Format stark strukturiert. Sich
 
 ### Disqus-API
 TODO evtl
+beschreiben wie wir an die url kommen
+* phantomjs (vielleicht noch probleme die aufgefallen sind → kein https bei version 1.9)
+* zugriff über die beiden parameter
+* in welcher form kommen die posts da raus?
+* welche daten sind das?
 
 ### Gelöste Probleme
 Über die Disqus-API wird auf den aktuellen Zustand der Diskussion zugegriffen, dies war bei Twitter nicht im Nachhinein möglich, wie erwähnt war nur _streamen_ möglich, was jedoch zu neuen Problemen führte. Die Vereinfachung auf einen diskreten Zustand erleichtert die Programmlogik deutlich, Es gibt eine Phase, in der im Hintergrund die Daten geladen werden, danach können die Ergebnisse angezeigt werden.
 In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau bestimmen auf welchen Kommentar sie antworten. So treten Baumstrukturen hier wesentlich deutlicher auf und bieten sich so für Visualisierungen an.
 
+
+## Evaluierung (sollen wir sowas machen?)
+* qualität der sentimentanalyse
+* visualisierung tree vs. sunburst
+* aussagekraft der analyse → in den diskussionen scheint viel streit unter den teilnehmern zu herrschen, sehr viele beleidigungen → negatives sentiment
+* verteilung der nutzeraktivität (kann man vielleicht bots erkennen? vielleicht welche, die häufig kommentieren, oder nur 1 mal) →zipfsch
+* verteilung der thread-tiefe
+* nutzer in threads, wie viele teilnehmer / thema
+* die letzten punkte kann man eigentlich gut als ausblick nutzen, zeigen, was man analysieren könnte
 
 ## Quellen
 https://dev.twitter.com/rest/public/search
