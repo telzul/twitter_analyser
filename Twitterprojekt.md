@@ -1,6 +1,6 @@
 # Dokumentation TwitterProjekt
 ## Ursprüngliche Ziele
-Kommunikation bei Twitter basiert auf 140 Zeichen langen Nachrichten von einem Sender zu beliebig vielen Empfängern. Zum Einen sind dies _Follower_, also Nutzer, die explizit Nachrichten des Senders erhalten wollen. Zum Anderen Beobachter bestimmter Themen (ursprünglich mit Hilfe von sogenannten _Hashtags_, Wörter mit vorangestelltem #).
+Kommunikation bei Twitter basiert auf 140 Zeichen langen Nachrichten von einem Sender zu beliebig vielen Empfängern. Zum Einen sind dies _Follower_, also Nutzer, die explizit Nachrichten des Senders erhalten wollen. Zum Anderen Beobachter bestimmter Themen (ursprünglich mit Hilfe von sogenannten _Hashtags_, Wörter mit vorangestelltem _#_).
 Nutzer machten sich die Hashtags schnell zu Nutze und Diskussionen um ein Thema konnten mit Hilfe des Hashtags gesammelt werden. Direkter noch ist eine Antwort auf einen Tweet, wenn der Nutzername auf dessen Tweet sich bezogen wird in die Antwort eingebunden wird.
 So können Diskussionen geführt werden, der Dienstanbieter selbst ermöglicht mittlerweile eine Ansicht, die es ermöglicht einen Gesprächsverlauf nachzuvollziehen, allerdings in recht begrenztem Umfang. Es ist dort nicht immer ganz klar welcher Tweet eine Antwort auf welchen ist und wieviele _Unterdiskussionen_ es gibt. Die Twitter-API enthält Informationen darüber, ob ein Tweet eine Antwort auf einen Anderen ist und wenn ja, welchen.
 Ein Ziel dieses Projektes war die Ansicht des Diskussionsverlaufes Graphischer darzustellen. Gespräche sollten sich als Baumstrukturen aufbauen, sodass nachvollziehbarer ist, wer wann wem antwortet und wie es eventuell unterteilt ist.
@@ -10,7 +10,7 @@ Ein weiteres Ziel war die Inhaltliche Analyse der Tweets, mittels Sentimentanaly
 
 ## Aufgekommene Probleme
 ### Twitter-API
-Die Twitter-API bietet theoretisch viele Möglichkeiten auf Tweets zuzugreifen, insbesondere sticht hier die Suchfunktion heraus, sie ermöglicht die Suche auf aktuellen und beliebten Tweets. Jedoch ist sie nicht vollständig, nach eigenen Angaben werden nicht alle passenden Tweets und User zurückgegeben. Es wird stattdessen auf die _Streaming-API_ verwiesen, welche wir daher auch benutzten. Sie ist dreigeteilt, es gibt _User-Streams_, die in etwa die Sicht eines einzelnen Benutzers wiederspiegeln, _Site-Streams_, die dazu dienen anderen Applikationen Zugriff im Auftrag mehrerer Nutzer zu gewähren, und drittens _Public-Streams_ mit denen Nutzer oder Themen verfolgt werden können. Letztere wird auch explizit für Data-Mining-Verfahren empfohlen. Diese Public-Streams-API ermöglicht das Verfolgen von Tweets in Echtzeit, als Parameter kann man User-IDs, geographische Angaben oder bis zu 400 Keywords angeben. Für den Mechanismus wird HTTP POST verwendet und dabei die Sitzung offen gehalten, sodass Daten von Twitter an die verbundene Applikation ohne weitere Requests gesendet werden.
+Die Twitter-API bietet theoretisch viele Möglichkeiten auf Tweets zuzugreifen, insbesondere sticht hier die Suchfunktion[1] heraus, sie ermöglicht die Suche auf aktuellen und beliebten Tweets. Jedoch ist sie nicht vollständig, nach eigenen Angaben werden nicht alle passenden Tweets und User zurückgegeben. Auch einzelne Tweets können abgerufen werden[2]. Es wird stattdessen auf die _Streaming-API_ verwiesen, welche wir daher auch benutzten. Sie ist dreigeteilt, es gibt _User-Streams_, die in etwa die Sicht eines einzelnen Benutzers wiederspiegeln, _Site-Streams_, die dazu dienen anderen Applikationen Zugriff im Auftrag mehrerer Nutzer zu gewähren, und drittens _Public-Streams_ mit denen Nutzer oder Themen verfolgt werden können. Letztere wird auch explizit für Data-Mining-Verfahren empfohlen. Diese Public-Streams-API ermöglicht das Verfolgen von Tweets in Echtzeit, als Parameter kann man User-IDs, geographische Angaben oder bis zu 400 Keywords angeben. Für den Mechanismus wird HTTP POST verwendet und dabei die Sitzung offen gehalten, sodass Daten von Twitter an die verbundene Applikation ohne weitere Requests gesendet werden.
 
 Da ein Webservice implementiert werden sollte, hatten wir zum Ziel dass in einem Formular neue Themen hinzugefügt werden können und Ergebnisse dazu zeitnah visualisiert. Da jedoch für neue Keywords die Verbindung neu aufgebaut werden muss, stieß das Vorgehen schnell an Rate-Limits. Twitter [3] gibt in der Dokumentation zwar an es gäbe für Entwickler kleine Spielräume, in denen auch mehrere Dutzend Anfragen in kurzer Zeit kein Problem wären, jedoch stellte sich beim Testen heraus, dass bereits wenige Verbindungen zu längeren Wartezeiten führen. Bereits bei fünf Verbindungen innerhalb weniger Minuten wurden die Limits erreicht, Twitter selbst gibt die genauen Strategien nicht öffentlich preis.
 
@@ -52,8 +52,9 @@ In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau b
 * die letzten punkte kann man eigentlich gut als ausblick nutzen, zeigen, was man analysieren könnte
 
 ## Quellen
-https://dev.twitter.com/rest/public/search
-https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
+[1] https://dev.twitter.com/rest/public/search
+
+[2] https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
 
 [3] https://dev.twitter.com/streaming/overview/connecting
 
