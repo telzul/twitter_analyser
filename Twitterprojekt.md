@@ -49,28 +49,28 @@ Darüber hinaus ließen sich weitere, tiefergehende Analysen auf den Daten durch
 
 
 ## Quellen
-[1] https://dev.twitter.com/rest/public/search
+[1] <https://dev.twitter.com/rest/public/search>
 
-[2] https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
+[2] <https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid>
 
-[3] https://dev.twitter.com/streaming/overview/connecting
+[3] <https://dev.twitter.com/streaming/overview/connecting>
 
-[4] https://github.com/tweetstream/tweetstream
+[4] <https://github.com/tweetstream/tweetstream>
 
-[5] http://www.chatkorpus.tu-dortmund.de/korpora.html
+[5] <http://www.chatkorpus.tu-dortmund.de/korpora.html>
 
-[6] https://snap.stanford.edu/data/web-Amazon.html
+[6] <https://snap.stanford.edu/data/web-Amazon.html>
 
-[7] https://disqus.com/home/discover/
+[7] <https://disqus.com/home/discover/>
 
-[8] http://redis.io/
+[8] <http://redis.io/>
 
-[9] https://disqus.com/api/docs/
+[9] <https://disqus.com/api/docs/>
 
-[10] https://disqus.com/api/docs/threads/listPosts/
+[10] <https://disqus.com/api/docs/threads/listPosts/>
 
-[11] https://disqus.com/api/docs/threads/details/
+[11] <https://disqus.com/api/docs/threads/details/>
 
-[12] http://phantomjs.org/
+[12] <http://phantomjs.org/>
 
-[13] http://d3js.org/
+[13] <http://d3js.org/>
