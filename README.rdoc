@@ -11,9 +11,9 @@ Tested with
 * make copies of the +.dist+-files in +./config/+ and remove the +.dist+
 * You need an Account on http:www.disqus.com and a registered application.
 * Fill in your corresponding data into +./config/disqus_api.yml+
-* for getting the necessary gems: +bundle install+
+* for getting the necessary gems: <tt>bundle install</tt>
 
 === Startup
 * Make sure redis is running
-* in the project directory start sidekiq: +bundle exec sidekiq+
-* run rails server +bundle exec rails server+
+* in the project directory start sidekiq: <tt>bundle exec sidekiq</tt>
+* run rails server <tt>bundle exec rails server</tt>
