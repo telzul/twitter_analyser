@@ -12,7 +12,7 @@
   -statistics = DiscussionStatistics.new(@discussion)
 
   %h2
-    =@discussion.details["clean_title"]
+    =@discussion.details["clean_title_unescaped"]
     %small=link_to("url", @discussion.url, target: "_blank")
     %small=link_to("refresh", refresh_url( url: @discussion.url))
   %small= "#{@discussion.posts.count} Posts"

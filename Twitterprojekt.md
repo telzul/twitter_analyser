@@ -1,7 +1,7 @@
 # Dokumentation TwitterProjekt
 ## Ursprüngliche Ziele
 Kommunikation bei Twitter basiert auf 140 Zeichen langen Nachrichten von einem Sender zu beliebig vielen Empfängern. Zum Einen sind dies _Follower_, also Nutzer, die explizit Nachrichten des Senders erhalten wollen. Zum Anderen Beobachter bestimmter Themen (ursprünglich mit Hilfe von sogenannten _Hashtags_, Wörter mit vorangestelltem #).
-Nutzer machten sich die Hashtags schnell zu Nutze und Diskussionen um ein Thema konnten mit Hilfe des Hashtags gesammelt werden. Direkter noch ist eine Antwort auf einen Tweet, wenn der Nutzername auf dessen Tweet sich bezogen wird in die Antwort eingebunden wird. TODO Beispiel
+Nutzer machten sich die Hashtags schnell zu Nutze und Diskussionen um ein Thema konnten mit Hilfe des Hashtags gesammelt werden. Direkter noch ist eine Antwort auf einen Tweet, wenn der Nutzername auf dessen Tweet sich bezogen wird in die Antwort eingebunden wird.
 So können Diskussionen geführt werden, der Dienstanbieter selbst ermöglicht mittlerweile eine Ansicht, die es ermöglicht einen Gesprächsverlauf nachzuvollziehen, allerdings in recht begrenztem Umfang. Es ist dort nicht immer ganz klar welcher Tweet eine Antwort auf welchen ist und wieviele _Unterdiskussionen_ es gibt. Die Twitter-API enthält Informationen darüber, ob ein Tweet eine Antwort auf einen Anderen ist und wenn ja, welchen.
 Ein Ziel dieses Projektes war die Ansicht des Diskussionsverlaufes Graphischer darzustellen. Gespräche sollten sich als Baumstrukturen aufbauen, sodass nachvollziehbarer ist, wer wann wem antwortet und wie es eventuell unterteilt ist.
 
@@ -28,15 +28,14 @@ In Folge der oben Beschriebenen Probleme musste das Projekt in eine andere Richt
 Stattdessen fiel die Wahl auf _Disqus_[7] eine Kommentarplattform, die auf anderen Webseiten eingebunden werden kann, etwa in Blogs oder Nachrichtenseiten. Es werden dabei verschachtelte Gespräche möglich und eine vielfalt verschiedener Themen kann untersucht werden. Als zusätzlicher Vorteil gegenüber Twitter müssen die Daten nicht Live mitgeschnitten werden, sondern sind asynchron verfügbar. Die Textlängen variieren relativ stark, was für die Sentimentanalyse ein Hindernis sein kann, dies muss evaluiert werden. Auf dem Disqus eigenen Portal existieren weitere Diskussionsthemen unabhängig von externen Seiten. Die Verbreitung des Dienstes ermöglicht eine Bandbreite an verschiedenen Gesprächen zu betrachten, auch in sehr unterschiedlicher Größe. So gibt es Themen mit Beiträgen im zweistelligen Bereich, jedoch auch mehrere Tausend sind möglich.
 
 ### Datenbank
-Die von Disqus übermittelten Daten sind im JSON-Format stark strukturiert. Sicherlich wäre es möglich diese Struktur in ein Datenbankschema zu überführen, da eine Threadvisualisierung einzeln für sich steht, können alle dafür notwendigen Daten im ganzen als JSON gespeichert werden und erst zur Verarbeitung interpretiert werden. Auch ein längerfristig persistentes Speichern ist nicht notwendig. Daher haben wir uns entschieden die Daten als Text in eine Redis-Datenbank[8] zu speichern. Sie sind dort mit einem Ablaufdatum versehen und werden dementsprechend nach Ablauf dieser gelöscht. Um auf bereits heruntergeladene Daten zuzugreifen wird als Schlüssel die abgefragte URL verwendet.  
+Die von Disqus übermittelten Daten sind im JSON-Format stark strukturiert. Sicherlich wäre es möglich diese Struktur in ein Datenbankschema zu überführen, da eine Threadvisualisierung einzeln für sich steht, können alle dafür notwendigen Daten im ganzen als JSON gespeichert werden und erst zur Verarbeitung interpretiert werden. Auch ein längerfristig persistentes Speichern ist nicht notwendig. Daher haben wir uns entschieden die Daten als Text in eine Redis-Datenbank[8] zu speichern. Sie sind dort mit einem Ablaufdatum versehen und werden dementsprechend nach Ablauf dieser gelöscht. Um auf bereits heruntergeladene Daten zuzugreifen wird als Schlüssel die abgefragte URL verwendet.
 
 ### Disqus-API
-TODO evtl
-beschreiben wie wir an die url kommen
-* phantomjs (vielleicht noch probleme die aufgefallen sind → kein https bei version 1.9)
-* zugriff über die beiden parameter
-* in welcher form kommen die posts da raus?
-* welche daten sind das?
+Disqus hat eine umfangreiche API[9], die es wohl ermöglicht eigene Clients zu entwickeln. Für unsere Zwecke benötigen wir lediglich zwei Methoden daraus: Zum einen __threads/listPosts__[10] und für Details zum Thread __threads/details__[11], wovon bisher ausschließlich der Threadname genutzt wird.
+Um über die API einen Thread abrufen zu können, muss man diesen eindeutig identifizieren können. Dazu gibt es bei Disqus zwei Wege: Entweder über die __thread_id__ die Internetseite, welche Disqus einbindet,  mit einem Wort identifiziert, etwa _lawblog_. Um den Thread zu einem bestimmten Beitrag, etwa einem Blogpost zu identifizieren kommt dazu das Feld __thread_ident__.
+Dagegen wird __thread_id__ auf Disqus-internen Foren verwendet.
+Um diese notwendigen Daten in einem ersten Schritt zu laden wird ein __phantomjs__[12]-Skript verwendet. Damit wird die Seite im Hintergrund per Webkit gerendert, sodass die Felder ausgelesen werden können.
+Der Zugangspunkt __threads/listPosts__ liefert dann alle Nutzerbeiträge zu dem angegebenen Thema. Dabei wird jeder Post über eine Zahl identifiziert und von Anderen als __parent__ referenziert, wenn diese eine Antwort auf ersteren sind. Darüber lässt sich im Nachhinein die Baumstruktur wieder aufbauen.
 
 ### Gelöste Probleme
 Über die Disqus-API wird auf den aktuellen Zustand der Diskussion zugegriffen, dies war bei Twitter nicht im Nachhinein möglich, wie erwähnt war nur _streamen_ möglich, was jedoch zu neuen Problemen führte. Die Vereinfachung auf einen diskreten Zustand erleichtert die Programmlogik deutlich, Es gibt eine Phase, in der im Hintergrund die Daten geladen werden, danach können die Ergebnisse angezeigt werden.
@@ -67,3 +66,11 @@ https://dev.twitter.com/rest/reference/get/statuses/show/%3Aid
 [7] https://disqus.com/home/discover/
 
 [8] http://redis.io/
+
+[9] https://disqus.com/api/docs/
+
+[10] https://disqus.com/api/docs/threads/listPosts/
+
+[11] https://disqus.com/api/docs/threads/details/
+
+[12] http://phantomjs.org/
