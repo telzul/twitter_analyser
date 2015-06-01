@@ -10,7 +10,7 @@ class ParseThreadId
     begin
 
       script_path = File.join(Rails.root,"lib","get_disqus_forum_name.js")
-      cmd = "phantomjs #{script_path} '#{url}' '#{tmpfile.path}'"
+      cmd = "phantomjs --ssl-protocol=any #{script_path} '#{url}' '#{tmpfile.path}'" #TODO: test if this works on 1.9 with the --ssl... option for https sites
       spawn cmd, timeout: 90
 
       data = JSON.parse(tmpfile.read) rescue nil

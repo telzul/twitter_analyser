@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=== System Requirements
+Tested with
+* Ruby 2.2.0
+* Rails 4.2.0
+* Phantomjs 2.0 (we had a problem with 1.9 being not usable for https, needs test if fix works)
+* Redis 2.2.14
 
-Things you may want to cover:
+=== Other Requirements
+* make copies of the +.dist+-files in +./config/+ and remove the +.dist+
+* You need an Account on http:www.disqus.com and a registered application.
+* Fill in your corresponding data into +./config/disqus_api.yml+
+* for getting the necessary gems: +bundle install+
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== Startup
+* Make sure redis is running
+* in the project directory start sidekiq: +bundle exec sidekiq+
+* run rails server +bundle exec rails server+
