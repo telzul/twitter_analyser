@@ -42,14 +42,11 @@ Der Zugangspunkt __threads/listPosts__ liefert dann alle Nutzerbeiträge zu dem 
 In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau bestimmen auf welchen Kommentar sie antworten. So treten Baumstrukturen hier wesentlich deutlicher auf und bieten sich so für Visualisierungen an.
 
 
-## Evaluierung (sollen wir sowas machen?)
-* qualität der sentimentanalyse
-* visualisierung tree vs. sunburst
-* aussagekraft der analyse → in den diskussionen scheint viel streit unter den teilnehmern zu herrschen, sehr viele beleidigungen → negatives sentiment
-* verteilung der nutzeraktivität (kann man vielleicht bots erkennen? vielleicht welche, die häufig kommentieren, oder nur 1 mal) →zipfsch
-* verteilung der thread-tiefe
-* nutzer in threads, wie viele teilnehmer / thema
-* die letzten punkte kann man eigentlich gut als ausblick nutzen, zeigen, was man analysieren könnte
+## Evaluierung
+Mit den nun gewonnenen Daten sind Visualisierungen sinnvoll möglich, so sind einige davon mit Hilfe der JavaScript-Bibliothek __d3.js__[13] entstanden. Es bliebe übrig die verwendeten Methoden zu evaluieren, etwa die Qualität der Sentimentanalyse in verschiedenen Dimensionen: Zum einen ist diese auf einem andersartigen Corpus trainiert, viel schwieriger ist allerdings die Dynamiken in einem laufenden Gespräch nachzuvollziehen. Bereits auf den ersten Blick zeigt sich, dass die meisten Kommentare sich nicht auf den ursprünglichen Text beziehen sondern auf den vorausgehenden Nutzerbeitrag. Hier muss dementsprechend die Aussagekraft der Visualisierungen diskutiert werden, das Balkendiagramm über die Gesamtzahl der Sentimente sagt weniger über die Meinungen zum Thema aus, als vielmehr über die allgemeine Stimmung in dem Thread. Häufig kommt es dabei zu Konfrontationen unter Nutzern, was sich in negativem Sentiment niederschlägt. Dies lässt sich insbesondere über die Baum- und Sunburstvisualisierung nachverfolgen.
+Darüber hinaus ließen sich weitere, tiefergehende Analysen auf den Daten durchführen. Vielleicht lassen sich über Verteilungen der Threadtiefen aussagen treffen, oder Unterthemen identifizieren. Wenn man mehrere Threads von einer Internetseite, etwa einem Blog, sammelt, können vielleicht auch Aussagen über die Nutzerbasis getroffen werden.
+
+
 
 ## Quellen
 [1] https://dev.twitter.com/rest/public/search
@@ -75,3 +72,5 @@ In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau b
 [11] https://disqus.com/api/docs/threads/details/
 
 [12] http://phantomjs.org/
+
+[13] http://d3js.org/
