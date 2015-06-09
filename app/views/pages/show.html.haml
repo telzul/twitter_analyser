@@ -1,5 +1,5 @@
 
--if @discussion.get("status") != "created"
+-if @discussion.get("status") == "in_creation"
   .splash-container
     .splash-row
       We are still busy collecting the data. Please stand by
@@ -8,7 +8,12 @@
     window.track_status("#{@discussion.url}");
 
 
--else
+-elsif @discussion.get("status") == "id_extraction_failed"
+  .splash-container
+    .splash-row
+      Sorry, an error occurred when trying to extract Disqus id
+
+-elsif @discussion.get("status") == "created"
   -statistics = DiscussionStatistics.new(@discussion)
 
   %h2
@@ -53,3 +58,9 @@
     load_chart(chartdata);
     loadtree(treedata);
     UserSentiments(#{statistics.user_sentiments.to_json});
+
+-else
+  .splash-container
+    .splash-row
+      An unknown error occured, status:
+      = @discussion.get("status")
