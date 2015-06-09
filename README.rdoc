@@ -4,8 +4,12 @@
 Tested with
 * Ruby 2.2.0
 * Rails 4.2.0
-* Phantomjs 2.0 (we had a problem with 1.9 being not usable for https, needs test if fix works)
+* Phantomjs 2.0
 * Redis 2.2.14
+* JavaScript Runtime (see <https://github.com/rails/execjs> )
+
+==== A note on phantomjs
+On Ubuntu with the packaged phantomjs 1.9 we noticed that it is not able to work with https connections easily. While we were able to get https working with a commandline argument forcing another version, it nevertheless cannot retrieve the necessary data from threads on http:www.disqus.com.
 
 === Other Requirements
 * make copies of the +.dist+-files in +./config/+ and remove the +.dist+

@@ -37,6 +37,11 @@ Dagegen wird __thread_id__ auf Disqus-internen Foren verwendet.
 Um diese notwendigen Daten in einem ersten Schritt zu laden wird ein __phantomjs__[12]-Skript verwendet. Damit wird die Seite im Hintergrund per Webkit gerendert, sodass die Felder ausgelesen werden können.
 Der Zugangspunkt __threads/listPosts__ liefert dann alle Nutzerbeiträge zu dem angegebenen Thema. Dabei wird jeder Post über eine Zahl identifiziert und von Anderen als __parent__ referenziert, wenn diese eine Antwort auf ersteren sind. Darüber lässt sich im Nachhinein die Baumstruktur wieder aufbauen.
 
+#### Zu Phantomjs
+Wir haben phantomjs 2.0 verwendet, die derzeit unter Ubuntu als Paket vorkompilierte Version 1.9 scheint Probleme mit https-Verbindungen zu haben. Zwar ließ sich mit einem Kommandozeilenparameter (__--ssl-protocol=tlsv1__) erfolgreich https verwenden, dennoch wurde die Seite von phantomjs nicht korrekt aufgebaut, sodass für Threads auf <https://www.disqus.com> selber die benötigten Parameter nicht ausgelesen werden können.
+Version 2.0 kann offenbar aufgrund eines Bugs bisher nicht vorkompiliert werden[14].
+
+
 ### Gelöste Probleme
 Über die Disqus-API wird auf den aktuellen Zustand der Diskussion zugegriffen, dies war bei Twitter nicht im Nachhinein möglich, wie erwähnt war nur _streamen_ möglich, was jedoch zu neuen Problemen führte. Die Vereinfachung auf einen diskreten Zustand erleichtert die Programmlogik deutlich, Es gibt eine Phase, in der im Hintergrund die Daten geladen werden, danach können die Ergebnisse angezeigt werden.
 In Disqus ist desweiteren die Threadansicht üblich, Nutzer können also genau bestimmen auf welchen Kommentar sie antworten. So treten Baumstrukturen hier wesentlich deutlicher auf und bieten sich so für Visualisierungen an.
@@ -74,3 +79,5 @@ Darüber hinaus ließen sich weitere, tiefergehende Analysen auf den Daten durch
 [12] <http://phantomjs.org/>
 
 [13] <http://d3js.org/>
+
+[14] <https://github.com/ariya/phantomjs/issues/12948>
